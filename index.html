@@ -10,10 +10,35 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v6.0.0/css/all.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+
+    <script>
+        const toggle = document.getElementById('checkbox');
+        const body = document.body;
+
+        toggle.addEventListener('input', e => {
+            const isChecked = e.target.checked;
+
+            if (isChecked) {
+                body.classList.add('dark-theme');
+            } else {
+                body.classList.remove('dark-theme');
+            }
+        });
+
+        const themeSwitch = document.querySelector('input');
+
+        themeSwitch.addEventListener('change', () => {
+            document.body.classList.toggle('dark-theme');
+        });
+    </script>
 </head>
 <body>
     <header>
         <div class="container">
+            <label class="switch">
+                <input type="checkbox" id="checkbox">
+                <span class="slider round"></span>
+            </label>
             <div class="header-menu">
                 <ul>
                     <li>
