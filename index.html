@@ -7,51 +7,39 @@
     <title>Portofolio</title>
 
     <link rel="stylesheet" href="stylesheet.css">
+    
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v6.0.0/css/all.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
 
-    <script>
-        const toggle = document.getElementById('checkbox');
-        const body = document.body;
-
-        toggle.addEventListener('input', e => {
-            const isChecked = e.target.checked;
-
-            if (isChecked) {
-                body.classList.add('dark-theme');
-            } else {
-                body.classList.remove('dark-theme');
-            }
-        });
-
-        const themeSwitch = document.querySelector('input');
-
-        themeSwitch.addEventListener('change', () => {
-            document.body.classList.toggle('dark-theme');
-        });
-    </script>
+    <script src="app.js"></script>
 </head>
 <body>
     <header>
         <div class="container">
-            <label class="switch">
-                <input type="checkbox" id="checkbox">
+            <!-- <label class="switch" for="ChangeTheme">
+                <input type="checkbox" id="ChangeTheme">
                 <span class="slider round"></span>
-            </label>
-            <div class="header-menu">
+            </label> -->
+            <div class="header-menu" id="nav">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
                 <ul>
                     <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#skills">Skills</a>
+                        <a href="#home">Home</a>
                     </li>
                     <li>
                         <a href="#about">About</a>
                     </li>
                     <li>
-                        <a href="#home">Home</a>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#technology">Technology</a>
+                    </li>
+                    <li>
+                        <a href="#testimonial">Testimonial</a>
                     </li>
                 </ul>
             </div>
@@ -59,81 +47,112 @@
     </header>
     <main>
         <section id="home">
-            <div class="container">
-                
+            <div class="home-wrapper">
+                <div class="container">
+                    <h1>Im Naufan, <br> Web Programmer</h1>
+                    <a class="btn" href="#contact">Contact</a>
+                </div>
             </div>
         </section>
         <section id="about">
-            <div class="container">
-                
+            <div class="about-wrapper">
+                <div class="container">
+                    <h2 class="heading">About</h2>
+                </div>
             </div>
         </section>
-        <section id="skills">
-            <div class="skills-wrapper">
+        <section id="services">
+            <div class="services-wrapper">
                 <div class="container">
+                    <h2 class="heading">Services</h2>
+                </div>
+            </div>
+        </section>
+        <section id="technology">
+            <div class="technology-wrapper">
+                <div class="container">
+                    <h2 class="heading">Technology</h2>
                     <div class="card">
-                        <div class="skills">
+                        <div class="technology">
                             <span class="devicon-javascript-plain colored"></span>
+                            <p>Javascript</p>
                         </div>
                     </div>
                     <div class="card">
-                        <div class="skills">
+                        <div class="technology">
                             <span class="devicon-react-original-wordmark colored"></span>
+                            <p>React</p>
                         </div>
                     </div>
                     <div class="card">
-                        <div class="skills">
+                        <div class="technology">
                             <span class="devicon-jquery-plain-wordmark colored"></span>
+                            <p>JQuery</p>
                         </div>
                     </div>
                     <div class="card">
-                        <div class="skills">
-                            <span class="devicon-php-plain colored"></span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="skills">
-                            <span class="devicon-ruby-plain-wordmark colored"></span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="skills">
+                        <div class="technology">
                             <span class="devicon-nodejs-plain-wordmark colored"></span>
+                            <p>Nodejs</p>
                         </div>
                     </div>
                     <div class="card">
-                        <div class="skills">
+                        <div class="technology">
+                            <span class="devicon-php-plain colored"></span>
+                            <p>PHP</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="technology">
                             <span class="devicon-laravel-plain-wordmark colored"></span>
+                            <p>Laravel</p>
                         </div>
                     </div>
                     <div class="card">
-                        <div class="skills">
+                        <div class="technology">
                             <span class="devicon-codeigniter-plain-wordmark colored"></span>
+                            <p>CodeIgniter</p>
                         </div>
                     </div>
                     <div class="card">
-                        <div class="skills">
+                        <div class="technology">
+                            <span class="devicon-ruby-plain-wordmark colored"></span>
+                            <p>Ruby</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="technology">
                             <span class="devicon-rails-plain-wordmark colored"></span>
+                            <p>Ruby on Rails</p>
                         </div>
                     </div>
                     <div class="card">
-                        <div class="skills">
+                        <div class="technology">
                             <span class="devicon-mysql-plain-wordmark colored"></span>
+                            <p>MySQL</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="contact">
-            <div class="container">
-                
+        <section id="testimonial">
+            <div class="testimonial-wrapper">
+                <div class="container">
+                    <h2 class="heading">Testimonial</h2>
+                </div>
             </div>
         </section>
-
+        <section id="contact">
+            <div class="contact-wrapper">
+                <div class="container">
+                    <h2 class="heading">Contact</h2>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="container">
-            <p>Made by love</p>
+            <p>2022 Made by Love</p>
         </div>
     </footer>
 </body>

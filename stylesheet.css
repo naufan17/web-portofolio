@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6, p, div {
 body {
   font-family: 'Ubuntu', sans-serif;
   margin: 0;
-  background-color: rgb(15 23 42);
+  background: linear-gradient(to top left, rgb(30 41 59), rgb(15 23 42));
 }
 
 li {
@@ -26,10 +26,11 @@ a {
 main {
 }
 
-header {
+.header-menu {
   height: 64px;
   width: 100%;
-  background-color: rgb(17 24 39);
+  background-color: rgb(15 23 42);
+  right: 0;
   top: 0;
   z-index: 10;
   position: fixed;
@@ -37,12 +38,25 @@ header {
 }
 
 .header-menu li {
-  float: right;
-  padding: 24px 24px;
+  float: left;
+  padding-left: 64px;
+  padding-top: 24px;
+  font-size: 16px;
+  display: block;
+}
+
+.header-menu li:hover {
+  opacity: 0.6;
 }
 
 .header-menu a {
   color : white;
+}
+
+header .icon {
+  font-size: 24px;
+  padding: 16px 24px;
+  display: none;
 }
 
 .container {
@@ -51,10 +65,17 @@ header {
   margin: 0 auto;
 }
 
+.heading {
+  font-size: 32px;
+  color: white;
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(158, 158, 158);
   transition: 0.3s;
-  padding: 24px 24px;
+  padding: 6px 24px;
   border-radius: 5px; 
   margin: 24px 24px;
   display: inline-block;
@@ -65,16 +86,71 @@ header {
   box-shadow: 0 8px 16px 0 rgba(158, 158, 158);
 }
 
-.skills-wrapper{
-  margin: 48px 48px;
+.home-wrapper{
+  margin: 48px 24px;
   text-align: center;
 }
 
-.skills {
-  width: 20%;
+.home-wrapper h1 {
+  font-size: 64px;
+  padding: 48px 48px;
+  margin-top: 128px;
+  color: white;
+  text-align: center;
+}
+
+.home-wrapper .btn:hover {
+  opacity: 0.6;
+}
+
+.home-wrapper .btn {
+  background-color: rgb(30 41 59);
+  border: none;
+  border-radius: 5px;
+  padding: 16px 32px;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.about-wrapper{
+  margin: 48px 24px;
+  text-align: center;
+}
+
+.services-wrapper{
+  margin: 48px 24px;
+  text-align: center;
+}
+
+.technology-wrapper{
+  margin: 48px 24px;
+  text-align: center;
+}
+
+.testimonial-wrapper{
+  margin: 48px 24px;
+  text-align: center;
+}
+
+.contact-wrapper{
+  margin: 48px 24px;
+  text-align: center;
+}
+
+.technology {
   margin-top: 24px;
   margin-bottom: 24px;
-  font-size: 120px;
+  font-size: 80px;
+  opacity: 0.8;
+}
+
+.technology p {
+  font-size: 16px;
+  color: white;
+  margin-top: 12px;
 }
 
 footer {
@@ -82,12 +158,14 @@ footer {
   background-color: rgb(17 24 39);
   bottom: 0;
   width: 100%;
+  opacity: 0.8;
 }
 
 footer p {
   text-align: center;
   color: white;
   padding: 24px 24px;
+  font-size: 16px;
 }
 
 .switch {
@@ -141,6 +219,35 @@ input[type=checkbox]:checked + .slider:before {
   border-radius: 50%;
 }
 
-body.dark-theme {
-  background-color: white;
+body.dark-mode {
+  background-color: black;
+}
+
+@media (max-width: 768px) {
+  .header-menu.responsive {
+    height: 320px;
+  }
+
+  header .icon {
+    display: block;
+  }
+  
+  .header-menu li {
+    float: none;
+    display: none;
+    padding: 16px 24px;
+  }
+  
+  .header-menu.responsive li {
+    float: none;
+    display: block;
+  }
+
+  .home-wrapper h1 {
+    font-size: 40px;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
 }
