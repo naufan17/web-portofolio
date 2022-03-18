@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Portofolio</title>
@@ -12,28 +13,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
 
     <script src="app.js"></script>
-
-    <script>
-var i = 0;
-var txt = 'Lorem ipsum dummy text blabla.';
-var speed = 50;
-
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("demo").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
-</script>
 </head>
 <body>
     <header>
         <div class="container">
-            <!-- <label class="switch" for="ChangeTheme">
-                <input type="checkbox" id="ChangeTheme">
-                <span class="slider round"></span>
-            </label> -->
             <div class="header-menu" id="nav">
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
@@ -55,6 +38,10 @@ function typeWriter() {
                         <a href="#testimonial">Testimonial</a>
                     </li>
                 </ul>
+                <label class="switch" for="checkbox">
+                    <input type="checkbox" id="checkbox">
+                    <span class="slider round"></span>
+                </label>
             </div>
         </div>
     </header>

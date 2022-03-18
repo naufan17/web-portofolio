@@ -1,13 +1,13 @@
-const toggle = document.getElementById('ChangeTheme');
+const checkbox = document.getElementById('checkbox');
 const body = document.body;
 
-toggle.addEventListener('input', e => {
+checkbox = document.addEventListener('input', e => {
     const isChecked = e.target.checked;
 
     if (isChecked) {
-        body.classList.add("dark-mode");
+        body.classList.add('bright-mode');
     } else {
-        body.classList.remove("dark-mode");
+        body.classList.remove('bright-mode');
     }
 });
 

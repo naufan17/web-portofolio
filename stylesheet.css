@@ -3,7 +3,7 @@
 html, body,
 ul, ol, li,
 h1, h2, h3, h4, h5, h6, p, div {
-  margin: 0;
+  margin: 0 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -11,8 +11,13 @@ h1, h2, h3, h4, h5, h6, p, div {
 
 body {
   font-family: 'Ubuntu', sans-serif;
-  margin: 0;
   background: linear-gradient(to top left, rgb(30 41 59), rgb(15 23 42));
+  color: white;
+}
+
+body .bright-mode {
+  background: white;
+  color: black;
 }
 
 li {
@@ -21,6 +26,7 @@ li {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 .header-menu {
@@ -46,10 +52,6 @@ a {
   opacity: 0.6;
 }
 
-.header-menu a {
-  color : white;
-}
-
 .header-menu .icon {
   font-size: 24px;
   padding: 18px 24px;
@@ -61,6 +63,11 @@ a {
   opacity: 0.6;
 }
 
+.header-menu label{
+  float: right;
+  display: inline-block;
+}
+
 .container {
   width: 100%;
   padding: 0 16px;
@@ -69,7 +76,6 @@ a {
 
 .heading {
   font-size: 32px;
-  color: white;
   margin-top: 36px;
   margin-bottom: 36px;
   text-align: center;
@@ -85,26 +91,19 @@ a {
   text-align: center;
 }
 
-.fa-white {
-  color: white;
-}
-
 .card p {
   font-size: 16px;
-  color: white;
   padding: 8px 0;
 }
 
 .card h4{
   font-size: 16px;
-  color: white;
   padding: 8px 0;
 }
 
 .card h6{
   font-size: 16px;
   font-weight: normal;
-  color: white;
   padding: 8px 0;
 }
 
@@ -136,7 +135,6 @@ a {
 
 .typewriter h1 {
   font-size: 64px;
-  color: white;
   overflow: hidden;
   border-right: .15em solid white;
   white-space: nowrap;
@@ -159,12 +157,12 @@ a {
 
 @keyframes typing1 {
   from { width: 0 }
-  to { width: 5.5em; border: none;}
+  to { width: 5.5em; border: none}
 }
 
 @keyframes typing2 {
-  0% { width: 0; opacity: 1 }
-  100% { width: 8.5em; opacity: 1; }
+  from { width: 0; opacity: 1 }
+  to { width: 8.5em; opacity: 1 }
 }
 
 @keyframes blink-caret {
@@ -177,7 +175,6 @@ a {
   border: none;
   border-radius: 5px;
   padding: 16px 32px;
-  color: white;
   font-size: 16px;
   text-align: center;
   display: inline-block;
@@ -246,7 +243,6 @@ footer .down{
 
 footer a {
   text-align: center;
-  color: white;
   padding: 24px 24px;
   font-size: 18px;
 }
@@ -257,14 +253,13 @@ footer a:hover {
 
 footer p {
   text-align: center;
-  color: white;
   padding-bottom: 24px;
   font-size: 16px;
 }
 
 @media (max-width: 1000px) {
   .header-menu li {
-    padding-left: 84px;
+    padding-left: 64px;
   }
 
   .home-wrapper h1 {
@@ -284,7 +279,6 @@ footer p {
   }
 }
 
-
 @media (max-width: 768px) {
   .header-menu.responsive {
     height: 320px;
@@ -303,6 +297,10 @@ footer p {
   .header-menu.responsive li {
     float: none;
     display: block;
+  }
+
+  .header-menu label{
+    display: none;
   }
 
   .home-wrapper h1 {
@@ -334,10 +332,13 @@ footer p {
 
 .switch {
   position: relative;
-  display: inline-block;
   margin: 18px 18px;
   width: 48px;
   height: 28px;
+}
+
+.switch input { 
+  display: none;
 }
 
 .slider {
@@ -364,14 +365,24 @@ footer p {
   transition: .4s;
 }
 
-input[type=checkbox]:checked + .slider {
+input:checked + .slider {
   background-color: #2196F3;
 }
 
-input[type=checkbox]:checked + .slider:before {
+input:checked + .slider:before {
   -webkit-transform: translateX(20px);
   -ms-transform: translateX(20px);
   transform: translateX(20px);
+}
+
+input:checked + body {
+  background: white;
+  color: black;
+}
+
+input:checked + body .bright-mode {
+  background: white;
+  color: black;
 }
 
 .slider.round {
@@ -380,8 +391,4 @@ input[type=checkbox]:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
-}
-
-body.dark-mode {
-  background-color: black;
 }
