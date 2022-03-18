@@ -23,32 +23,6 @@ a {
   text-decoration: none;
 }
 
-.hidden {
-  opacity:0;
-}
-.console-container {
- 
-  font-family:Khula;
-  font-size:4em;
-  text-align:center;
-  height:200px;
-  width:600px;
-  display:block;
-  position:absolute;
-  color:white;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  margin:auto;
-}
-.console-underscore {
-   display:inline-block;
-  position:relative;
-  top:-0.14em;
-  left:10px;
-}
-
 .header-menu {
   height: 64px;
   width: 100%;
@@ -151,20 +125,51 @@ a {
 }
 
 .home-wrapper{
-  margin: 48px 24px;
+  margin: 48px 48px;
   text-align: center;
 }
 
-.home-wrapper h1 {
+.typewriter{ 
+  margin-top: 168px;
+  margin-bottom: 64px;
+}
+
+.typewriter h1 {
   font-size: 64px;
-  padding: 48px 48px;
-  margin-top: 128px;
   color: white;
-  text-align: center;
+  overflow: hidden;
+  border-right: .15em solid white;
+  white-space: nowrap;
+  margin: 16px auto; 
 }
 
-.home-wrapper .btn:hover {
-  opacity: 0.6;
+.typewriter h1:nth-child(1) {
+  width: 5.5em;
+  animation: typing1 1s steps(40, end), blink-caret .5s step-end infinite;
+  animation-fill-mode: forwards;
+}
+
+.typewriter h1:nth-child(2) {
+  width: 8.5em;
+  opacity: 0;
+  animation: typing2 1.5s steps(40, end), blink-caret .5s step-end infinite;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes typing1 {
+  from { width: 0 }
+  to { width: 5.5em; border: none;}
+}
+
+@keyframes typing2 {
+  0% { width: 0; opacity: 1 }
+  100% { width: 8.5em; opacity: 1; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white }
 }
 
 .home-wrapper .btn {
@@ -177,6 +182,12 @@ a {
   text-align: center;
   display: inline-block;
   cursor: pointer;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.home-wrapper .btn:hover {
+  opacity: 0.6;
 }
 
 .about-wrapper{
@@ -192,16 +203,6 @@ a {
   text-align: center;
 }
 
-.testimonial-wrapper{
-  margin: 48px 24px;
-  text-align: center;
-}
-
-.contact-wrapper{
-  margin: 48px 24px;
-  text-align: center;
-}
-
 .technology {
   margin-top: 24px;
   margin-bottom: 24px;
@@ -209,11 +210,21 @@ a {
   opacity: 0.8;
 }
 
+.testimonial-wrapper{
+  margin: 48px 24px;
+  text-align: center;
+}
+
 .testimonial {
   margin-top: 24px;
   margin-bottom: 24px;
   font-size: 80px;
   opacity: 0.8;
+}
+
+.contact-wrapper{
+  margin: 48px 24px;
+  text-align: center;
 }
 
 footer {
@@ -251,10 +262,79 @@ footer p {
   font-size: 16px;
 }
 
+@media (max-width: 1000px) {
+  .header-menu li {
+    padding-left: 84px;
+  }
+
+  .home-wrapper h1 {
+    font-size: 56px;
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+
+  .width-1 {
+    width: 40%;
+  }
+  
+  .width-2 {
+    width: 40%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .header-menu.responsive {
+    height: 320px;
+  }
+
+  .header-menu .icon {
+    display: block;
+  }
+  
+  .header-menu li {
+    float: none;
+    display: none;
+    padding: 16px 24px;
+  }
+  
+  .header-menu.responsive li {
+    float: none;
+    display: block;
+  }
+
+  .home-wrapper h1 {
+    font-size: 36px;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .width-1 {
+    width: 90%;
+  }
+  
+  .width-2 {
+    width: 90%;
+  }
+
+  .home-wrapper .btn {
+    padding: 14px 28px;
+    color: white;
+    font-size: 14px;
+  }
+
+  footer a {
+    padding: 16px 16px;
+  }
+}
+
 .switch {
   position: relative;
   display: inline-block;
-  float: right;
   margin: 18px 18px;
   width: 48px;
   height: 28px;
@@ -304,45 +384,4 @@ input[type=checkbox]:checked + .slider:before {
 
 body.dark-mode {
   background-color: black;
-}
-
-@media (max-width: 768px) {
-  .header-menu.responsive {
-    height: 320px;
-  }
-
-  .header-menu .icon {
-    display: block;
-  }
-  
-  .header-menu li {
-    float: none;
-    display: none;
-    padding: 16px 24px;
-  }
-  
-  .header-menu.responsive li {
-    float: none;
-    display: block;
-  }
-
-  .home-wrapper h1 {
-    font-size: 40px;
-  }
-
-  .heading {
-    font-size: 24px;
-  }
-
-  .width-1 {
-    width: 90%;
-  }
-  
-  .width-2 {
-    width: 90%;
-  }
-
-  footer a {
-    padding: 16px 16px;
-  }
 }
