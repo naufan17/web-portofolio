@@ -368,7 +368,7 @@ input:checked + body .bright-mode {
   border-radius: 50%;
 }
 
-.opacity{
+.transparent{
   opacity: 0;
 }
 
@@ -473,7 +473,7 @@ input:checked + body .bright-mode {
     transform: translateY(-20%);
   }
   to {
-    opacity: 1;
+    opacity: 0.8;
     transform: translateY(0%);
   }
 }
