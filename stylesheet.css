@@ -16,8 +16,8 @@ body {
 }
 
 body .bright-mode {
-  background: white;
-  color: black;
+  background: linear-gradient(to top left, rgb(241 245 249), rgb(226 232 240));
+  color: rgb(15 23 42);
 }
 
 li {
@@ -141,35 +141,6 @@ a {
   margin: 16px auto; 
 }
 
-.typewriter h1:nth-child(1) {
-  width: 5.5em;
-  animation: typing1 1s steps(40, end), blink-caret .5s step-end infinite;
-  animation-fill-mode: forwards;
-}
-
-.typewriter h1:nth-child(2) {
-  width: 8.5em;
-  opacity: 0;
-  animation: typing2 1.5s steps(40, end), blink-caret .5s step-end infinite;
-  animation-delay: 1.5s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes typing1 {
-  from { width: 0 }
-  to { width: 5.5em; border: none}
-}
-
-@keyframes typing2 {
-  from { width: 0; opacity: 1 }
-  to { width: 8.5em; opacity: 1 }
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: white }
-}
-
 .home-wrapper .btn {
   background-color: rgb(30 41 59);
   border: none;
@@ -253,6 +224,7 @@ footer a:hover {
 
 footer p {
   text-align: center;
+  color: white;
   padding-bottom: 24px;
   font-size: 16px;
 }
@@ -376,13 +348,13 @@ input:checked + .slider:before {
 }
 
 input:checked + body {
-  background: white;
-  color: black;
+  background: linear-gradient(to top left, rgb(241 245 249), rgb(226 232 240));
+  color: rgb(15 23 42);
 }
 
 input:checked + body .bright-mode {
-  background: white;
-  color: black;
+  background: linear-gradient(to top left, rgb(241 245 249), rgb(226 232 240));
+  color: rgb(15 23 42);
 }
 
 .slider.round {
@@ -391,4 +363,148 @@ input:checked + body .bright-mode {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.opacity{
+  opacity: 0;
+}
+
+.typewriter h1:nth-child(1) {
+  width: 5.5em;
+  animation: typing1 1s steps(40, end), blink-caret .5s step-end infinite;
+  animation-fill-mode: forwards;
+}
+
+.typewriter h1:nth-child(2) {
+  width: 8.5em;
+  opacity: 0;
+  animation: typing2 1.5s steps(40, end), blink-caret .5s step-end infinite;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.lineDown {
+  animation: anim-lineDown 2s steps(40, end), .5s step-end  infinite;
+  animation-delay: 2.8s;
+  animation-fill-mode: forwards;
+}
+
+.pop-outin {
+  animation:anim-popoutin 0.5s  steps(40, end), .5s step-end infinite;
+  animation-delay: 2.6s;
+  animation-fill-mode: forwards;
+}
+
+.lineUp1 {
+  animation: anim-lineUp 2s steps(40, end), .5s step-end  infinite;
+  animation-delay: 2.8s;
+  animation-fill-mode: forwards;
+}
+
+.lineUp2 {
+  animation: anim-lineUp 2s steps(40, end), .5s step-end  infinite;
+  animation-delay: 3.0s;
+  animation-fill-mode: forwards;
+}
+
+.lineUp3 {
+  animation: anim-lineUp 2s steps(40, end), .5s step-end  infinite;
+  animation-delay: 3.2s;
+  animation-fill-mode: forwards;
+}
+
+.lineUp4 {
+  animation: anim-lineUp 2s steps(40, end), .5s step-end  infinite;
+  animation-delay: 3.4s;
+  animation-fill-mode: forwards;
+}
+
+.lineUp5 {
+  animation: anim-lineUp 2s steps(40, end), .5s step-end  infinite;
+  animation-delay: 3.6s;
+  animation-fill-mode: forwards;
+}
+
+.lineUp6 {
+  animation: anim-lineUp 2s steps(40, end), .5s step-end  infinite;
+  animation-delay: 3.8s;
+  animation-fill-mode: forwards;
+}
+
+.lineUp7 {
+  animation: anim-lineUp 2s steps(40, end), .5s step-end  infinite;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+.lineUp8 {
+  animation: anim-lineUp 2s steps(40, end), .5s step-end  infinite;
+  animation-delay: 4.2s;
+  animation-fill-mode: forwards;
+}
+
+.lineUp9 {
+  animation: anim-lineUp 2s steps(40, end), .5s step-end  infinite;
+  animation-delay: 4.4s;
+  animation-fill-mode: forwards;
+}
+
+.lineUp10 {
+  animation: anim-lineUp 2s steps(40, end), .5s step-end  infinite;
+  animation-delay: 4.6s;
+  animation-fill-mode: forwards;
+}
+
+.lineUp11 {
+  animation: anim-lineUp 2s steps(40, end), .5s step-end  infinite;
+  animation-delay: 4.8s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes typing1 {
+  from { width: 0 }
+  to { width: 5.5em; border: none}
+}
+
+@keyframes typing2 {
+  from { width: 0; opacity: 1 }
+  to { width: 8.5em; opacity: 1 }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white }
+}
+
+@keyframes anim-lineDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes anim-popoutin {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes anim-lineUp {
+  from {
+    opacity: 0;
+    transform: translateY(60%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
