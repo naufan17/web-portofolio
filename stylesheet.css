@@ -30,7 +30,7 @@ a {
 }
 
 .header-menu {
-  height: 72px;
+  height: 68px;
   width: 100%;
   background-color: rgb(15 23 42);
   right: 0;
@@ -91,12 +91,22 @@ a {
   text-align: center;
 }
 
+.card img { 
+  width: 288px;
+  height: 154px;
+}
+
 .card p {
   font-size: 16px;
   padding: 8px 0;
 }
 
 .card h4{
+  font-size: 20px;
+  padding: 8px 0;
+}
+
+.card h5{
   font-size: 16px;
   padding: 8px 0;
 }
@@ -192,6 +202,18 @@ a {
 }
 
 .contact {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-size: 80px;
+  opacity: 0.8;
+}
+
+.blog-wrapper{
+  margin: 48px 24px;
+  text-align: center;
+}
+
+.blog {
   margin-top: 24px;
   margin-bottom: 24px;
   font-size: 80px;
