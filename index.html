@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v6.1.0/css/all.css" />
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v6.1.1/css/all.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
 
     <script src="script.js"></script>
@@ -18,7 +18,7 @@
     <header>
         <div class="container">      
             <div class="header-menu transparent lineDown" id="nav">
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <a href="javascript:void(0);" class="icon" onclick="brightMode()">
                     <i class="fa fa-bars"></i>
                 </a>
                 <ul>
@@ -36,10 +36,10 @@
                     </li>
                     <!-- <li>
                         <a href="#blog" id="menu5">Blog</a>
-                    </li>
+                    </li> -->
                     <li>
                         <a href="#contact" id="menu6">Contact</a>
-                    </li> -->
+                    </li>
                 </ul>
                 <label class="switch" for="checkbox">
                     <input type="checkbox" id="checkbox">
@@ -54,10 +54,10 @@
                 <div class="container">
                     <div class="typewriter" id="typewriter">
                         <h1>I'm Naufan, </h1>
-                        <h1>Web Programmer</h1>
+                        <h1>Web Developer</h1>
                     </div>
                     <div class="transparent pop-outin">
-                        <a class="btn" href="#contact">Contact</a>
+                        <a class="btn" href="CV Muhammad Naufan Athoillah.pdf" id="btn" download="CV Muhammad Naufan Athoillah">Curriculum Vitae</a>
                     </div>
                 </div>
             </div>
@@ -74,76 +74,82 @@
                 <div class="container">
                     <h2 class="heading transparent lineUp1">Skills</h2>
                     <div class="transparent lineUp2">
-                        <div class="card" id="card1">
+                        <div class="card" id="card-1">
                             <div class="skills">
                                 <span class="devicon-javascript-plain colored"></span>
                                 <p>Javascript</p>
                             </div>
                         </div>
-                        <div class="card" id="card2">
+                        <div class="card" id="card-2">
                             <div class="skills">
                                 <span class="devicon-react-original-wordmark colored"></span>
                                 <p>React</p>
                             </div>
                         </div>
-                        <div class="card" id="card3">
+                        <div class="card" id="card-3">
                             <div class="skills">
                                 <span class="devicon-jquery-plain-wordmark colored"></span>
                                 <p>JQuery</p>
                             </div>
                         </div>
-                        <div class="card" id="card4">
+                        <div class="card" id="card-4">
                             <div class="skills">
                                 <span class="devicon-nodejs-plain-wordmark colored"></span>
                                 <p>Nodejs</p>
                             </div>
                         </div>
-                        <div class="card" id="card5">
+                        <!-- <div class="card" id="card-5">
                             <div class="skills">
                                 <span class="devicon-express-original-wordmark"></span>
                                 <p>Express</p>
                             </div>
-                        </div>
-                        <div class="card" id="card6">
+                        </div> -->
+                        <div class="card" id="card-6">
                             <div class="skills">
                                 <span class="devicon-php-plain colored"></span>
                                 <p>PHP</p>
                             </div>
                         </div>
-                        <div class="card" id="card7">
+                        <div class="card" id="card-7">
                             <div class="skills">
                                 <span class="devicon-laravel-plain-wordmark colored"></span>
                                 <p>Laravel</p>
                             </div>
                         </div>
-                        <div class="card" id="card8">
+                        <div class="card" id="card-8">
                             <div class="skills">
                                 <span class="devicon-codeigniter-plain-wordmark colored"></span>
                                 <p>CodeIgniter</p>
                             </div>
                         </div>
-                        <!-- <div class="card" id="card9">
+                        <!-- <div class="card" id="card-9">
                             <div class="skills">
                                 <span class="devicon-ruby-plain-wordmark colored"></span>
                                 <p>Ruby</p>
                             </div>
                         </div>
-                        <div class="card" id="card10">
+                        <div class="card" id="card-10">
                             <div class="skills">
                                 <span class="devicon-rails-plain-wordmark colored"></span>
                                 <p>Ruby on Rails</p>
                             </div>
                         </div> -->
-                        <div class="card" id="card11">
+                        <div class="card" id="card-11">
                             <div class="skills">
                                 <span class="devicon-mysql-plain-wordmark colored"></span>
                                 <p>MySQL</p>
                             </div>
                         </div>
-                        <div class="card" id="card12">
+                        <div class="card" id="card-12">
                             <div class="skills">
                                 <span class="devicon-postgresql-plain-wordmark colored"></span>
-                                <p>MySQL</p>
+                                <p>PostgreSQL</p>
+                            </div>
+                        </div>
+                        <div class="card" id="card-13">
+                            <div class="skills">
+                                <span class="devicon-github-original-wordmark colored"></span>
+                                <p>Github</p>
                             </div>
                         </div>
                     </div>
@@ -155,25 +161,34 @@
                 <div class="container">
                     <h2 class="heading transparent lineUp3">Portofolio</h2>
                     <div class="transparent lineUp4">
-                        <div class="card width-1" id="card13">
+                        <div class="card width-1" id="card-14">
                             <div class="portofolio">
-                                <img src="blog.png" alt="">
-                                <h4>Web Portofolio</h4>
-                                <p>"This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties. The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from this colored "Try it Yourself" link."</p>
+                                <img src="sistem-informasi-akademik-mdnu.png" alt="">
+                                <h4>Sistem Informasi Akademik MDNU</h4>
+                                <p>Projek kerja praktek kuliah membuat sistem informasi akademik Pondok Pesantren Nurul Ummah Kotagede. Sistem dibuat untuk admin, santri dan ustadz untuk mempermudah kegiatan administrasi di pondok pesantren dilakukan secara daring</p>
+                                <a href="https://siakad-mdnu.herokuapp.com/">
+                                    <span class="width-4 fa-solid fa-arrow-up-right-from-square" id="logo-14"></span>
+                                </a>
                             </div>
                         </div>
-                        <div class="card width-1" id="card14">
+                        <div class="card width-1" id="card-15">
                             <div class="portofolio">
-                                <img src="blog.png" alt="">
+                                <img src="web-portofolio.png" alt="">
                                 <h4>Web Portofolio</h4>
-                                <p>"This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties. The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from this colored "Try it Yourself" link."</p>
+                                <p>Website profile saya pribadi berisikan skill, portofolio dan kontak</p>
+                                <a href="https://naufan17.github.io/web-portofolio/">
+                                    <span class="width-4 fa-solid fa-arrow-up-right-from-square" id="logo-15"></span>
+                                </a>
                             </div>
                         </div>
-                        <div class="card width-1" id="card15">
+                        <div class="card width-1" id="card-16">
                             <div class="portofolio">
-                                <img src="blog.png" alt="">
-                                <h4>Web Portofolio</h4>
-                                <p>"This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties. The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from this colored "Try it Yourself" link."</p>
+                                <img src="cek-resi.png" alt="">
+                                <h4>Cek Resi</h4>
+                                <p>Website untuk melacak pengiriman barang dari 12 perusahaan jasa ekspedisi. Masukkan resi pengiriman untuk dapat melacak informasi, detail dan riwayat pengiriman</p>
+                                <a href="https://naufan17.github.io/Cek-Resi/">
+                                    <span class="width-4 fa-solid fa-arrow-up-right-from-square" id="logo-16"></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -218,38 +233,38 @@
                 <div class="container">
                     <h2 class="heading transparent lineUp7">Contact</h2>
                     <div class="transparent lineUp8">
-                        <div class="card width-2" id="card16">
+                        <div class="card width-2" id="card-17">
                             <div class="contact">
                                 <a href="https://mail.google.com/mail/u/0/?fs=1&to=muhammadnaufan@gmail.com&tf=cm">
-                                    <span class="width-3 fa-solid fa-envelope"></span>  
+                                    <span class="width-3 fa-solid fa-brands fa-envelope" id="logo-17"></span>  
                                 </a>
                             </div>
                         </div>
-                        <div class="card width-2" id="card17">
+                        <div class="card width-2" id="card-18">
                             <div class="contact">
                                 <a href="https://wa.me/6289630743492">
-                                    <span class="width-3 fa-brands fa-whatsapp"></span>
+                                    <span class="width-3 fa-brands fa-whatsapp" id="logo-18"></span>
                                 </a>
                             </div>
                         </div>
-                        <div class="card width-2" id="card18">
+                        <div class="card width-2" id="card-19">
                             <div class="contact">
                                 <a href="https://github.com/naufan17">
-                                    <span class="width-3 fa-brands fa-github"></span>
+                                    <span class="width-3 fa-brands fa-github" id="logo-19"></span>
                                 </a>
                             </div>
                         </div>
-                        <div class="card width-2" id="card19">
+                        <div class="card width-2" id="card-20">
                             <div class="contact">
                                 <a href="https://instagram.com/naufan00">
-                                    <span class="width-3 fa-brands fa-instagram"></span>
+                                    <span class="width-3 fa-brands fa-instagram" id="logo-20"></span>
                                 </a>
                             </div>
                         </div>
-                        <div class="card width-2" id="card20">
+                        <div class="card width-2" id="card-21">
                             <div class="contact">
                                 <a href="https://www.linkedin.com/in/muhammad-naufan/">
-                                    <span class="width-3 fa-brands fa-linkedin"></span>
+                                    <span class="width-3 fa-brands fa-linkedin" id="logo-21"></span>
                                 </a>
                             </div>
                         </div>
