@@ -73,7 +73,7 @@ a {
 
 .header-menu label{
   float: right;
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 .container {
@@ -309,11 +309,16 @@ footer p {
 
 @media (max-width: 768px) {
   .header-menu.responsive {
-    height: 280px;
+    height: 328px;
   }
 
   .header-menu .icon {
     display: block;
+  }
+
+  .header-menu-bright .icon {
+    display: block;
+    color: rgb(15 23 42);
   }
   
   .header-menu li {
@@ -321,14 +326,20 @@ footer p {
     display: none;
     padding: 16px 24px;
   }
+
+  .header-menu label {
+    float: none;
+    display: none;
+  }
   
   .header-menu.responsive li {
     float: none;
     display: block;
   }
 
-  .header-menu label{
-    display: none;
+  .header-menu.responsive label{
+    float: none;
+    display: block;
   }
 
   .home-wrapper h1 {
@@ -349,7 +360,6 @@ footer p {
 
   .btn {
     padding: 14px 28px;
-    color: white;
     font-size: 14px;
   }
 

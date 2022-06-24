@@ -86,11 +86,11 @@ checkbox = document.addEventListener('input', e => {
     }
 });
 
-function brightMode() {
+function menuIcon() {
     var x = document.getElementById("nav");
     if (x.className === "header-menu") {
-      x.className += " responsive";
+        x.className += " responsive";
     } else {
-      x.className = "header-menu";
+        x.className = "header-menu";
     }
 }
