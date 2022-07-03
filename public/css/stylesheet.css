@@ -219,6 +219,10 @@ a {
   opacity: 0.8;
 }
 
+.portofolio p{
+  height: 160px;
+}
+
 .contact-wrapper{
   margin: 48px 24px;
   text-align: center;
@@ -305,6 +309,10 @@ footer p {
   .width-2 {
     width: 40%;
   }
+
+  .portofolio p{
+    height: 148px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -362,6 +370,11 @@ footer p {
     padding: 14px 28px;
     font-size: 14px;
   }
+
+  .portofolio p{
+    height: auto;
+  }
+  
 
   footer a {
     padding: 16px 16px;
