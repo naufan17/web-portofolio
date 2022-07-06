@@ -18,11 +18,11 @@ checkbox = document.addEventListener('input', e => {
         // document.getElementById('card-5').classList.add('card-bright');
         document.getElementById('card-6').classList.add('card-bright');
         document.getElementById('card-7').classList.add('card-bright');
-        document.getElementById('card-8').classList.add('card-bright');
+        // document.getElementById('card-8').classList.add('card-bright');
         // document.getElementById('card-9').classList.add('card-bright');
         // document.getElementById('card-10').classList.add('card-bright');
         document.getElementById('card-11').classList.add('card-bright');
-        document.getElementById('card-12').classList.add('card-bright');
+        // document.getElementById('card-12').classList.add('card-bright');
         document.getElementById('card-13').classList.add('card-bright');
         document.getElementById('card-14').classList.add('card-bright');
         document.getElementById('logo-14').classList.add('fa-solid-bright');
@@ -61,11 +61,11 @@ checkbox = document.addEventListener('input', e => {
         // document.getElementById('card-5').classList.remove('card-bright');
         document.getElementById('card-6').classList.remove('card-bright');
         document.getElementById('card-7').classList.remove('card-bright');
-        document.getElementById('card-8').classList.remove('card-bright');
+        // document.getElementById('card-8').classList.remove('card-bright');
         // document.getElementById('card-9').classList.remove('card-bright');
         // document.getElementById('card-10').classList.remove('card-bright');
         document.getElementById('card-11').classList.remove('card-bright');
-        document.getElementById('card-12').classList.remove('card-bright');
+        // document.getElementById('card-12').classList.remove('card-bright');
         document.getElementById('card-13').classList.remove('card-bright');
         document.getElementById('card-14').classList.remove('card-bright');
         document.getElementById('logo-14').classList.remove('fa-solid-bright');
