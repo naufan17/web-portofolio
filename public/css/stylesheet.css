@@ -240,18 +240,6 @@ a {
   color: rgb(15 23 42);
 }
 
-.blog-wrapper{
-  margin: 48px 24px;
-  text-align: center;
-}
-
-.blog {
-  margin-top: 24px;
-  margin-bottom: 24px;
-  font-size: 80px;
-  opacity: 0.8;
-}
-
 footer {
   background-color: rgb(15 23 42);
   bottom: 0;
@@ -376,7 +364,6 @@ footer p {
     height: auto;
   }
   
-
   footer a {
     padding: 16px 16px;
   }
