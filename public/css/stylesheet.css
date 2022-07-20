@@ -54,6 +54,7 @@ a {
   padding-left: 64px;
   padding-top: 24px;
   font-size: 16px;
+  font-weight: 500;
   display: block;
 }
 
@@ -182,6 +183,10 @@ a {
   cursor: pointer;
   margin-top: 16px;
   margin-bottom: 32px;
+}
+
+.btn span{
+  margin-right: 8px;
 }
 
 .btn-bright {
