@@ -136,8 +136,8 @@ a {
   font-size: 48px;
 }
 
-.font-link {
-  font-size: 24px;
+.font-link-portofolio {
+  font-size: 28px;
 }
 
 .card:hover {
@@ -352,6 +352,11 @@ footer p {
     font-size: 36px;
   }
 
+  .btn {
+    padding: 14px 28px;
+    font-size: 14px;
+  }
+
   .heading {
     font-size: 28px;
   }
@@ -360,8 +365,8 @@ footer p {
     font-size: 40px;
   }
 
-  .font-link {
-    font-size: 20px;
+  .font-link-portofolio {
+    font-size: 24px;
   }
   
   .width-portofolio {
