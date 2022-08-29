@@ -75,7 +75,6 @@ a {
 
 .header-menu label{
   float: right;
-  /* display: inline-block; */
 }
 
 .container {
@@ -85,7 +84,7 @@ a {
 }
 
 .heading {
-  font-size: 32px;
+  font-size: 36px;
   margin-top: 36px;
   margin-bottom: 36px;
   text-align: center;
@@ -106,47 +105,38 @@ a {
 }
 
 .card img { 
-  /* width: 256px;
-  height: 144px; */
   width: 100%;
   height: auto;
 }
 
-.card p {
-  font-size: 16px;
-  padding: 8px 0;
-}
-
 .card h4{
-  font-size: 20px;
+  font-size: 24px;
   padding: 8px 0;
 }
 
-.card h5{
-  font-size: 16px;
+.card p {
+  font-size: 18px;
   padding: 8px 0;
 }
 
-.card h6{
-  font-size: 16px;
-  font-weight: normal;
-  padding: 8px 0;
+.width-about {
+  width: 80%;
 }
 
-.width-1 {
+.width-portofolio {
   width: 25%;
   height: auto;
 }
 
-.width-2 {
+.width-contact {
   width: 15%;
 }
 
-.width-3 {
+.font-link-contact {
   font-size: 48px;
 }
 
-.width-4 {
+.font-link {
   font-size: 24px;
 }
 
@@ -160,8 +150,8 @@ a {
 }
 
 .typewriter{ 
-  margin-top: 168px;
-  margin-bottom: 64px;
+  margin-top: 200px;
+  margin-bottom: 132px;
 }
 
 .typewriter h1 {
@@ -199,6 +189,14 @@ a {
 
 .about-wrapper{
   margin: 48px 24px;
+  text-align: center;
+}
+
+.about {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-size: 80px;
+  opacity: 0.8;
 }
 
 .skills-wrapper{
@@ -250,6 +248,7 @@ footer {
   bottom: 0;
   width: 100%;
   opacity: 0.8;
+  position: relative;
 }
 
 .footer-bright {
@@ -279,13 +278,13 @@ footer a:hover {
 footer p {
   text-align: center;
   color: rgb(203 213 225);
-  padding-bottom: 24px;
-  font-size: 16px;
+  padding-bottom: 18px;
+  font-size: 18px;
 }
 
 @media (max-width: 1000px) {
   .header-menu li {
-    padding-left: 96px;
+    padding-left: 84px;
   }
 
   .home-wrapper h1 {
@@ -293,15 +292,20 @@ footer p {
   }
 
   .heading {
-    font-size: 28px;
+    font-size: 32px;
   }
 
-  .width-1 {
-    width: 40%;
+  .width-about {
+    width: 90%;
   }
   
-  .width-2 {
-    width: 20%;
+  .width-portofolio {
+    width: 40%;
+    height: auto;
+  }
+  
+  .width-contact {
+    width: 25%;
   }
 
   .portofolio p{
@@ -311,7 +315,7 @@ footer p {
 
 @media (max-width: 768px) {
   .header-menu.responsive {
-    height: 328px;
+    height: 388px;
   }
 
   .header-menu .icon {
@@ -349,14 +353,23 @@ footer p {
   }
 
   .heading {
-    font-size: 24px;
+    font-size: 28px;
   }
 
-  .width-1 {
-    width: 90%;
+  .font-link-contact {
+    font-size: 40px;
+  }
+
+  .font-link {
+    font-size: 20px;
   }
   
-  .width-2 {
+  .width-portofolio {
+    width: 90%;
+    height: auto;
+  }
+  
+  .width-contact {
     width: 40%;
   }
 
@@ -365,12 +378,26 @@ footer p {
     font-size: 14px;
   }
 
+  .card h4{
+    font-size: 20px;
+    padding: 8px 0;
+  }
+  
+  .card p {
+    font-size: 16px;
+    padding: 8px 0;
+  }  
+
   .portofolio p{
     height: auto;
   }
   
   footer a {
     padding: 16px 16px;
+  }
+
+  footer p {
+    font-size: 16px;
   }
 }
 
