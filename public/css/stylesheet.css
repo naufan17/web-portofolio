@@ -114,34 +114,20 @@ a {
   padding: 8px 0;
 }
 
+.card h6{
+  font-size: 18px;
+  padding: 8px 0;
+  font-weight: 500;
+}
+
 .card p {
   font-size: 18px;
   padding: 8px 0;
-}
-
-.width-about {
-  width: 80%;
-}
-
-.width-portofolio {
-  width: 25%;
-  height: auto;
-}
-
-.width-contact {
-  width: 15%;
-}
-
-.font-link-contact {
-  font-size: 48px;
-}
-
-.font-link-portofolio {
-  font-size: 28px;
+  text-align: justify;
 }
 
 .card:hover {
-  opacity: 0.6;
+  transform: translateY(-6px);
 }
 
 .home-wrapper{
@@ -199,6 +185,10 @@ a {
   opacity: 0.8;
 }
 
+.width-about {
+  width: 80%;
+}
+
 .skills-wrapper{
   margin: 48px 24px;
   text-align: center;
@@ -223,8 +213,21 @@ a {
   opacity: 0.8;
 }
 
+.width-portofolio {
+  width: 25%;
+  height: auto;
+}
+
+.font-link-portofolio {
+  font-size: 28px;
+}
+
 .portofolio p{
-  height: 160px;
+  height: 200px;
+}
+
+.portofolio span:hover {
+  opacity: 0.6;
 }
 
 .contact-wrapper{
@@ -237,6 +240,18 @@ a {
   margin-bottom: 24px;
   font-size: 80px;
   opacity: 0.8;
+}
+
+.width-contact {
+  width: 15%;
+}
+
+.font-link-contact {
+  font-size: 48px;
+}
+
+.contact span:hover {
+  opacity: 0.6;
 }
 
 .fa-solid-bright{
@@ -385,12 +400,14 @@ footer p {
 
   .card h4{
     font-size: 20px;
-    padding: 8px 0;
+  }
+
+  .card h6{
+    font-size: 16px;
   }
   
   .card p {
     font-size: 16px;
-    padding: 8px 0;
   }  
 
   .portofolio p{
@@ -487,6 +504,36 @@ input:checked + body .bright-mode {
   animation-fill-mode: forwards;
 }
 
+@keyframes typing1 {
+  from { 
+    width: 0 
+  }
+  to { 
+    width: 5.5em; 
+    border: none
+  }
+}
+
+@keyframes typing2 {
+  from { 
+    width: 0; 
+    opacity: 1 
+  }
+  to { 
+    width: 7.5em; 
+    opacity: 1 
+  }
+}
+
+@keyframes blink-caret {
+  from, to { 
+    border-color: transparent 
+  }
+  50% { 
+    border-color: rgb(203 213 225) 
+  }
+}
+
 .lineDown {
   animation: anim-lineDown 2s steps(40, end), .5s step-end  infinite;
   animation-delay: 2.8s;
@@ -551,21 +598,6 @@ input:checked + body .bright-mode {
   animation: anim-lineUp 2s steps(40, end), .5s step-end  infinite;
   animation-delay: 4.4s;
   animation-fill-mode: forwards;
-}
-
-@keyframes typing1 {
-  from { width: 0 }
-  to { width: 5.5em; border: none}
-}
-
-@keyframes typing2 {
-  from { width: 0; opacity: 1 }
-  to { width: 7.5em; opacity: 1 }
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: rgb(203 213 225) }
 }
 
 @keyframes anim-lineDown {
