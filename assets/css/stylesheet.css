@@ -1,11 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Ubuntu:300, 400, 500, 700';
 
-html, body,
-ul, ol, li,
-h1, h2, h3, h4, h5, h6, p, div {
-  margin: 0 0;
-  padding: 0;
-  box-sizing: border-box;
+html {
   scroll-behavior: smooth;
   scroll-padding-top: 96px;
 }
@@ -14,11 +9,18 @@ body {
   font-family: 'Ubuntu', sans-serif;
   background: linear-gradient(to top left, rgb(30 41 59), rgb(15 23 42));
   color: rgb(203 213 225);
+  margin: 0;
+  padding: 0;
 }
 
 .body-bright-mode {
   background: linear-gradient(to top left, rgb(203 213 225), rgb(148 163 184));
   color: rgb(15 23 42);
+}
+
+ul {
+  margin: 0;
+  padding: 0
 }
 
 li {
@@ -34,59 +36,50 @@ a {
   color: rgb(15 23 42);
 }
 
-.header-menu {
+nav {
   height: 68px;
   width: 100%;
   background-color: rgb(15 23 42);
-  right: 0;
   top: 0;
   z-index: 10;
   position: fixed;
   opacity: 0.8;
 }
 
-.header-menu-bright {
+.nav-bright {
   background-color: rgb(203 213 225);
 }
 
-.header-menu li {
+nav li {
   float: left;
-  padding-left: 64px;
-  padding-top: 24px;
+  padding: 24px 42px;
   font-size: 16px;
   font-weight: 500;
-  display: block;
+  display: inline;
 }
 
-.header-menu li:hover {
-  opacity: 0.6;
+nav li:hover {
+  opacity: 0.8;
 }
 
-.header-menu .icon {
+nav .icon {
   font-size: 24px;
   padding: 18px 24px;
   display: none;
   opacity: 0.8;
 }
 
-.header-menu .icon:hover{
+nav .icon:hover{
   opacity: 0.6;
 }
 
-.header-menu label{
+nav label{
   float: right;
-}
-
-.container {
-  width: 100%;
-  padding: 0 16px;
-  margin: 0 auto;
 }
 
 .heading {
   font-size: 36px;
-  margin-top: 36px;
-  margin-bottom: 36px;
+  margin: 36px 0;
   text-align: center;
 }
 
@@ -109,12 +102,12 @@ a {
   height: auto;
 }
 
-.card h4{
+.card h3{
   font-size: 24px;
   padding: 8px 0;
 }
 
-.card h6{
+.card h4{
   font-size: 18px;
   padding: 8px 0;
   font-weight: 500;
@@ -223,7 +216,8 @@ a {
 }
 
 .portofolio p{
-  height: 200px;
+  height: 212px;
+  overflow: auto;
 }
 
 .portofolio span:hover {
@@ -270,38 +264,14 @@ footer {
   background-color: rgb(203 213 225);
 }
 
-footer .up {
-  height: 20px;
-  text-align: center;
-}
-
-footer .down{
-  height: 40px;
-  text-align: center;
-}
-
-footer a {
-  text-align: center;
-  padding: 24px 24px;
-  font-size: 18px;
-}
-
-footer a:hover {
-  opacity: 0.6;
-}
-
 footer p {
   text-align: center;
   color: rgb(203 213 225);
-  padding-bottom: 18px;
+  padding: 18px 0;
   font-size: 18px;
 }
 
 @media (max-width: 1000px) {
-  .header-menu li {
-    padding-left: 84px;
-  }
-
   .home-wrapper h1 {
     font-size: 56px;
   }
@@ -329,36 +299,36 @@ footer p {
 }
 
 @media (max-width: 768px) {
-  .header-menu.responsive {
+  nav.responsive {
     height: 388px;
   }
 
-  .header-menu .icon {
+  nav .icon {
     display: block;
   }
 
-  .header-menu-bright .icon {
+  nav-bright .icon {
     display: block;
     color: rgb(15 23 42);
   }
   
-  .header-menu li {
+  nav li {
     float: none;
     display: none;
     padding: 16px 24px;
   }
 
-  .header-menu label {
+  nav label {
     float: none;
     display: none;
   }
   
-  .header-menu.responsive li {
+  nav.responsive li {
     float: none;
     display: block;
   }
 
-  .header-menu.responsive label{
+  nav.responsive label{
     float: none;
     display: block;
   }

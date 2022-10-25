@@ -3,7 +3,7 @@ let checkbox = document.getElementById('checkbox');
 checkbox = document.addEventListener('input', e => {
     if (isChecked = e.target.checked) {
         document.body.classList.add('body-bright-mode');
-        document.getElementById('nav').classList.add('header-menu-bright');
+        document.getElementById('nav').classList.add('nav-bright');
         document.getElementById('menu1').classList.add('a-bright');
         document.getElementById('menu2').classList.add('a-bright');
         document.getElementById('menu3').classList.add('a-bright');
@@ -43,7 +43,7 @@ checkbox = document.addEventListener('input', e => {
         document.getElementById('foot').classList.add('footer-bright');
     } else {
         document.body.classList.remove('body-bright-mode');
-        document.getElementById('nav').classList.remove('header-menu-bright');
+        document.getElementById('nav').classList.remove('nav-bright');
         document.getElementById('menu1').classList.remove('a-bright');
         document.getElementById('menu2').classList.remove('a-bright');
         document.getElementById('menu3').classList.remove('a-bright');
@@ -86,9 +86,9 @@ checkbox = document.addEventListener('input', e => {
 
 function menuIcon() {
     var x = document.getElementById("nav");
-    if (x.className === "header-menu") {
+    if (x.className === "nav") {
         x.className += " responsive";
     } else {
-        x.className = "header-menu";
+        x.className = "nav";
     }
 }
