@@ -254,10 +254,9 @@ nav label{
 
 footer {
   background-color: rgb(15 23 42);
-  bottom: 0;
-  width: 100%;
   opacity: 0.8;
-  position: relative;
+  text-align: center;
+  padding: 8px;
 }
 
 .footer-bright {
@@ -265,9 +264,7 @@ footer {
 }
 
 footer p {
-  text-align: center;
   color: rgb(203 213 225);
-  padding: 18px 0;
   font-size: 18px;
 }
 
