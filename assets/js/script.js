@@ -2,8 +2,16 @@ let checkbox = document.getElementById('checkbox');
 
 checkbox = document.addEventListener('input', e => {
     if (isChecked = e.target.checked) {
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+              document.getElementById("nav").classList.add('nav-bright');;
+            } else {
+              document.getElementById("nav").classList.remove('nav-bright');
+            }
+        }
+
         document.body.classList.add('body-bright-mode');
-        document.getElementById('nav').classList.add('nav-bright');
         document.getElementById('menu1').classList.add('a-bright');
         document.getElementById('menu2').classList.add('a-bright');
         document.getElementById('menu3').classList.add('a-bright');
@@ -91,4 +99,13 @@ function menuIcon() {
     } else {
         x.className = "nav";
     }
+}
+
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+    document.getElementById("nav").classList.add('nav-dark');;
+  } else {
+    document.getElementById("nav").classList.remove('nav-dark');
+  }
 }

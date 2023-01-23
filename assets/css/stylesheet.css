@@ -39,11 +39,14 @@ a {
 nav {
   height: 68px;
   width: 100%;
-  background-color: rgb(15 23 42);
   top: 0;
   z-index: 10;
   position: fixed;
-  opacity: 0.8;
+  transition: 0.5s;
+}
+
+.nav-dark {
+  background-color: rgb(15 23 42);
 }
 
 .nav-bright {
@@ -254,7 +257,6 @@ nav label{
 
 footer {
   background-color: rgb(15 23 42);
-  opacity: 0.8;
   text-align: center;
   padding: 8px;
 }
