@@ -4,10 +4,10 @@ checkbox = document.addEventListener('input', e => {
     if (isChecked = e.target.checked) {
         window.onscroll = function() {scrollFunction()};
         function scrollFunction() {
-            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-              document.getElementById("nav").classList.add('nav-bright');;
+            if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
+                document.getElementById("nav").classList.add('nav-bright');
             } else {
-              document.getElementById("nav").classList.remove('nav-bright');
+                document.getElementById("nav").classList.remove('nav-bright');
             }
         }
 
@@ -103,9 +103,9 @@ function menuIcon() {
 
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
-  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-    document.getElementById("nav").classList.add('nav-dark');;
-  } else {
-    document.getElementById("nav").classList.remove('nav-dark');
-  }
+    if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
+        document.getElementById("nav").classList.add('nav-dark');
+    } else {
+        document.getElementById("nav").classList.remove('nav-dark');
+    }
 }

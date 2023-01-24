@@ -394,9 +394,9 @@ footer p {
 
 .switch {
   position: relative;
-  margin: 18px 18px;
-  width: 48px;
-  height: 28px;
+  margin: 16px 16px;
+  width: 56px;
+  height: 36px;
 }
 
 .switch input { 
@@ -410,7 +410,7 @@ footer p {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: rgb(203 213 225);
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -422,29 +422,25 @@ footer p {
   width: 20px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
+  padding: 4px 4px;
+  background-color: rgb(15 23 42);
   -webkit-transition: .4s;
   transition: .4s;
 }
 
+.fa-moon {
+  font-size: 20px;
+}
+
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: rgb(15 23 42);
 }
 
 input:checked + .slider:before {
+  background-color: rgb(203 213 225);
   -webkit-transform: translateX(20px);
   -ms-transform: translateX(20px);
   transform: translateX(20px);
-}
-
-input:checked + body {
-  background: linear-gradient(to top left, rgb(241 245 249), rgb(226 232 240));
-  color: rgb(15 23 42);
-}
-
-input:checked + body .bright-mode {
-  background: linear-gradient(to top left, rgb(241 245 249), rgb(226 232 240));
-  color: rgb(15 23 42);
 }
 
 .slider.round {
