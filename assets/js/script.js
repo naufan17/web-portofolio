@@ -12,11 +12,13 @@ checkbox = document.addEventListener('input', e => {
         }
 
         document.body.classList.add('body-bright-mode');
+        document.getElementById('nav').classList.add('nav-bright');
         document.getElementById('menu1').classList.add('a-bright');
         document.getElementById('menu2').classList.add('a-bright');
         document.getElementById('menu3').classList.add('a-bright');
         document.getElementById('menu4').classList.add('a-bright');
         document.getElementById('menu5').classList.add('a-bright');
+        document.getElementById('menu-dropdown').classList.add('a-bright');
         document.getElementById('btn').classList.add('a-bright', 'btn-bright');
         document.getElementById('card-about').classList.add('card-bright');
         document.getElementById('card-skills-1').classList.add('card-bright');
@@ -50,6 +52,15 @@ checkbox = document.addEventListener('input', e => {
         document.getElementById('foot-text').classList.add('a-bright');
         document.getElementById('foot').classList.add('footer-bright');
     } else {
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
+                document.getElementById("nav").classList.add('nav-dark');
+            } else {
+                document.getElementById("nav").classList.remove('nav-dark');
+            }
+        }
+
         document.body.classList.remove('body-bright-mode');
         document.getElementById('nav').classList.remove('nav-bright');
         document.getElementById('menu1').classList.remove('a-bright');
@@ -57,6 +68,7 @@ checkbox = document.addEventListener('input', e => {
         document.getElementById('menu3').classList.remove('a-bright');
         document.getElementById('menu4').classList.remove('a-bright');
         document.getElementById('menu5').classList.remove('a-bright');
+        document.getElementById('menu-dropdown').classList.remove('a-bright');
         document.getElementById('btn').classList.remove('a-bright', 'btn-bright');
         document.getElementById('card-about').classList.remove('card-bright');
         document.getElementById('card-skills-1').classList.remove('card-bright');
@@ -98,14 +110,5 @@ function menuIcon() {
         x.className += " responsive";
     } else {
         x.className = "nav";
-    }
-}
-
-window.onscroll = function() {scrollFunction()};
-function scrollFunction() {
-    if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
-        document.getElementById("nav").classList.add('nav-dark');
-    } else {
-        document.getElementById("nav").classList.remove('nav-dark');
     }
 }
