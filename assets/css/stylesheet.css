@@ -223,6 +223,10 @@ nav label{
   font-size: 28px;
 }
 
+.portofolio h3{
+  height: 72px;
+}
+
 .portofolio p{
   height: 212px;
   overflow: auto;
@@ -383,6 +387,10 @@ footer p {
   .card p {
     font-size: 16px;
   }  
+
+  .portofolio h3{
+    height: auto;
+  }
 
   .portofolio p{
     height: auto;
