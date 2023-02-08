@@ -1,5 +1,11 @@
 @import 'https://fonts.googleapis.com/css?family=Ubuntu:300, 400, 500, 700';
 
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 96px;
@@ -9,13 +15,6 @@ body {
   font-family: 'Ubuntu', sans-serif;
   background: linear-gradient(to top left, rgb(30 41 59), rgb(15 23 42));
   color: rgb(203 213 225);
-  margin: 0;
-  padding: 0;
-}
-
-html, body{
-  width: 100%;
-  height: auto;
 }
 
 .body-bright-mode {
@@ -264,7 +263,7 @@ nav label{
 footer {
   background-color: rgb(15 23 42);
   text-align: center;
-  padding: 8px;
+  padding: 24px;
 }
 
 .footer-bright {
