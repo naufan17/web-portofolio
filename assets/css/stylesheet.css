@@ -13,6 +13,11 @@ body {
   padding: 0;
 }
 
+html, body{
+  width: 100%;
+  height: auto;
+}
+
 .body-bright-mode {
   background: linear-gradient(to top left, rgb(203 213 225), rgb(148 163 184));
   color: rgb(15 23 42);

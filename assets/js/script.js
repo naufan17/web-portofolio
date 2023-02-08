@@ -2,17 +2,8 @@ let checkbox = document.getElementById('checkbox');
 
 checkbox = document.addEventListener('input', e => {
     if (isChecked = e.target.checked) {
-        window.onscroll = function() {scrollFunction()};
-        function scrollFunction() {
-            if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
-                document.getElementById("nav").classList.add('nav-bright');
-            } else {
-                document.getElementById("nav").classList.remove('nav-bright');
-            }
-        }
-
         document.body.classList.add('body-bright-mode');
-        document.getElementById('nav').classList.add('nav-bright');
+        document.getElementById('nav').classList.remove('nav-dark');
         document.getElementById('menu1').classList.add('a-bright');
         document.getElementById('menu2').classList.add('a-bright');
         document.getElementById('menu3').classList.add('a-bright');
@@ -51,16 +42,16 @@ checkbox = document.addEventListener('input', e => {
         document.getElementById('logo-contact-4').classList.add('fa-solid-bright');
         document.getElementById('foot-text').classList.add('a-bright');
         document.getElementById('foot').classList.add('footer-bright');
-    } else {
+
         window.onscroll = function() {scrollFunction()};
         function scrollFunction() {
             if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
-                document.getElementById("nav").classList.add('nav-dark');
+                document.getElementById("nav").classList.add('nav-bright');
             } else {
-                document.getElementById("nav").classList.remove('nav-dark');
+                document.getElementById("nav").classList.remove('nav-bright');
             }
         }
-
+    } else {
         document.body.classList.remove('body-bright-mode');
         document.getElementById('nav').classList.remove('nav-bright');
         document.getElementById('menu1').classList.remove('a-bright');
@@ -101,8 +92,26 @@ checkbox = document.addEventListener('input', e => {
         document.getElementById('logo-contact-4').classList.remove('fa-solid-bright');
         document.getElementById('foot-text').classList.remove('a-bright');
         document.getElementById('foot').classList.remove('footer-bright');
+
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
+                document.getElementById("nav").classList.add('nav-dark');
+            } else {
+                document.getElementById("nav").classList.remove('nav-dark');
+            }
+        }
     }
 });
+
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+    if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
+        document.getElementById("nav").classList.add('nav-dark');
+    } else {
+        document.getElementById("nav").classList.remove('nav-dark');
+    }
+}
 
 function menuIcon() {
     var x = document.getElementById("nav");
