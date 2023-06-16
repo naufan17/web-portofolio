@@ -202,37 +202,37 @@ nav label{
   opacity: 0.8;
 }
 
-.portofolio-wrapper{
+.portfolio-wrapper{
   margin: 48px 24px;
   text-align: center;
 }
 
-.portofolio {
+.portfolio {
   margin-top: 24px;
   margin-bottom: 24px;
   font-size: 80px;
   opacity: 0.8;
 }
 
-.width-portofolio {
+.width-portfolio {
   width: 25%;
   height: auto;
 }
 
-.font-link-portofolio {
+.font-link-portfolio {
   font-size: 28px;
 }
 
-.portofolio h3{
+.portfolio h3{
   height: 72px;
 }
 
-.portofolio p{
-  height: 212px;
+.portfolio p{
+  height: 228px;
   overflow: auto;
 }
 
-.portofolio span:hover {
+.portfolio span:hover {
   opacity: 0.6;
 }
 
@@ -292,7 +292,7 @@ footer p {
     width: 90%;
   }
   
-  .width-portofolio {
+  .width-portfolio {
     width: 40%;
     height: auto;
   }
@@ -301,7 +301,7 @@ footer p {
     width: 25%;
   }
 
-  .portofolio p{
+  .portfolio p{
     height: 148px;
   }
 }
@@ -358,11 +358,11 @@ footer p {
     font-size: 40px;
   }
 
-  .font-link-portofolio {
+  .font-link-portfolio {
     font-size: 24px;
   }
   
-  .width-portofolio {
+  .width-portfolio {
     width: 90%;
     height: auto;
   }
@@ -388,11 +388,11 @@ footer p {
     font-size: 16px;
   }  
 
-  .portofolio h3{
+  .portfolio h3{
     height: auto;
   }
 
-  .portofolio p{
+  .portfolio p{
     height: auto;
   }
   
