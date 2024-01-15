@@ -219,8 +219,14 @@ nav label{
   height: auto;
 }
 
-.font-link-portfolio {
+.font-github-portfolio {
   font-size: 28px;
+  margin: 0 8px 0 8px;
+}
+
+.font-link-portfolio {
+  font-size: 26px;
+  margin: 0 8px 0 8px;
 }
 
 .portfolio h3{
@@ -358,8 +364,12 @@ footer p {
     font-size: 40px;
   }
 
-  .font-link-portfolio {
+  .font-github-portfolio {
     font-size: 24px;
+  }
+
+  .font-link-portfolio {
+    font-size: 22px;
   }
   
   .width-portfolio {
