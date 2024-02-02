@@ -485,7 +485,7 @@ input:checked + .slider:before {
 }
 
 .typewriter h1:nth-child(2) {
-  width: 8.5em;
+  width: 9.5em;
   opacity: 0;
   animation: typing2 1.5s steps(40, end), blink-caret .5s step-end infinite;
   animation-delay: 1.5s;
@@ -508,17 +508,22 @@ input:checked + .slider:before {
     opacity: 1 
   }
   to { 
-    width: 7.5em; 
+    width: 8.5em; 
     opacity: 1 
   }
 }
 
+:root {
+  --background-color: transparent;
+  --caret-color: rgb(203, 213, 225);
+}
+
 @keyframes blink-caret {
-  from, to { 
-    border-color: transparent 
+  from, to {
+    border-color: var(--background-color);
   }
-  50% { 
-    border-color: rgb(203 213 225) 
+  50% {
+    border-color: var(--caret-color);
   }
 }
 

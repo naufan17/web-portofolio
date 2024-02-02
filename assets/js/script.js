@@ -48,7 +48,8 @@ checkbox = document.addEventListener('input', e => {
         document.getElementById('logo-contact-4').classList.add('fa-solid-bright');
         document.getElementById('foot-text').classList.add('a-bright');
         document.getElementById('foot').classList.add('footer-bright');
-
+        document.documentElement.style.setProperty('--caret-color', 'rgb(15 23 42)');
+    
         window.onscroll = function() {scrollFunction()};
         function scrollFunction() {
             if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
@@ -104,6 +105,7 @@ checkbox = document.addEventListener('input', e => {
         document.getElementById('logo-contact-4').classList.remove('fa-solid-bright');
         document.getElementById('foot-text').classList.remove('a-bright');
         document.getElementById('foot').classList.remove('footer-bright');
+        document.documentElement.style.setProperty('--caret-color', 'rgb(203, 213, 225)');
 
         window.onscroll = function() {scrollFunction()};
         function scrollFunction() {
@@ -117,6 +119,7 @@ checkbox = document.addEventListener('input', e => {
 });
 
 window.onscroll = function() {scrollFunction()};
+
 function scrollFunction() {
     if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
         document.getElementById("nav").classList.add('nav-dark');
