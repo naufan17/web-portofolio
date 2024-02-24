@@ -35,9 +35,9 @@ checkbox = document.addEventListener('input', e => {
         document.getElementById('card-portfolio-5').classList.add('card-bright');
         document.getElementById('link-portfolio-5').classList.add('fa-solid-bright');
         document.getElementById('github-portfolio-5').classList.add('fa-solid-bright');
-        document.getElementById('card-portfolio-6').classList.add('card-bright');
-        document.getElementById('link-portfolio-6').classList.add('fa-solid-bright');
-        document.getElementById('github-portfolio-6').classList.add('fa-solid-bright');
+        // document.getElementById('card-portfolio-6').classList.add('card-bright');
+        // document.getElementById('link-portfolio-6').classList.add('fa-solid-bright');
+        // document.getElementById('github-portfolio-6').classList.add('fa-solid-bright');
         document.getElementById('card-contact-1').classList.add('card-bright');
         document.getElementById('logo-contact-1').classList.add('fa-solid-bright');
         document.getElementById('card-contact-2').classList.add('card-bright');
@@ -51,11 +51,14 @@ checkbox = document.addEventListener('input', e => {
         document.documentElement.style.setProperty('--caret-color', 'rgb(15 23 42)');
     
         window.onscroll = function() {scrollFunction()};
+
         function scrollFunction() {
-            if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
-                document.getElementById("nav").classList.add('nav-bright');
+            var nav = document.getElementById("nav");
+
+            if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160 || window.innerWidth < 768) {
+                nav.classList.add('nav-bright');
             } else {
-                document.getElementById("nav").classList.remove('nav-bright');
+                nav.classList.remove('nav-bright');
             }
         }
     } else {
@@ -92,9 +95,9 @@ checkbox = document.addEventListener('input', e => {
         document.getElementById('card-portfolio-5').classList.remove('card-bright');
         document.getElementById('link-portfolio-5').classList.remove('fa-solid-bright');
         document.getElementById('github-portfolio-5').classList.remove('fa-solid-bright');
-        document.getElementById('card-portfolio-6').classList.remove('card-bright');
-        document.getElementById('link-portfolio-6').classList.remove('fa-solid-bright');
-        document.getElementById('github-portfolio-6').classList.remove('fa-solid-bright');
+        // document.getElementById('card-portfolio-6').classList.remove('card-bright');
+        // document.getElementById('link-portfolio-6').classList.remove('fa-solid-bright');
+        // document.getElementById('github-portfolio-6').classList.remove('fa-solid-bright');
         document.getElementById('card-contact-1').classList.remove('card-bright');
         document.getElementById('logo-contact-1').classList.remove('fa-solid-bright');
         document.getElementById('card-contact-2').classList.remove('card-bright');
@@ -108,11 +111,14 @@ checkbox = document.addEventListener('input', e => {
         document.documentElement.style.setProperty('--caret-color', 'rgb(203, 213, 225)');
 
         window.onscroll = function() {scrollFunction()};
+
         function scrollFunction() {
-            if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
-                document.getElementById("nav").classList.add('nav-dark');
+            var nav = document.getElementById("nav");
+
+            if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160 || window.innerWidth < 768) {
+                nav.classList.add('nav-dark');
             } else {
-                document.getElementById("nav").classList.remove('nav-dark');
+                nav.classList.remove('nav-dark');
             }
         }
     }
@@ -121,18 +127,21 @@ checkbox = document.addEventListener('input', e => {
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
-        document.getElementById("nav").classList.add('nav-dark');
+    var nav = document.getElementById("nav");
+
+    if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160 || window.innerWidth < 768) {
+        nav.classList.add('nav-dark');
     } else {
-        document.getElementById("nav").classList.remove('nav-dark');
+        nav.classList.remove('nav-dark');
     }
 }
 
 function menuIcon() {
-    var x = document.getElementById("nav");
-    if (x.className === "nav") {
-        x.className += " responsive";
+    var nav = document.getElementById("nav");
+    
+    if (nav.className === "nav") {
+        nav.className += " responsive";
     } else {
-        x.className = "nav";
+        nav.className = "nav";
     }
 }

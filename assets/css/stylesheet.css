@@ -234,7 +234,7 @@ nav label{
 }
 
 .portfolio p{
-  height: 228px;
+  height: 268px;
   overflow: auto;
 }
 
@@ -306,15 +306,11 @@ footer p {
   .width-contact {
     width: 25%;
   }
-
-  .portfolio p{
-    height: 148px;
-  }
 }
 
 @media (max-width: 768px) {
   nav.responsive {
-    height: 388px;
+    height: 388px;    
   }
 
   nav .icon {
