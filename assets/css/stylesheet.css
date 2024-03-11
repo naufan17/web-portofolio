@@ -248,8 +248,7 @@ nav label{
 }
 
 .contact {
-  margin-top: 12px;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   font-size: 80px;
   opacity: 0.8;
 }
@@ -374,7 +373,7 @@ footer p {
   }
   
   .width-contact {
-    width: 40%;
+    width: 30%;
   }
 
   .btn {
@@ -382,16 +381,20 @@ footer p {
     font-size: 14px;
   }
 
-  .card h4{
+  .card h3{
     font-size: 20px;
   }
 
-  .card h6{
+  .card h4{
     font-size: 16px;
   }
   
   .card p {
     font-size: 16px;
+  }  
+
+  .skill {
+    font-size: 68px;
   }  
 
   .portfolio h3{
@@ -401,6 +404,10 @@ footer p {
   .portfolio p{
     height: auto;
   }
+
+  .contact {
+    font-size: 68px;
+  }  
   
   footer a {
     padding: 16px 16px;
