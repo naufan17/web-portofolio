@@ -194,12 +194,11 @@ input:checked + .slider:before {
 }
 
 .home-wrapper{
-  margin: 48px 48px;
   text-align: center;
 }
 
 .typewriter{ 
-  margin-top: 200px;
+  margin-top: 224px;
   margin-bottom: 148px;
 }
 
@@ -237,7 +236,7 @@ input:checked + .slider:before {
 }
 
 .about-wrapper{
-  margin: 48px 24px;
+  margin: 60px 48px;
   text-align: center;
 }
 
@@ -253,7 +252,7 @@ input:checked + .slider:before {
 }
 
 .skill-wrapper{
-  margin: 48px 24px;
+  margin: 60px 48px;
   text-align: center;
 }
 
@@ -265,7 +264,7 @@ input:checked + .slider:before {
 }
 
 .portfolio-wrapper{
-  margin: 48px 24px;
+  margin: 60px 48px;
   text-align: center;
 }
 
@@ -361,10 +360,11 @@ footer p {
 @media (max-width: 768px) {
   .navbar {
     display: block;
+    margin: 0 8px;
   }
 
   nav.responsive {
-    height: 388px;    
+    height: 344px;    
   }
 
   nav .icon {
