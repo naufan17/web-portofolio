@@ -58,9 +58,16 @@ nav {
   background-color: rgb(241 245 249);
 }
 
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin: 0 36px;
+}
+
 nav li {
   float: left;
-  padding: 24px 42px;
+  padding: 24px 52px;
   font-size: 16px;
   font-weight: 500;
   display: inline;
@@ -81,8 +88,63 @@ nav .icon:hover{
   opacity: 0.8;
 }
 
-nav label{
-  float: right;
+.switch {
+  position: relative;
+  margin: 16px 16px;
+  width: 56px;
+  height: 36px;
+}
+
+.switch input { 
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(203 213 225);
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 19px;
+  width: 19px;
+  left: 4px;
+  bottom: 4px;
+  padding: 4px 4px;
+  background-color: rgb(15 23 42);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.fa-moon {
+  font-size: 20px;
+}
+
+input:checked + .slider {
+  background-color: rgb(15 23 42);
+}
+
+input:checked + .slider:before {
+  background-color: rgb(241 245 249);
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 .heading {
@@ -138,7 +200,7 @@ nav label{
 
 .typewriter{ 
   margin-top: 200px;
-  margin-bottom: 132px;
+  margin-bottom: 148px;
 }
 
 .typewriter h1 {
@@ -150,14 +212,14 @@ nav label{
 }
 
 .btn {
+  display: inline-block;
+  cursor: pointer;
   background-color: rgb(30 41 59);
   border: none;
   border-radius: 5px;
   padding: 16px 32px;
   font-size: 16px;
   text-align: center;
-  display: inline-block;
-  cursor: pointer;
   margin-top: 16px;
   margin-bottom: 32px;
 }
@@ -221,12 +283,12 @@ nav label{
 
 .font-github-portfolio {
   font-size: 28px;
-  margin: 0 8px 0 8px;
+  margin: 0 8px;
 }
 
 .font-link-portfolio {
   font-size: 26px;
-  margin: 0 8px 0 8px;
+  margin: 0 8px;
 }
 
 .portfolio h3{
@@ -242,33 +304,6 @@ nav label{
   opacity: 0.6;
 }
 
-.contact-wrapper{
-  margin: 48px 24px;
-  text-align: center;
-}
-
-.contact {
-  margin-bottom: 16px;
-  font-size: 80px;
-  opacity: 0.8;
-}
-
-.width-contact {
-  width: 15%;
-}
-
-.font-link-contact {
-  font-size: 48px;
-}
-
-.contact span:hover {
-  opacity: 0.6;
-}
-
-.fa-solid-bright{
-  color: rgb(15 23 42);
-}
-
 footer {
   background-color: rgb(15 23 42);
   text-align: center;
@@ -279,9 +314,29 @@ footer {
   background-color: rgb(241 245 249);
 }
 
+.contact {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.font-link-contact {
+  font-size: 28px;
+  margin: 0 16px;
+}
+
+.contact span:hover {
+  opacity: 0.6;
+}
+
+.fa-solid-bright{
+  color: rgb(15 23 42);
+}
+
 footer p {
   color: rgb(203 213 225);
   font-size: 18px;
+  margin-top: 24px;
 }
 
 @media (max-width: 1000px) {
@@ -300,14 +355,14 @@ footer p {
   .width-portfolio {
     width: 40%;
     height: auto;
-  }
-  
-  .width-contact {
-    width: 25%;
-  }
+  }  
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    display: block;
+  }
+
   nav.responsive {
     height: 388px;    
   }
@@ -346,41 +401,6 @@ footer p {
     font-size: 36px;
   }
 
-  .btn {
-    padding: 14px 28px;
-    font-size: 14px;
-  }
-
-  .heading {
-    font-size: 28px;
-  }
-
-  .font-link-contact {
-    font-size: 40px;
-  }
-
-  .font-github-portfolio {
-    font-size: 24px;
-  }
-
-  .font-link-portfolio {
-    font-size: 22px;
-  }
-  
-  .width-portfolio {
-    width: 90%;
-    height: auto;
-  }
-  
-  .width-contact {
-    width: 30%;
-  }
-
-  .btn {
-    padding: 14px 28px;
-    font-size: 14px;
-  }
-
   .card h3{
     font-size: 20px;
   }
@@ -393,9 +413,23 @@ footer p {
     font-size: 16px;
   }  
 
+  .btn {
+    padding: 14px 28px;
+    font-size: 14px;
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+
   .skill {
     font-size: 68px;
   }  
+
+  .width-portfolio {
+    width: 90%;
+    height: auto;
+  }
 
   .portfolio h3{
     height: auto;
@@ -405,9 +439,17 @@ footer p {
     height: auto;
   }
 
-  .contact {
-    font-size: 68px;
-  }  
+  .font-github-portfolio {
+    font-size: 24px;
+  }
+
+  .font-link-portfolio {
+    font-size: 22px;
+  }
+  
+  .font-link-contact {
+    font-size: 24px;
+  }
   
   footer a {
     padding: 16px 16px;
@@ -416,69 +458,6 @@ footer p {
   footer p {
     font-size: 16px;
   }
-}
-
-.switch {
-  position: relative;
-  margin: 16px 16px;
-  width: 56px;
-  height: 36px;
-}
-
-.switch input { 
-  display: none;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgb(203 213 225);
-  -webkit-transition: .2s;
-  transition: .2s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 19px;
-  width: 19px;
-  left: 4px;
-  bottom: 4px;
-  padding: 4px 4px;
-  background-color: rgb(15 23 42);
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.fa-moon {
-  font-size: 20px;
-}
-
-input:checked + .slider {
-  background-color: rgb(15 23 42);
-}
-
-input:checked + .slider:before {
-  background-color: rgb(241 245 249);
-  -webkit-transform: translateX(20px);
-  -ms-transform: translateX(20px);
-  transform: translateX(20px);
-}
-
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-
-.transparent{
-  opacity: 0;
 }
 
 .typewriter h1:nth-child(1) {
@@ -528,6 +507,10 @@ input:checked + .slider:before {
   50% {
     border-color: var(--caret-color);
   }
+}
+
+.transparent{
+  opacity: 0;
 }
 
 .lineDown {

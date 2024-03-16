@@ -8,7 +8,6 @@ checkbox = document.addEventListener('input', e => {
         document.getElementById('menu2').classList.add('a-bright');
         document.getElementById('menu3').classList.add('a-bright');
         document.getElementById('menu4').classList.add('a-bright');
-        document.getElementById('menu5').classList.add('a-bright');
         document.getElementById('menu-dropdown').classList.add('a-bright');
         document.getElementById('btn').classList.add('a-bright', 'btn-bright');
         document.getElementById('card-about').classList.add('card-bright');
@@ -38,13 +37,9 @@ checkbox = document.addEventListener('input', e => {
         // document.getElementById('card-portfolio-6').classList.add('card-bright');
         // document.getElementById('link-portfolio-6').classList.add('fa-solid-bright');
         // document.getElementById('github-portfolio-6').classList.add('fa-solid-bright');
-        document.getElementById('card-contact-1').classList.add('card-bright');
         document.getElementById('logo-contact-1').classList.add('fa-solid-bright');
-        document.getElementById('card-contact-2').classList.add('card-bright');
         document.getElementById('logo-contact-2').classList.add('fa-solid-bright');
-        document.getElementById('card-contact-3').classList.add('card-bright');
         document.getElementById('logo-contact-3').classList.add('fa-solid-bright');
-        document.getElementById('card-contact-4').classList.add('card-bright');
         document.getElementById('logo-contact-4').classList.add('fa-solid-bright');
         document.getElementById('foot-text').classList.add('a-bright');
         document.getElementById('foot').classList.add('footer-bright');
@@ -68,7 +63,6 @@ checkbox = document.addEventListener('input', e => {
         document.getElementById('menu2').classList.remove('a-bright');
         document.getElementById('menu3').classList.remove('a-bright');
         document.getElementById('menu4').classList.remove('a-bright');
-        document.getElementById('menu5').classList.remove('a-bright');
         document.getElementById('menu-dropdown').classList.remove('a-bright');
         document.getElementById('btn').classList.remove('a-bright', 'btn-bright');
         document.getElementById('card-about').classList.remove('card-bright');
@@ -98,13 +92,9 @@ checkbox = document.addEventListener('input', e => {
         // document.getElementById('card-portfolio-6').classList.remove('card-bright');
         // document.getElementById('link-portfolio-6').classList.remove('fa-solid-bright');
         // document.getElementById('github-portfolio-6').classList.remove('fa-solid-bright');
-        document.getElementById('card-contact-1').classList.remove('card-bright');
         document.getElementById('logo-contact-1').classList.remove('fa-solid-bright');
-        document.getElementById('card-contact-2').classList.remove('card-bright');
         document.getElementById('logo-contact-2').classList.remove('fa-solid-bright');
-        document.getElementById('card-contact-3').classList.remove('card-bright');
         document.getElementById('logo-contact-3').classList.remove('fa-solid-bright');
-        document.getElementById('card-contact-4').classList.remove('card-bright');
         document.getElementById('logo-contact-4').classList.remove('fa-solid-bright');
         document.getElementById('foot-text').classList.remove('a-bright');
         document.getElementById('foot').classList.remove('footer-bright');

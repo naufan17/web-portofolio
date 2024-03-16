@@ -16,20 +16,21 @@
 <body>
     <header>
         <nav class="transparent lineDown" id="nav">
-            <div class="icon" id="menu-icon">
-                <i class="fa fa-bars" id="menu-dropdown" onclick="menuIcon()"></i>
+            <div class="navbar">
+                <div class="icon" id="menu-icon">
+                    <i class="fa fa-bars" id="menu-dropdown" onclick="menuIcon()"></i>
+                </div>
+                <ul>
+                    <li><a href="#home" id="menu1">Home</a></li>
+                    <li><a href="#about" id="menu2">About</a></li>
+                    <li><a href="#skill" id="menu3">Skill</a></li>
+                    <li><a href="#portfolio" id="menu4">Portfolio</a></li>
+                </ul>
+                <label class="switch" for="checkbox">
+                    <input type="checkbox" id="checkbox">
+                    <span class="slider round fa-solid fa-moon"></span>
+                </label>    
             </div>
-            <ul>
-                <li><a href="#home" id="menu1">Home</a></li>
-                <li><a href="#about" id="menu2">About</a></li>
-                <li><a href="#skill" id="menu3">Skill</a></li>
-                <li><a href="#portfolio" id="menu4">Portfolio</a></li>
-                <li><a href="#contact" id="menu5">Contact</a></li>
-            </ul>
-            <label class="switch" for="checkbox">
-                <input type="checkbox" id="checkbox">
-                <span class="slider round fa-solid fa-moon"></span>
-            </label>
         </nav>
     </header>
     <main>
@@ -220,41 +221,22 @@
                 </div> -->
             </div>
         </div>
-        <div class="contact-wrapper" id="contact">
-            <h2 class="heading transparent lineUp7">Contact</h2>
-            <div class="transparent lineUp8">
-                <div class="card width-contact" id="card-contact-1">
-                    <div class="contact">
-                        <a href="https://mail.google.com/mail/u/0/?fs=1&to=muhammadnaufan@gmail.com&tf=cm" class="font-link-contact">
-                            <span class="fa-solid fa-envelope" id="logo-contact-1"></span>  
-                        </a>
-                    </div>
-                </div>
-                <div class="card width-contact" id="card-contact-2">
-                    <div class="contact">
-                        <a href="https://wa.me/6289630743492" class="font-link-contact">
-                            <span class="fa-brands fa-whatsapp" id="logo-contact-2"></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="card width-contact" id="card-contact-3">
-                    <div class="contact">
-                        <a href="https://github.com/naufan17" class="font-link-contact">
-                            <span class="fa-brands fa-github" id="logo-contact-3"></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="card width-contact" id="card-contact-4">
-                    <div class="contact">
-                        <a href="https://www.linkedin.com/in/muhammad-naufan/" class="font-link-contact">
-                            <span class="fa-brands fa-linkedin" id="logo-contact-4"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
     </main>
     <footer class="transparent lineUp9" id="foot">
+        <div class="contact">
+            <a href="https://mail.google.com/mail/u/0/?fs=1&to=muhammadnaufan@gmail.com&tf=cm" class="font-link-contact">
+                <span class="fa-solid fa-envelope" id="logo-contact-1"></span>  
+            </a>
+            <a href="https://wa.me/6289630743492" class="font-link-contact">
+                <span class="fa-brands fa-whatsapp" id="logo-contact-2"></span>
+            </a>
+            <a href="https://www.linkedin.com/in/muhammad-naufan/" class="font-link-contact">
+                <span class="fa-brands fa-linkedin" id="logo-contact-4"></span>
+            </a>
+            <a href="https://github.com/naufan17" class="font-link-contact">
+                <span class="fa-brands fa-github" id="logo-contact-3"></span>
+            </a>
+        </div>
         <p id="foot-text">&#169; <script>document.write(new Date().getFullYear())</script> Made by Naufan</p>
     </footer>
 </body>
