@@ -39,6 +39,9 @@ checkbox = document.addEventListener('input', e => {
         document.getElementById('card-portfolio-6').classList.add('card-bright');
         document.getElementById('link-portfolio-6').classList.add('fa-solid-bright');
         document.getElementById('github-portfolio-6').classList.add('fa-solid-bright');
+        document.getElementById('card-portfolio-7').classList.add('card-bright');
+        document.getElementById('link-portfolio-7').classList.add('fa-solid-bright');
+        document.getElementById('github-portfolio-7').classList.add('fa-solid-bright');
         document.getElementById('logo-contact-1').classList.add('fa-solid-bright');
         document.getElementById('logo-contact-2').classList.add('fa-solid-bright');
         document.getElementById('logo-contact-3').classList.add('fa-solid-bright');
@@ -96,6 +99,9 @@ checkbox = document.addEventListener('input', e => {
         document.getElementById('card-portfolio-6').classList.remove('card-bright');
         document.getElementById('link-portfolio-6').classList.remove('fa-solid-bright');
         document.getElementById('github-portfolio-6').classList.remove('fa-solid-bright');
+        document.getElementById('card-portfolio-7').classList.remove('card-bright');
+        document.getElementById('link-portfolio-7').classList.remove('fa-solid-bright');
+        document.getElementById('github-portfolio-7').classList.remove('fa-solid-bright');
         document.getElementById('logo-contact-1').classList.remove('fa-solid-bright');
         document.getElementById('logo-contact-2').classList.remove('fa-solid-bright');
         document.getElementById('logo-contact-3').classList.remove('fa-solid-bright');
