@@ -1,6 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Ubuntu:300, 400, 500, 700';
 
-* {
+/* * {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
@@ -9,9 +9,9 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 96px;
-}
+} */
 
-body {
+/* body {
   font-family: 'Ubuntu', sans-serif;
   background: linear-gradient(to top left, rgb(30 41 59), rgb(15 23 42));
   color: rgb(203 213 225);
@@ -20,9 +20,9 @@ body {
 .body-bright-mode {
   background: linear-gradient(to top left, rgb(248 250 252), rgb(241 245 249));
   color: rgb(15 23 42);
-}
+} */
 
-ul {
+/* ul {
   margin: 0;
   padding: 0
 }
@@ -63,9 +63,9 @@ nav {
   position: relative;
   justify-content: space-between;
   margin: 0 36px;
-}
+} */
 
-nav li {
+/* nav li {
   float: left;
   padding: 24px 52px;
   font-size: 16px;
@@ -86,7 +86,7 @@ nav .icon {
 
 nav .icon:hover{
   opacity: 0.8;
-}
+} */
 
 .switch {
   position: relative;
@@ -198,8 +198,8 @@ input:checked + .slider:before {
 }
 
 .typewriter{ 
-  margin-top: 224px;
-  margin-bottom: 148px;
+  margin-top: 200px;
+  margin-bottom: 128px;
 }
 
 .typewriter h1 {
@@ -339,7 +339,7 @@ footer p {
 }
 
 @media (max-width: 1000px) {
-  .home-wrapper h1 {
+  .typewriter h1 {
     font-size: 56px;
   }
 
@@ -397,7 +397,7 @@ footer p {
     display: block;
   }
 
-  .home-wrapper h1 {
+  .typewriter h1 {
     font-size: 36px;
   }
 
@@ -461,13 +461,13 @@ footer p {
 }
 
 .typewriter h1:nth-child(1) {
-  width: 5.5em;
+  width: 6.6em;
   animation: typing1 1s steps(40, end), blink-caret .5s step-end infinite;
   animation-fill-mode: forwards;
 }
 
 .typewriter h1:nth-child(2) {
-  width: 9.5em;
+  width: 8.8em;
   opacity: 0;
   animation: typing2 1.5s steps(40, end), blink-caret .5s step-end infinite;
   animation-delay: 1.5s;
@@ -479,7 +479,7 @@ footer p {
     width: 0 
   }
   to { 
-    width: 5.5em; 
+    width: 6.6em; 
     border: none
   }
 }
@@ -490,7 +490,7 @@ footer p {
     opacity: 1 
   }
   to { 
-    width: 9.5em; 
+    width: 8.8em; 
     opacity: 1 
   }
 }
