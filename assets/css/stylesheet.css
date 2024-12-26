@@ -13,20 +13,6 @@
   margin: 16px auto; 
 }
 
-.btn {
-  display: inline-block;
-  cursor: pointer;
-  background-color: rgb(30 41 59);
-  border: none;
-  border-radius: 5px;
-  padding: 16px 32px;
-  font-size: 16px;
-  text-align: center;
-  margin-top: 16px;
-  margin-bottom: 32px;
-}
-
-
 @media (max-width: 1000px) {
   .typewriter h1 {
     font-size: 56px;
@@ -34,6 +20,11 @@
 }
 
 @media (max-width: 768px) {
+  .typewriter{ 
+    margin-top: 346px;
+    margin-bottom: 324px;
+  }
+
   .typewriter h1 {
     font-size: 36px;
   }
