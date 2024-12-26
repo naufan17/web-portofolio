@@ -5,6 +5,20 @@
   margin-bottom: 86px;
 }
 
+.custom-scroll::-webkit-scrollbar {
+  width: 16px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: rgb(15 23 42);
+  border-radius: 8px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: rgb(203 213 225);
+  border-radius: 8px;
+}
+
 .typewriter h1 {
   font-size: 64px;
   overflow: hidden;
