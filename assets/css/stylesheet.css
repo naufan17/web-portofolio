@@ -31,8 +31,8 @@
 }
 
 .typewriter h1:nth-child(1) {
-  width: 6.6em;
-  animation: typing1 1s steps(40, end), blink-caret .5s step-end infinite;
+  width: 7.2em;
+  animation: typing1 1.2s steps(40, end), blink-caret .5s step-end infinite;
   animation-fill-mode: forwards;
 }
 
@@ -49,7 +49,7 @@
     width: 0 
   }
   to { 
-    width: 6.6em; 
+    width: 7.2em; 
     border: none
   }
 }
