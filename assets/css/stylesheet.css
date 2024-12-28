@@ -2,7 +2,7 @@
 
 .typewriter{ 
   margin-top: 192px;
-  margin-bottom: 86px;
+  margin-bottom: 84px;
 }
 
 .custom-scroll::-webkit-scrollbar {
@@ -35,8 +35,8 @@
 
 @media (max-width: 768px) {
   .typewriter{ 
-    margin-top: 320px;
-    margin-bottom: 112px;
+    margin-top: 286px;
+    margin-bottom: 126px;
   }
 
   .typewriter h1 {
