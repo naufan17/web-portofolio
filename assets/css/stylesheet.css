@@ -63,8 +63,8 @@
 .typewriter h1:nth-child(2) {
   width: 8.8em;
   opacity: 0;
-  animation: typing2 1.5s steps(40, end), blink-caret .5s step-end infinite;
-  animation-delay: 1.5s;
+  animation: typing2 1.6s steps(40, end), blink-caret .5s step-end infinite;
+  animation-delay: 1.4s;
   animation-fill-mode: forwards;
 }
 
