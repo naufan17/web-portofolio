@@ -15,7 +15,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="assets/js/script.js"></script>
 </head>
-<body class="text-white bg-blue-50 min-h-screen custom-scroll"></body>
+<body class="text-white bg-blue-50 min-h-screen custom-scroll">
     <header>
         <nav class="absolute top-0 left-0 right-0 z-50">
             <div class="hidden sm:flex  flex-wrap items-center justify-center px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24">
@@ -37,12 +37,13 @@
         </nav>
     </header>
     <main>
-        <div id="home" class="relative px-4 py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-12">
+        <div id="home" class="relative px-4 py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-12"
+            style="background-image: url('assets/images/background.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
             <div id="typewriter" class="typewriter">
-                <h1 class="text-3xl text-blue-800 font-ubuntu font-semibold leading-tight tracking-tight text-blue-800 sm:text-4xl md:text-5xl">
+                <h1 class="bg-clip-text text-transparent bg-gradient-to-r from-blue-800 to-rose-800 text-3xl font-ubuntu font-semibold leading-tight tracking-tight sm:text-4xl md:text-5xl">
                     Hi, I'm Naufan, a
                 </h1>
-                <h1 class="text-3xl text-blue-800 font-ubuntu font-semibold leading-tight tracking-tight text-blue-800 sm:text-4xl md:text-5xl md:mx-auto">
+                <h1 class="bg-clip-text text-transparent bg-gradient-to-r from-rose-800 to-blue-800 text-3xl font-ubuntu font-semibold leading-tight tracking-tight sm:text-4xl md:text-5xl md:mx-auto">
                     Fullstack Developer
                 </h1>
             </div>
@@ -52,7 +53,7 @@
                 </a>    
             </div>
         </div>
-        <div id="tech-stack" class="relative mt-8 sm:mt-12 px-4 py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-12">
+        <div id="tech-stack" class="relative mt-8 sm:mt-12 py-6 mx-auto lg:py-12">
             <div class="flex flex-col justify-center items-center">
                 <h2 class="text-3xl text-blue-800 font-ubuntu font-semibold leading-tight tracking-tight text-blue-800 sm:text-4xl md:text-5xl">
                     Tech Stack
@@ -186,7 +187,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
             <script>
                 const container = document.querySelector('.overflow-x-auto');
                 const scrollAmount = 1;

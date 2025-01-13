@@ -10,74 +10,103 @@
 
 // setInterval(autoScroll, 20);
 
+function showModal(modalId) {
+  const modal = document.getElementById(modalId);
+  modal.classList.remove('hidden');
+  modal.style.opacity = 0;
+  let opacity = 0;
+  const fadeIn = setInterval(() => {
+    if (opacity >= 1) {
+      clearInterval(fadeIn);
+    } else {
+      opacity += 0.1;
+      modal.style.opacity = opacity;
+    }
+  }, 3);
+}
+
+function closeModal(modalId) {
+  const modal = document.getElementById(modalId);
+  let opacity = 1;
+  const fadeOut = setInterval(() => {
+    if (opacity <= 0) {
+      clearInterval(fadeOut);
+      modal.classList.add('hidden');
+    } else {
+      opacity -= 0.1;
+      modal.style.opacity = opacity;
+    }
+  }, 3);
+}
+
 function showSIAModal() {
-  document.getElementById('siaModal').classList.remove('hidden');
+  showModal('siaModal');
 }
 
 function closeSIAModal() {
-  document.getElementById('siaModal').classList.add('hidden');
+  closeModal('siaModal');
 }
 
 function showConnectBCAModal() {
-  document.getElementById('connectBCAModal').classList.remove('hidden');
+  showModal('connectBCAModal');
 }
 
 function closeConnectBCAModal() {
-  document.getElementById('connectBCAModal').classList.add('hidden');
+  closeModal('connectBCAModal');
 }
 
 function showBincangRakyatModal() {
-  document.getElementById('bincangRakyatModal').classList.remove('hidden');
+  showModal('bincangRakyatModal');
 }
 
 function closeBincangRakyatModal() {
-  document.getElementById('bincangRakyatModal').classList.add('hidden');
+  closeModal('bincangRakyatModal');
 }
 
 function showMarvelModal() {
-  document.getElementById('marvelModal').classList.remove('hidden');
+  showModal('marvelModal');
 }
 
 function closeMarvelModal() {
-  document.getElementById('marvelModal').classList.add('hidden');
+  closeModal('marvelModal');
 }
 
 function showCryptoModal() {
-  document.getElementById('cryptoModal').classList.remove('hidden');
+  showModal('cryptoModal');
 }
 
 function closeCryptoModal() {
-  document.getElementById('cryptoModal').classList.add('hidden');
+  closeModal('cryptoModal');
 }
 
 function showCekResiModal() {
-  document.getElementById('cekResiModal').classList.remove('hidden');
+  showModal('cekResiModal');
 }
 
 function closeCekResiModal() {
-  document.getElementById('cekResiModal').classList.add('hidden');
+  closeModal('cekResiModal');
 }
 
 function showBCRModal() {
-  document.getElementById('bcrModal').classList.remove('hidden');
+  showModal('bcrModal');
 }
 
 function closeBCRModal() {
-  document.getElementById('bcrModal').classList.add('hidden');
+  closeModal('bcrModal');
 }
 
 function showPortfolioModal() {
-  document.getElementById('portfolioModal').classList.remove('hidden');
+  showModal('portfolioModal');
 }
 
 function closePortofolioModal() {
-  document.getElementById('portfolioModal').classList.add('hidden');
+  closeModal('portfolioModal');
 }
 
 function showSimplifyModal() {
-  document.getElementById('simplifyModal').classList.remove('hidden');
+  showModal('simplifyModal');
 }
 
 function closeSimplifyModal() {
-  document.getElementById('simplifyModal').classList.add('hidden');
+  closeModal('simplifyModal');
 }
