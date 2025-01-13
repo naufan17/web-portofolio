@@ -10,19 +10,19 @@
 }
 
 .custom-scroll::-webkit-scrollbar-track {
-  background: rgb(15 23 42);
+  background: rgb(239 246 255);
   border-radius: 6px;
 }
 
 .custom-scroll::-webkit-scrollbar-thumb {
-  background: rgb(203 213 225);
+  background: rgb(30 64 175);
   border-radius: 6px;
 }
 
 .typewriter h1 {
   font-size: 64px;
   overflow: hidden;
-  border-right: .15em solid rgb(15 23 42);
+  border-right: .15em solid rgb(30 64 175);
   white-space: nowrap;
   margin: 16px auto; 
 }
@@ -81,7 +81,7 @@
 
 :root {
   --background-color: transparent;
-  --caret-color: rgb(203, 213, 225);
+  --caret-color: rgb(30 64 175);
 }
 
 @keyframes blink-caret {
