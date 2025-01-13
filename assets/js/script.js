@@ -1,14 +1,7 @@
-// const container = document.querySelector('#tech-stack-list');
-// const scrollAmount = 1;
-
-// function autoScroll() {
-//     container.scrollLeft += scrollAmount;
-//     if (container.scrollLeft >= container.scrollWidth - container.clientWidth) {
-//         container.scrollLeft = 0;
-//     }
-// }
-
-// setInterval(autoScroll, 20);
+const track = document.querySelector('.carousel-track');
+const items = Array.from(track.children);
+const cloneItems = items.map(item => item.cloneNode(true));
+cloneItems.forEach(clone => track.appendChild(clone));
 
 function showModal(modalId) {
   const modal = document.getElementById(modalId);

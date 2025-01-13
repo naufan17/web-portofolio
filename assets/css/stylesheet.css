@@ -6,17 +6,17 @@
 }
 
 .custom-scroll::-webkit-scrollbar {
-  width: 12px;
+  width: 8px;
 }
 
 .custom-scroll::-webkit-scrollbar-track {
   background: rgb(239 246 255);
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
 .custom-scroll::-webkit-scrollbar-thumb {
   background: rgb(30 64 175);
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
 .scrollbar-hide::-webkit-scrollbar {
@@ -35,6 +35,7 @@
   white-space: nowrap;
   margin: 16px auto; 
 }
+
 
 @media (max-width: 1000px) {
   .typewriter h1 {
