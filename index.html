@@ -13,7 +13,6 @@
 
     <script src="https://kit.fontawesome.com/a356fc26bb.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/motion@latest/dist/motion.js"></script>
     <script src="assets/js/script.js"></script>
 </head>
 <body class="text-white bg-blue-50 min-h-screen custom-scroll"></body>
@@ -21,16 +20,16 @@
         <nav class="absolute top-0 left-0 right-0 z-50">
             <div class="hidden sm:flex  flex-wrap items-center justify-center px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24">
                 <div class="flex flex-row space-x-24 py-6">
-                    <a href="/web-portofolio" class="font-semibold text-blue-800 text-base hover:text-blue-900">
+                    <a href="/web-portofolio" class="font-semibold text-blue-800 text-base hover:text-blue-600">
                         Home
                     </a>
-                    <a href="#tech-stack" class="font-semibold text-blue-800 text-base hover:text-blue-900">
+                    <a href="#tech-stack" class="font-semibold text-blue-800 text-base hover:text-blue-600">
                         Tech Stack
                     </a>
-                    <a href="#curriculum-vitae" class="font-semibold text-blue-800 text-base hover:text-blue-900">
+                    <a href="#curriculum-vitae" class="font-semibold text-blue-800 text-base hover:text-blue-600">
                         Curriculum Vitae
                     </a>
-                    <a href="#portfolio" class="font-semibold text-blue-800 text-base  hover:text-blue-900">
+                    <a href="#portfolio" class="font-semibold text-blue-800 text-base  hover:text-blue-600">
                         Portfolio
                     </a>
                 </div>
@@ -62,128 +61,145 @@
                     I have experience in several programming languages and frameworks.
                 </p>
             </div>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6 mt-8 sm:mt-12">
-                <div class="flex flex-col justify-center items-center bg-blue-100 border-2 border-blue-200 rounded-2xl p-2 sm:p-4">
-                    <div class="w-20 sm:w-24 h-20 sm:h-24 bg-blue-200 rounded-full p-1 sm:p-2">
-                        <div class="inline-flex w-full h-full justify-center items-center">
-                            <span class="devicon-php-plain colored text-[60px] sm:text-[80px]"></span>
+            <div class="relative mt-8 sm:mt-12">
+                <div class="overflow-x-auto whitespace-nowrap scrollbar-hide">
+                    <div class="inline-flex space-x-4 sm:space-x-6">
+                        <div class="flex flex-col justify-center items-center bg-blue-100 border-2 border-blue-200 rounded-2xl p-2 sm:p-4">
+                            <div class="w-20 sm:w-24 h-20 sm:h-24 bg-blue-200 rounded-full p-1 sm:p-2">
+                                <div class="inline-flex w-full h-full justify-center items-center">
+                                    <span class="devicon-php-plain colored text-[60px] sm:text-[80px]"></span>
+                                </div>
+                            </div>
+                            <h4 class="mt-1 sm:mt-2 text-blue-800 font-semibold text-base sm:text-lg text-center">
+                                PHP
+                            </h4>
+                        </div>
+                        <div class="flex flex-col justify-center items-center bg-blue-100 border-2 border-blue-200 rounded-2xl p-2 sm:p-4">
+                            <div class="w-20 sm:w-24 h-20 sm:h-24 bg-blue-200 rounded-full p-1 sm:p-2">
+                                <div class="inline-flex w-full h-full justify-center items-center">
+                                    <span class="devicon-laravel-plain colored text-[48px] sm:text-[60px]"></span>
+                                </div>
+                            </div>
+                            <h4 class="mt-1 sm:mt-2 text-blue-800 font-semibold text-base sm:text-lg text-center">
+                                Laravel
+                            </h4>
+                        </div>
+                        <div class="flex flex-col justify-center items-center bg-blue-100 border-2 border-blue-200 rounded-2xl p-2 sm:p-4">
+                            <div class="w-20 sm:w-24 h-20 sm:h-24 bg-blue-200 rounded-full p-1 sm:p-2">
+                                <div class="inline-flex w-full h-full justify-center items-center">
+                                    <span class="devicon-javascript-plain colored text-[48px] sm:text-[60px]"></span>
+                                </div>
+                            </div>
+                            <h4 class="mt-1 sm:mt-2 text-blue-800 font-semibold text-base sm:text-lg text-center">
+                                JavaScript
+                            </h4>
+                        </div>
+                        <div class="flex flex-col justify-center items-center bg-blue-100 border-2 border-blue-200 rounded-2xl p-2 sm:p-4">
+                            <div class="w-20 sm:w-24 h-20 sm:h-24 bg-blue-200 rounded-full p-1 sm:p-2">
+                                <div class="inline-flex w-full h-full justify-center items-center">
+                                    <span class="devicon-typescript-plain colored text-[48px] sm:text-[60px]"></span>
+                                </div>    
+                            </div>
+                            <h4 class="mt-1 sm:mt-2 text-blue-800 font-semibold text-base sm:text-lg text-center">
+                                TypeScript
+                            </h4>
+                        </div>
+                        <div class="flex flex-col justify-center items-center bg-blue-100 border-2 border-blue-200 rounded-2xl p-2 sm:p-4">
+                            <div class="w-20 sm:w-24 h-20 sm:h-24 bg-blue-200 rounded-full p-1 sm:p-2">
+                                <div class="inline-flex w-full h-full justify-center items-center">
+                                    <span class="devicon-nodejs-plain colored text-[48px] sm:text-[60px]"></span>
+                                </div>
+                            </div>
+                            <h4 class="mt-1 sm:mt-2 text-blue-800 font-semibold text-base sm:text-lg text-center">
+                                NodeJS
+                            </h4>
+                        </div>
+                        <div class="flex flex-col justify-center items-center bg-blue-100 border-2 border-blue-200 rounded-2xl p-2 sm:p-4">
+                            <div class="w-20 sm:w-24 h-20 sm:h-24 bg-blue-200 rounded-full p-1 sm:p-2">
+                                <div class="inline-flex w-full h-full justify-center items-center">
+                                    <span class="devicon-express-original text-[48px] sm:text-[60px]"></span>
+                                </div>
+                            </div>
+                            <h4 class="mt-1 sm:mt-2 text-blue-800 font-semibold text-base sm:text-lg text-center">
+                                Express
+                            </h4>
+                        </div>
+                        <div class="flex flex-col justify-center items-center bg-blue-100 border-2 border-blue-200 rounded-2xl p-2 sm:p-4">
+                            <div class="w-20 sm:w-24 h-20 sm:h-24 bg-blue-200 rounded-full p-1 sm:p-2">
+                                <div class="inline-flex w-full h-full justify-center items-center">
+                                    <span class="devicon-nestjs-original colored text-[48px] sm:text-[60px]"></span>
+                                </div>
+                            </div>
+                            <h4 class="mt-1 sm:mt-2 text-blue-800 font-semibold text-base sm:text-lg text-center">
+                                NestJS
+                            </h4>
+                        </div>
+                        <div class="flex flex-col justify-center items-center bg-blue-100 border-2 border-blue-200 rounded-2xl p-2 sm:p-4">
+                            <div class="w-20 sm:w-24 h-20 sm:h-24 bg-blue-200 rounded-full p-1 sm:p-2">
+                                <div class="inline-flex w-full h-full justify-center items-center">
+                                    <span class="devicon-react-original colored text-[48px] sm:text-[60px]"></span>
+                                </div>    
+                            </div>
+                            <h4 class="mt-1 sm:mt-2 text-blue-800 font-semibold text-base sm:text-lg text-center">
+                                React
+                            </h4>   
+                        </div>
+                        <div class="flex flex-col justify-center items-center bg-blue-100 border-2 border-blue-200 rounded-2xl p-2 sm:p-4">
+                            <div class="w-20 sm:w-24 h-20 sm:h-24 bg-blue-200 rounded-full p-1 sm:p-2">
+                                <div class="inline-flex w-full h-full justify-center items-center">
+                                    <span class="devicon-angularjs-plain colored text-[48px] sm:text-[60px]"></span>
+                                </div>
+                            </div>
+                            <h4 class="mt-1 sm:mt-2 text-blue-800 font-semibold text-base sm:text-lg text-center">
+                                Angular
+                            </h4>
+                        </div>
+                        <div class="flex flex-col justify-center items-center bg-blue-100 border-2 border-blue-200 rounded-2xl p-2 sm:p-4">
+                            <div class="w-20 sm:w-24 h-20 sm:h-24 bg-blue-200 rounded-full p-1 sm:p-2">
+                                <div class="inline-flex w-full h-full justify-center items-center">
+                                    <span class="devicon-mysql-plain colored text-[48px] sm:text-[60px]"></span>
+                                </div>
+                            </div>
+                            <h4 class="mt-1 sm:mt-2 text-blue-800 font-semibold text-base sm:text-lg text-center">
+                                MySQL
+                            </h4>
+                        </div>
+                        <div class="flex flex-col justify-center items-center bg-blue-100 border-2 border-blue-200 rounded-2xl p-2 sm:p-4">
+                            <div class="w-20 sm:w-24 h-20 sm:h-24 bg-blue-200 rounded-full p-1 sm:p-2">
+                                <div class="inline-flex w-full h-full justify-center items-center">
+                                    <span class="devicon-postgresql-plain colored text-[48px] sm:text-[60px]"></span>
+                                </div>
+                            </div>
+                            <h4 class="mt-1 sm:mt-2 text-blue-800 font-semibold text-base sm:text-lg text-center">
+                                PostgreSQL
+                            </h4>
+                        </div>
+                        <div class="flex flex-col justify-center items-center bg-blue-100 border-2 border-blue-200 rounded-2xl p-2 sm:p-4">
+                            <div class="w-20 sm:w-24 h-20 sm:h-24 bg-blue-200 rounded-full p-1 sm:p-2">
+                                <div class="inline-flex w-full h-full justify-center items-center">
+                                    <span class="devicon-mongodb-plain colored text-[48px] sm:text-[60px]"></span>
+                                </div>
+                            </div>
+                            <h4 class="mt-1 sm:mt-2 text-blue-800 font-semibold text-base sm:text-lg text-center">
+                                MongoDB
+                            </h4>
                         </div>
                     </div>
-                    <h4 class="mt-1 sm:mt-2 text-blue-800 font-semibold text-base sm:text-lg text-center">
-                        PHP
-                    </h4>
-                </div>
-                <div class="flex flex-col justify-center items-center bg-blue-100 border-2 border-blue-200 rounded-2xl p-2 sm:p-4">
-                    <div class="w-20 sm:w-24 h-20 sm:h-24 bg-blue-200 rounded-full p-1 sm:p-2">
-                        <div class="inline-flex w-full h-full justify-center items-center">
-                            <span class="devicon-laravel-plain colored text-[48px] sm:text-[60px]"></span>
-                        </div>
-                    </div>
-                    <h4 class="mt-1 sm:mt-2 text-blue-800 font-semibold text-base sm:text-lg text-center">
-                        Laravel
-                    </h4>
-                </div>
-                <div class="flex flex-col justify-center items-center bg-blue-100 border-2 border-blue-200 rounded-2xl p-2 sm:p-4">
-                    <div class="w-20 sm:w-24 h-20 sm:h-24 bg-blue-200 rounded-full p-1 sm:p-2">
-                        <div class="inline-flex w-full h-full justify-center items-center">
-                            <span class="devicon-javascript-plain colored text-[48px] sm:text-[60px]"></span>
-                        </div>
-                    </div>
-                    <h4 class="mt-1 sm:mt-2 text-blue-800 font-semibold text-base sm:text-lg text-center">
-                        JavaScript
-                    </h4>
-                </div>
-                <div class="flex flex-col justify-center items-center bg-blue-100 border-2 border-blue-200 rounded-2xl p-2 sm:p-4">
-                    <div class="w-20 sm:w-24 h-20 sm:h-24 bg-blue-200 rounded-full p-1 sm:p-2">
-                        <div class="inline-flex w-full h-full justify-center items-center">
-                            <span class="devicon-typescript-plain colored text-[48px] sm:text-[60px]"></span>
-                        </div>    
-                    </div>
-                    <h4 class="mt-1 sm:mt-2 text-blue-800 font-semibold text-base sm:text-lg text-center">
-                        TypeScript
-                    </h4>
-                </div>
-                <div class="flex flex-col justify-center items-center bg-blue-100 border-2 border-blue-200 rounded-2xl p-2 sm:p-4">
-                    <div class="w-20 sm:w-24 h-20 sm:h-24 bg-blue-200 rounded-full p-1 sm:p-2">
-                        <div class="inline-flex w-full h-full justify-center items-center">
-                            <span class="devicon-nodejs-plain colored text-[48px] sm:text-[60px]"></span>
-                        </div>
-                    </div>
-                    <h4 class="mt-1 sm:mt-2 text-blue-800 font-semibold text-base sm:text-lg text-center">
-                        NodeJS
-                    </h4>
-                </div>
-                <div class="flex flex-col justify-center items-center bg-blue-100 border-2 border-blue-200 rounded-2xl p-2 sm:p-4">
-                    <div class="w-20 sm:w-24 h-20 sm:h-24 bg-blue-200 rounded-full p-1 sm:p-2">
-                        <div class="inline-flex w-full h-full justify-center items-center">
-                            <span class="devicon-express-original text-[48px] sm:text-[60px]"></span>
-                        </div>
-                    </div>
-                    <h4 class="mt-1 sm:mt-2 text-blue-800 font-semibold text-base sm:text-lg text-center">
-                        Express
-                    </h4>
-                </div>
-                <div class="flex flex-col justify-center items-center bg-blue-100 border-2 border-blue-200 rounded-2xl p-2 sm:p-4">
-                    <div class="w-20 sm:w-24 h-20 sm:h-24 bg-blue-200 rounded-full p-1 sm:p-2">
-                        <div class="inline-flex w-full h-full justify-center items-center">
-                            <span class="devicon-nestjs-original colored text-[48px] sm:text-[60px]"></span>
-                        </div>
-                    </div>
-                    <h4 class="mt-1 sm:mt-2 text-blue-800 font-semibold text-base sm:text-lg text-center">
-                        NestJS
-                    </h4>
-                </div>
-                <div class="flex flex-col justify-center items-center bg-blue-100 border-2 border-blue-200 rounded-2xl p-2 sm:p-4">
-                    <div class="w-20 sm:w-24 h-20 sm:h-24 bg-blue-200 rounded-full p-1 sm:p-2">
-                        <div class="inline-flex w-full h-full justify-center items-center">
-                            <span class="devicon-react-original colored text-[48px] sm:text-[60px]"></span>
-                        </div>    
-                    </div>
-                    <h4 class="mt-1 sm:mt-2 text-blue-800 font-semibold text-base sm:text-lg text-center">
-                        React
-                    </h4>   
-                </div>
-                <div class="flex flex-col justify-center items-center bg-blue-100 border-2 border-blue-200 rounded-2xl p-2 sm:p-4">
-                    <div class="w-20 sm:w-24 h-20 sm:h-24 bg-blue-200 rounded-full p-1 sm:p-2">
-                        <div class="inline-flex w-full h-full justify-center items-center">
-                            <span class="devicon-angularjs-plain colored text-[48px] sm:text-[60px]"></span>
-                        </div>
-                    </div>
-                    <h4 class="mt-1 sm:mt-2 text-blue-800 font-semibold text-base sm:text-lg text-center">
-                        Angular
-                    </h4>
-                </div>
-                <div class="flex flex-col justify-center items-center bg-blue-100 border-2 border-blue-200 rounded-2xl p-2 sm:p-4">
-                    <div class="w-20 sm:w-24 h-20 sm:h-24 bg-blue-200 rounded-full p-1 sm:p-2">
-                        <div class="inline-flex w-full h-full justify-center items-center">
-                            <span class="devicon-mysql-plain colored text-[48px] sm:text-[60px]"></span>
-                        </div>
-                    </div>
-                    <h4 class="mt-1 sm:mt-2 text-blue-800 font-semibold text-base sm:text-lg text-center">
-                        MySQL
-                    </h4>
-                </div>
-                <div class="flex flex-col justify-center items-center bg-blue-100 border-2 border-blue-200 rounded-2xl p-2 sm:p-4">
-                    <div class="w-20 sm:w-24 h-20 sm:h-24 bg-blue-200 rounded-full p-1 sm:p-2">
-                        <div class="inline-flex w-full h-full justify-center items-center">
-                            <span class="devicon-postgresql-plain colored text-[48px] sm:text-[60px]"></span>
-                        </div>
-                    </div>
-                    <h4 class="mt-1 sm:mt-2 text-blue-800 font-semibold text-base sm:text-lg text-center">
-                        PostgreSQL
-                    </h4>
-                </div>
-                <div class="flex flex-col justify-center items-center bg-blue-100 border-2 border-blue-200 rounded-2xl p-2 sm:p-4">
-                    <div class="w-20 sm:w-24 h-20 sm:h-24 bg-blue-200 rounded-full p-1 sm:p-2">
-                        <div class="inline-flex w-full h-full justify-center items-center">
-                            <span class="devicon-mongodb-plain colored text-[48px] sm:text-[60px]"></span>
-                        </div>
-                    </div>
-                    <h4 class="mt-1 sm:mt-2 text-blue-800 font-semibold text-base sm:text-lg text-center">
-                        MongoDB
-                    </h4>
                 </div>
             </div>
+            <script>
+                const container = document.querySelector('.overflow-x-auto');
+                const scrollAmount = 1;
+
+                function autoScroll() {
+                    container.scrollLeft += scrollAmount;
+                    if (container.scrollLeft >= container.scrollWidth - container.clientWidth) {
+                        container.scrollLeft = 0;
+                    }
+                }
+
+                setInterval(autoScroll, 20);
+            </script>
         </div>
         <div id="curriculum-vitae" class="relative mt-8 sm:mt-12 px-4 py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-lg md:px-24 lg:px-8 lg:py-12">
             <div class="bg-blue-100 border-2 border-blue-200 rounded-2xl p-8 sm:p-10">
@@ -214,7 +230,7 @@
                 </p>
             </div> 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mt-8 sm:mt-12">
-                <div class="bg-blue-100 border-2 border-blue-200 rounded-2xl">
+                <div class="bg-blue-100 bg-opacity-50 border-2 border-blue-200 rounded-2xl duration-500 hover:transform hover:scale-105">
                     <div class="flex justify-end p-4 sm:p-6">
                         <img class="rounded-lg" src="assets/images/sistem-informasi-akademik-mdnu.png" alt="Sistem Informasi Akademik MDNU">
                     </div>
@@ -227,12 +243,12 @@
                         </p>
                     </div>
                     <div class="flex flex-row justify-center py-4 sm:py-6 space-x-4">
-                        <button onclick="showSIAModal()" class="inline-flex items-center text-blue-800 text-base font-semibold sm:text-lg hover:text-blue-700">
+                        <button onclick="showSIAModal()" class="inline-flex items-center text-blue-800 text-base font-semibold sm:text-lg hover:text-blue-600">
                             See more <span class="ml-2 fa-solid fa-chevron-right text-sm sm:text-base"></span>
                         </button>
                     </div>
                 </div>
-                <div class="bg-blue-100 border-2 border-blue-200 rounded-2xl">
+                <div class="bg-blue-100 bg-opacity-50 border-2 border-blue-200 rounded-2xl duration-500 hover:transform hover:scale-105">
                     <div class="flex justify-end p-4 sm:p-6">
                         <img class="rounded-lg" src="assets/images/connect-by-bca.png" alt="Connect by BCA">
                     </div>
@@ -245,13 +261,13 @@
                         </p>
                     </div>
                     <div class="flex flex-row justify-center py-4 sm:py-6 space-x-4">
-                        <button onclick="showConnectBCAModal()" class="inline-flex items-center text-blue-800 text-base font-semibold sm:text-lg hover:text-blue-700">
+                        <button onclick="showConnectBCAModal()" class="inline-flex items-center text-blue-800 text-base font-semibold sm:text-lg hover:text-blue-600">
                             See more 
                             <span class="ml-2 fa-solid fa-chevron-right text-sm sm:text-base"></span>
                         </button>
                     </div>
                 </div>
-                <div class="bg-blue-100 border-2 border-blue-200 rounded-2xl">
+                <div class="bg-blue-100 bg-opacity-50 border-2 border-blue-200 rounded-2xl duration-500 hover:transform hover:scale-105">
                     <div class="flex justify-end p-4 sm:p-6">
                         <img class="rounded-lg" src="assets/images/bincang-rakyat.png" alt="Bincang Rakyat">
                     </div>
@@ -264,12 +280,12 @@
                         </p>
                     </div>
                     <div class="flex flex-row justify-center py-4 sm:py-6 space-x-4">
-                        <button onclick="showBincangRakyatModal()" class="inline-flex items-center text-blue-800 text-base font-semibold sm:text-lg hover:text-blue-700">
+                        <button onclick="showBincangRakyatModal()" class="inline-flex items-center text-blue-800 text-base font-semibold sm:text-lg hover:text-blue-600">
                             See more <span class="ml-2 fa-solid fa-chevron-right text-sm sm:text-base"></span>
                         </button>
                     </div>
                 </div>
-                <div class="bg-blue-100 border-2 border-blue-200 rounded-2xl">
+                <div class="bg-blue-100 bg-opacity-50 border-2 border-blue-200 rounded-2xl duration-500 hover:transform hover:scale-105">
                     <div class="flex justify-end p-4 sm:p-6">
                         <img class="rounded-lg" src="assets/images/marvel-film.png" alt="Marvel Film & Series">
                     </div>
@@ -282,12 +298,12 @@
                         </p>
                     </div>
                     <div class="flex flex-row justify-center py-4 sm:py-6 space-x-4">
-                        <button onclick="showMarvelModal()" class="inline-flex items-center text-blue-800 text-base font-semibold sm:text-lg hover:text-blue-700">
+                        <button onclick="showMarvelModal()" class="inline-flex items-center text-blue-800 text-base font-semibold sm:text-lg hover:text-blue-600">
                             See more <span class="ml-2 fa-solid fa-chevron-right text-sm sm:text-base"></span>
                         </button>
                     </div>
                 </div>
-                <div class="bg-blue-100 border-2 border-blue-200 rounded-2xl">
+                <div class="bg-blue-100 bg-opacity-50 border-2 border-blue-200 rounded-2xl duration-500 hover:transform hover:scale-105">
                     <div class="flex justify-end p-4 sm:p-6">
                         <img class="rounded-lg" src="assets/images/crypto-market.png" alt="Crypto Market">
                     </div>
@@ -300,12 +316,12 @@
                         </p>
                     </div>
                     <div class="flex flex-row justify-center py-4 sm:py-6 space-x-4">
-                        <button onclick="showCryptoModal()" class="inline-flex items-center text-blue-800 text-base font-semibold sm:text-lg hover:text-blue-700">
+                        <button onclick="showCryptoModal()" class="inline-flex items-center text-blue-800 text-base font-semibold sm:text-lg hover:text-blue-600">
                             See more <span class="ml-2 fa-solid fa-chevron-right text-sm sm:text-base"></span>
                         </button>
                     </div>
                 </div>
-                <div class="bg-blue-100 border-2 border-blue-200 rounded-2xl">
+                <div class="bg-blue-100 bg-opacity-50 border-2 border-blue-200 rounded-2xl duration-500 hover:transform hover:scale-105">
                     <div class="flex justify-end p-4 sm:p-6">
                         <img class="rounded-lg" src="assets/images/cek-resi.png" alt="Cek Resi">
                     </div>
@@ -318,12 +334,12 @@
                         </p>
                     </div>
                     <div class="flex flex-row justify-center py-4 sm:py-6 space-x-4">
-                        <button onclick="showCekResiModal()" class="inline-flex items-center text-blue-800 text-base font-semibold sm:text-lg hover:text-blue-700">
+                        <button onclick="showCekResiModal()" class="inline-flex items-center text-blue-800 text-base font-semibold sm:text-lg hover:text-blue-600">
                             See more <span class="ml-2 fa-solid fa-chevron-right text-sm sm:text-base"></span>
                         </button>
                     </div>
                 </div>
-                <div class="bg-blue-100 border-2 border-blue-200 rounded-2xl">
+                <div class="bg-blue-100 bg-opacity-50 border-2 border-blue-200 rounded-2xl duration-500 hover:transform hover:scale-105">
                     <div class="flex justify-end p-4 sm:p-6">
                         <img class="rounded-lg" src="assets/images/binar-car-rental.png" alt="Binar Car Rental">
                     </div>
@@ -336,12 +352,12 @@
                         </p>
                     </div>
                     <div class="flex flex-row justify-center py-4 sm:py-6 space-x-4">
-                        <button onclick="showBCRModal()" class="inline-flex items-center text-blue-800 text-base font-semibold sm:text-lg hover:text-blue-700">
+                        <button onclick="showBCRModal()" class="inline-flex items-center text-blue-800 text-base font-semibold sm:text-lg hover:text-blue-600">
                             See more <span class="ml-2 fa-solid fa-chevron-right text-sm sm:text-base"></span>
                         </button>
                     </div>
                 </div>
-                <div class="bg-blue-100 border-2 border-blue-200 rounded-2xl">
+                <div class="bg-blue-100 bg-opacity-50 border-2 border-blue-200 rounded-2xl duration-500 hover:transform hover:scale-105">
                     <div class="flex justify-end p-4 sm:p-6">
                         <img class="rounded-lg" src="assets/images/web-portofolio.png" alt="Portofoilo Website">
                     </div>
@@ -354,12 +370,12 @@
                         </p>
                     </div>
                     <div class="flex flex-row justify-center py-4 sm:py-6 space-x-4">
-                        <button onclick="showPortfolioModal()" class="inline-flex items-center text-blue-800 text-base font-semibold sm:text-lg hover:text-blue-700">
+                        <button onclick="showPortfolioModal()" class="inline-flex items-center text-blue-800 text-base font-semibold sm:text-lg hover:text-blue-600">
                             See more <span class="ml-2 fa-solid fa-chevron-right text-sm sm:text-base"></span>
                         </button>
                     </div>
                 </div>
-                <div class="bg-blue-100 border-2 border-blue-200 rounded-2xl">
+                <div class="bg-blue-100 bg-opacity-50 border-2 border-blue-200 rounded-2xl duration-500 hover:transform hover:scale-105">
                     <div class="flex justify-end p-4 sm:p-6">
                         <img class="rounded-lg" src="assets/images/simplify.png" alt="Simplify">
                     </div>
@@ -373,7 +389,7 @@
                         </p>
                     </div>
                     <div class="flex flex-row justify-center py-4 sm:py-6 space-x-4">
-                        <button onclick="showSimplifyModal()" class="inline-flex items-center text-blue-800 text-base font-semibold sm:text-lg hover:text-blue-700">
+                        <button onclick="showSimplifyModal()" class="inline-flex items-center text-blue-800 text-base font-semibold sm:text-lg hover:text-blue-600">
                             See more <span class="ml-2 fa-solid fa-chevron-right text-sm sm:text-base"></span>
                         </button>
                     </div>
@@ -381,18 +397,18 @@
             </div>
         </div>
     </main>
-    <footer class="bg-blue-100 mt-8 sm:mt-12 p-4 sm:p-6">
+    <footer class="bg-blue-100 bg-opacity-50 mt-8 sm:mt-12 p-4 sm:p-6">
         <div class="flex justify-center items-center space-x-8 sm:space-x-10">
-            <a href="mailto:muhammadnaufan719@gmail.com" class="text-[28px] sm:text-[32px] text-blue-800 hover:text-blue-300">
+            <a href="mailto:muhammadnaufan719@gmail.com" class="text-[28px] sm:text-[32px] text-blue-800 hover:text-blue-600">
                 <span class="fa-solid fa-envelope"></span>  
             </a>
-            <a href="https://wa.me/6289630743492" class="text-[28px] sm:text-[32px] text-blue-800 hover:text-blue-300">
+            <a href="https://wa.me/6289630743492" class="text-[28px] sm:text-[32px] text-blue-800 hover:text-blue-600">
                 <span class="fa-brands fa-whatsapp"></span>
             </a>
-            <a href="https://www.linkedin.com/in/muhammad-naufan/" class="text-[28px] sm:text-[32px] text-blue-800 hover:text-blue-300">
+            <a href="https://www.linkedin.com/in/muhammad-naufan/" class="text-[28px] sm:text-[32px] text-blue-800 hover:text-blue-600">
                 <span class="fa-brands fa-linkedin"></span>
             </a>
-            <a href="https://github.com/naufan17" class="text-[28px] sm:text-[32px] text-blue-800 hover:text-blue-300">
+            <a href="https://github.com/naufan17" class="text-[28px] sm:text-[32px] text-blue-800 hover:text-blue-600">
                 <span class="fa-brands fa-github"></span>
             </a>
         </div>
@@ -402,11 +418,11 @@
     </footer>
 </body>
 
-<div id="siaModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center overflow-auto">
-    <div class="w-[720px] h-auto bg-blue-100 border-2 border-blue-200 rounded-2xl max-h-full overflow-y-auto pt-2 sm:pt-4 pb-6 sm:pb-8 px-6 sm:px-8 custom-scroll">
+<div id="siaModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center overflow-auto duration-300 ease-in-out">
+    <div class="w-[720px] h-auto bg-blue-100 bg-opacitborder-blue-200 rounded-2xl max-h-full overflow-y-auto pt-2 sm:pt-4 pb-6 sm:pb-8 px-6 sm:px-8 custom-scroll">
         <div class="flex justify-end">
             <button onclick="closeSIAModal()" class="text-[24px] sm:text-[28px] text-blue-800">
-                <span class="fa-solid fa-times hover:text-blue-300"></span>
+                <span class="fa-solid fa-times hover:text-blue-600"></span>
             </button>
         </div>
         <div class="flex justify-center mt-2">
@@ -458,11 +474,11 @@
     </div>
 </div>
 
-<div id="connectBCAModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center overflow-auto">
+<div id="connectBCAModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center overflow-auto duration-300 ease-in-out">
     <div class="w-[720px] h-auto bg-blue-100 border-2 border-blue-200 rounded-2xl max-h-full overflow-y-auto pt-2 sm:pt-4 pb-6 sm:pb-8 px-6 sm:px-8 custom-scroll">
         <div class="flex justify-end">
             <button onclick="closeConnectBCAModal()" class="text-[24px] sm:text-[28px] text-blue-800">
-                <span class="fa-solid fa-times hover:text-blue-300"></span>
+                <span class="fa-solid fa-times hover:text-blue-600"></span>
             </button>
         </div>
         <div class="flex justify-center mt-2">
@@ -514,11 +530,11 @@
     </div>
 </div>
 
-<div id="bincangRakyatModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center overflow-auto">
+<div id="bincangRakyatModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center overflow-auto duration-300 ease-in-out">
     <div class="w-[720px] h-auto bg-blue-100 border-2 border-blue-200 rounded-2xl max-h-full overflow-y-auto pt-2 sm:pt-4 pb-6 sm:pb-8 px-6 sm:px-8 custom-scroll">
         <div class="flex justify-end">
             <button onclick="closeBincangRakyatModal()" class="text-[24px] sm:text-[28px] text-blue-800">
-                <span class="fa-solid fa-times hover:text-blue-300"></span>
+                <span class="fa-solid fa-times hover:text-blue-600"></span>
             </button>
         </div>
         <div class="flex justify-center mt-2">
@@ -565,11 +581,11 @@
     </div>
 </div>
 
-<div id="marvelModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center overflow-auto">
+<div id="marvelModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center overflow-auto duration-300 ease-in-out">
     <div class="w-[720px] h-auto bg-blue-100 border-2 border-blue-200 rounded-2xl max-h-full overflow-y-auto pt-2 sm:pt-4 pb-6 sm:pb-8 px-6 sm:px-8 custom-scroll">
         <div class="flex justify-end">
             <button onclick="closeMarvelModal()" class="text-[24px] sm:text-[28px] text-blue-800">
-                <span class="fa-solid fa-times hover:text-blue-300"></span>
+                <span class="fa-solid fa-times hover:text-blue-600"></span>
             </button>
         </div>
         <div class="flex flex-wrap justify-center mt-2">
@@ -626,11 +642,11 @@
     </div>
 </div>
 
-<div id="cryptoModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center overflow-auto">
+<div id="cryptoModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center overflow-auto duration-300 ease-in-out">
     <div class="w-[720px] h-auto bg-blue-100 border-2 border-blue-200 rounded-2xl max-h-full overflow-y-auto pt-2 sm:pt-4 pb-6 sm:pb-8 px-6 sm:px-8 custom-scroll">
         <div class="flex justify-end">
             <button onclick="closeCryptoModal()" class="text-[24px] sm:text-[28px] text-blue-800">
-                <span class="fa-solid fa-times hover:text-blue-300"></span>
+                <span class="fa-solid fa-times hover:text-blue-600"></span>
             </button>
         </div>
         <div class="flex justify-center mt-2">
@@ -674,11 +690,11 @@
     </div>
 </div>
 
-<div id="cekResiModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center overflow-auto">
+<div id="cekResiModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center overflow-auto duration-300 ease-in-out">
     <div class="w-[720px] h-auto bg-blue-100 border-2 border-blue-200 rounded-2xl max-h-full overflow-y-auto pt-2 sm:pt-4 pb-6 sm:pb-8 px-6 sm:px-8 custom-scroll">
         <div class="flex justify-end">
             <button onclick="closeCekResiModal()" class="text-[24px] sm:text-[28px] text-blue-800">
-                <span class="fa-solid fa-times hover:text-blue-300"></span>
+                <span class="fa-solid fa-times hover:text-blue-600"></span>
             </button>
         </div>
         <div class="flex justify-center mt-2">
@@ -721,11 +737,11 @@
     </div>
 </div>
 
-<div id="bcrModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center overflow-auto">
+<div id="bcrModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center overflow-auto duration-300 ease-in-out">
     <div class="w-[720px] h-auto bg-blue-100 border-2 border-blue-200 rounded-2xl max-h-full overflow-y-auto pt-2 sm:pt-4 pb-6 sm:pb-8 px-6 sm:px-8 custom-scroll">
         <div class="flex justify-end">
             <button onclick="closeBCRModal()" class="text-[24px] sm:text-[28px] text-blue-800">
-                <span class="fa-solid fa-times hover:text-blue-300"></span>
+                <span class="fa-solid fa-times hover:text-blue-600"></span>
             </button>
         </div>
         <div class="flex justify-center mt-2">
@@ -776,11 +792,11 @@
     </div>
 </div>
 
-<div id="portfolioModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center overflow-auto">
+<div id="portfolioModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center overflow-auto duration-300 ease-in-out">
     <div class="w-[720px] h-auto bg-blue-100 border-2 border-blue-200 rounded-2xl max-h-full overflow-y-auto pt-2 sm:pt-4 pb-6 sm:pb-8 px-6 sm:px-8 custom-scroll">
         <div class="flex justify-end">
             <button onclick="closePortofolioModal()" class="text-[24px] sm:text-[28px] text-blue-800">
-                <span class="fa-solid fa-times hover:text-blue-300"></span>
+                <span class="fa-solid fa-times hover:text-blue-600"></span>
             </button>
         </div>
         <div class="flex justify-center mt-2">
@@ -828,11 +844,11 @@
     </div>
 </div>
 
-<div id="simplifyModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center overflow-auto">
+<div id="simplifyModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center overflow-auto duration-300 ease-in-out">
     <div class="w-[720px] h-auto bg-blue-100 border-2 border-blue-200 rounded-2xl max-h-full overflow-y-auto pt-2 sm:pt-4 pb-6 sm:pb-8 px-6 sm:px-8 custom-scroll">
         <div class="flex justify-end">
             <button onclick="closeSimplifyModal()" class="text-[24px] sm:text-[28px] text-blue-800">
-                <span class="fa-solid fa-times hover:text-blue-300"></span>
+                <span class="fa-solid fa-times hover:text-blue-600"></span>
             </button>
         </div>
         <div class="flex justify-center mt-2">

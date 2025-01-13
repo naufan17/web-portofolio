@@ -19,6 +19,15 @@
   border-radius: 6px;
 }
 
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 .typewriter h1 {
   font-size: 64px;
   overflow: hidden;
