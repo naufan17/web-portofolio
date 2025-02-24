@@ -103,3 +103,19 @@ function showSimplifyModal() {
 function closeSimplifyModal() {
   closeModal('simplifyModal');
 }
+
+function showBoilerplateExpressModal() {
+  showModal('boilerplateExpressModal');
+}
+
+function closeBoilerplateExpressModal() {
+  closeModal('boilerplateExpressModal');
+}
+
+function showBoilerplateGoGinModal() {
+  showModal('boilerplateGoGinModal');
+}
+
+function closeBoilerplateGoGinModal() {
+  closeModal('boilerplateGoGinModal');
+}
