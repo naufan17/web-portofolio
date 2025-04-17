@@ -1,8 +1,7 @@
 @import 'https://fonts.googleapis.com/css?family=Ubuntu:300, 400, 500, 700';
 
 .typewriter{ 
-  margin-top: 198px;
-  margin-bottom: 88px;
+  justify-content: center;
 }
 
 .custom-scroll::-webkit-scrollbar {
@@ -36,7 +35,6 @@
   margin: 16px auto; 
 }
 
-
 @media (max-width: 1000px) {
   .typewriter h1 {
     font-size: 56px;
@@ -44,11 +42,6 @@
 }
 
 @media (max-width: 768px) {
-  .typewriter{ 
-    margin-top: 286px;
-    margin-bottom: 126px;
-  }
-
   .typewriter h1 {
     font-size: 36px;
   }
