@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/stylesheet.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
 
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://kit.fontawesome.com/a356fc26bb.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="assets/js/script.js"></script>
@@ -40,12 +41,10 @@
     <main>
         <div id="home" class="relative px-4 py-6 h-screen mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl">
             <div class="flex flex-col justify-center items-center h-full">
-                <div id="typewriter" class="typewriter">
-                    <h1 class="bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-rose-700 text-3xl font-ubuntu font-semibold leading-tight tracking-tight sm:text-4xl md:text-5xl">
-                        Hi, I'm Naufan, a
+                <div class="flex flex-col justify-center items-center space-y-3 sm:space-y-4">
+                    <h1 id="typewriter-name" class="bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-rose-700 text-center text-4xl font-ubuntu font-semibold leading-tight tracking-tight sm:text-5xl md:text-[64px]">
                     </h1>
-                    <h1 class="bg-clip-text text-transparent bg-gradient-to-r from-rose-700 to-blue-700 text-3xl font-ubuntu font-semibold leading-tight tracking-tight sm:text-4xl md:text-5xl">
-                        Full Stack Developer
+                    <h1 id="typewriter-title" class="bg-clip-text text-transparent bg-gradient-to-r from-rose-700 to-blue-700 text-center text-4xl font-ubuntu font-semibold leading-tight tracking-tight sm:text-5xl md:text-[64px]">
                     </h1>
                 </div>
                 <div class="flex justify-center items-center mt-12 sm:mt-16">
@@ -350,19 +349,6 @@
                     </div>
                 </div>
             </div>
-            <script>
-                const container = document.querySelector('.overflow-x-auto');
-                const scrollAmount = 1;
-
-                function autoScroll() {
-                    container.scrollLeft += scrollAmount;
-                    if (container.scrollLeft >= container.scrollWidth - container.clientWidth) {
-                        container.scrollLeft = 0;
-                    }
-                }
-
-                setInterval(autoScroll, 20);
-            </script>
         </div>
         <div id="about" class="relative mt-8 sm:mt-12 px-4 py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-lg md:px-24 lg:px-8 lg:py-12">
             <div class="bg-blue-100 border border-blue-200 rounded-2xl p-8 sm:p-10">
@@ -1221,4 +1207,35 @@
         </div>
     </div>
 </div>
+<script>
+    const container = document.querySelector('.overflow-x-auto');
+    const scrollAmount = 1;
+
+    function autoScroll() {
+        container.scrollLeft += scrollAmount;
+        if (container.scrollLeft >= container.scrollWidth - container.clientWidth) {
+            container.scrollLeft = 0;
+        }
+    }
+
+    setInterval(autoScroll, 20);
+
+    const typewriterName = new Typewriter('#typewriter-name', {
+        delay: 75,
+    });
+
+    typewriterName
+        .typeString("Hi, I'm Naufan, a")
+        .start();
+
+    const typewriterTitle = new Typewriter('#typewriter-title', {
+        delay: 75,
+    });
+
+    typewriterTitle
+        .pauseFor(1500)
+        .typeString('Full Stack Developer')
+        .start();
+
+</script>
 </html>
