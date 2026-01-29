@@ -56,13 +56,13 @@ function closeBincangRakyatModal() {
   closeModal('bincangRakyatModal');
 }
 
-function showMarvelModal() {
-  showModal('marvelModal');
-}
+// function showMarvelModal() {
+//   showModal('marvelModal');
+// }
 
-function closeMarvelModal() {
-  closeModal('marvelModal');
-}
+// function closeMarvelModal() {
+//   closeModal('marvelModal');
+// }
 
 function showCryptoModal() {
   showModal('cryptoModal');
@@ -88,21 +88,21 @@ function closeBCRModal() {
   closeModal('bcrModal');
 }
 
-function showPortfolioModal() {
-  showModal('portfolioModal');
-}
+// function showPortfolioModal() {
+//   showModal('portfolioModal');
+// }
 
-function closePortofolioModal() {
-  closeModal('portfolioModal');
-}
+// function closePortofolioModal() {
+//   closeModal('portfolioModal');
+// }
 
-function showSimplifyModal() {
-  showModal('simplifyModal');
-}
+// function showSimplifyModal() {
+//   showModal('simplifyModal');
+// }
 
-function closeSimplifyModal() {
-  closeModal('simplifyModal');
-}
+// function closeSimplifyModal() {
+//   closeModal('simplifyModal');
+// }
 
 function showBoilerplateExpressModal() {
   showModal('boilerplateExpressModal');
