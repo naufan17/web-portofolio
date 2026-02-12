@@ -1,4 +1,3 @@
-import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import TechStack from './components/TechStack';
@@ -49,17 +48,11 @@ function App() {
       
       <Navbar />
       
-      <main className="relative z-10 pt-10">
+      <main className="relative z-10 pt-8 sm:pt-12 lg:pt-16">
         <Hero />
-        <section className="py-10">
-          <TechStack />
-        </section>
-        <section className="py-10">
-          <About />
-        </section>
-        <section className="py-10">
-          <Portfolio />
-        </section>
+        <TechStack />
+        <About />
+        <Portfolio />
       </main>
       
       <Footer />

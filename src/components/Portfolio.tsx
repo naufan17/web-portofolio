@@ -116,17 +116,17 @@ const Portfolio: React.FC = () => {
     const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
     return (
-        <div id="portfolio" className="relative px-4 py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-7xl md:px-24 lg:px-8 lg:py-12">
+        <div id="portfolio" className="relative px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-7xl md:px-24 lg:px-8 lg:py-20">
             <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="flex flex-col justify-center items-center"
+                className="flex flex-col justify-center items-center px-4"
             >
-                <h1 className="text-2xl text-blue-800 font-ubuntu font-semibold leading-tight tracking-tight sm:text-3xl md:text-4xl">
+                <h1 className="text-3xl text-blue-800 font-ubuntu font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">
                     Portfolio
                 </h1>
-                <h6 className="text-blue-800 text-center mt-6 sm:mt-8 text-lg sm:text-xl font-ubuntu">
+                <h6 className="text-blue-800/70 text-center mt-6 text-lg sm:text-xl font-ubuntu max-w-2xl">
                     Here are some of the projects I have worked on.
                 </h6>
             </motion.div> 

@@ -10,13 +10,13 @@ const About: React.FC = () => {
     ];
 
     return (
-        <div id="about" className="relative mt-8 sm:mt-12 px-4 py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-lg md:px-24 lg:px-8 lg:py-12">
+        <div id="about" className="relative mt-4 sm:mt-20 px-4 py-8 sm:py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-lg md:px-24 lg:px-8">
             <motion.div 
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
-                className="bg-white/40 backdrop-blur-xl border border-white/30 rounded-[2.5rem] p-8 sm:p-12 shadow-2xl relative overflow-hidden"
+                className="bg-white/40 backdrop-blur-xl border border-white/30 rounded-[2.5rem] p-8 sm:p-16 lg:p-20 shadow-2xl relative overflow-hidden"
             >
                 {/* Decorative background shape */}
                 <div className="absolute -top-24 -right-24 w-48 h-48 bg-blue-400/10 rounded-full blur-3xl"></div>

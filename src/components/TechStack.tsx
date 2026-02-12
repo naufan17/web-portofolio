@@ -19,12 +19,12 @@ const techStack = [
 
 const TechStack: React.FC = () => {
     return (
-        <div id="tech-stack" className="relative mt-8 sm:mt-12 py-6 mx-auto lg:py-12 overflow-hidden">
-            <div className="flex flex-col justify-center items-center mb-8">
-                <h2 className="text-2xl text-blue-800 font-ubuntu font-semibold leading-tight tracking-tight sm:text-3xl md:text-4xl">
+        <div id="tech-stack" className="relative mt-4 sm:mt-20 py-8 sm:py-12 mx-auto overflow-hidden">
+            <div className="flex flex-col justify-center items-center mb-10 px-4">
+                <h2 className="text-3xl text-blue-800 font-ubuntu font-bold leading-tight tracking-tight md:text-4xl lg:text-5xl">
                     Tech Stack
                 </h2>
-                <h6 className="text-blue-800 text-center mt-6 sm:mt-8 text-lg sm:text-xl font-ubuntu">
+                <h6 className="text-blue-800/70 text-center mt-6 text-lg sm:text-xl font-ubuntu max-w-2xl">
                     I have experience in several programming languages and frameworks.
                 </h6>
             </div>
