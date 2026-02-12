@@ -21,12 +21,12 @@ const TechStack: React.FC = () => {
     return (
         <div id="tech-stack" className="relative mt-8 sm:mt-12 py-6 mx-auto lg:py-12 overflow-hidden">
             <div className="flex flex-col justify-center items-center mb-8">
-                <h2 className="text-3xl text-blue-800 font-ubuntu font-semibold leading-tight tracking-tight sm:text-4xl md:text-5xl">
+                <h2 className="text-2xl text-blue-800 font-ubuntu font-semibold leading-tight tracking-tight sm:text-3xl md:text-4xl">
                     Tech Stack
                 </h2>
-                <p className="text-blue-800 text-center mt-6 sm:mt-8 text-xl md:text-2xl font-ubuntu">
+                <h6 className="text-blue-800 text-center mt-6 sm:mt-8 text-lg sm:text-xl font-ubuntu">
                     I have experience in several programming languages and frameworks.
-                </p>
+                </h6>
             </div>
             
             <div className="flex w-fit animate-infinite-scroll hover:[animation-play-state:paused]">
@@ -37,7 +37,7 @@ const TechStack: React.FC = () => {
                                 <span className={tech.icon}></span>
                             </div>
                         </div>
-                        <h4 className="mt-1 sm:mt-2 text-blue-800 font-semibold text-base sm:text-lg text-center font-ubuntu">
+                        <h4 className="mt-1 sm:mt-2 text-blue-800 font-semibold text-sm sm:text-base text-center font-ubuntu">
                             {tech.name}
                         </h4>
                     </div>

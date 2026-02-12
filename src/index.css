@@ -3,7 +3,7 @@
 
 @theme {
   --font-ubuntu: "Ubuntu", sans-serif;
-  --animate-infinite-scroll: infinite-scroll 40s linear infinite;
+  --animate-infinite-scroll: infinite-scroll 60s linear infinite;
 
   @keyframes infinite-scroll {
     from { transform: translateX(0); }
@@ -13,17 +13,21 @@
 
 @layer utilities {
   .custom-scroll::-webkit-scrollbar {
-    width: 8px;
+    width: 6px;
   }
 
   .custom-scroll::-webkit-scrollbar-track {
-    background: rgb(239 246 255);
-    border-radius: 4px;
+    background: transparent;
   }
 
   .custom-scroll::-webkit-scrollbar-thumb {
-    background: rgb(30 64 175);
-    border-radius: 4px;
+    background: rgba(30, 64, 175, 0.2);
+    border-radius: 10px;
+    transition: background 0.3s;
+  }
+
+  .custom-scroll::-webkit-scrollbar-thumb:hover {
+    background: rgba(30, 64, 175, 0.5);
   }
 
   .scrollbar-hide::-webkit-scrollbar {
@@ -41,10 +45,15 @@
 }
 
 body {
-  @apply text-white bg-blue-50 min-h-screen font-ubuntu;
+  @apply text-slate-900 bg-[#f8faff] min-h-screen font-ubuntu antialiased;
   margin: 0;
 }
 
 button, a {
   cursor: pointer;
+}
+
+/* Glassmorphism utility */
+.glass {
+  @apply bg-white/40 backdrop-blur-md border border-white/30 shadow-sm;
 }

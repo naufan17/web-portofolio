@@ -1,27 +1,37 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const Navbar: React.FC = () => {
+  const links = [
+    { name: 'Home', href: '/' },
+    { name: 'Tech Stack', href: '#tech-stack' },
+    { name: 'About', href: '#about' },
+    { name: 'Portfolio', href: '#portfolio' },
+  ];
+
   return (
-    <header>
-      <nav className="absolute top-0 left-0 right-0 z-50">
-        <div className="hidden sm:flex flex-wrap items-center justify-center px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24">
-          <div className="flex flex-row space-x-24 py-6">
-            <a href="/" className="py-0.5 px-4 font-semibold text-blue-800 text-base rounded-full hover:bg-blue-200 hover:bg-opacity-50 duration-100 ease-in font-ubuntu">
-              Home
-            </a>
-            <a href="#tech-stack" className="py-0.5 px-4 font-semibold text-blue-800 text-base rounded-full hover:bg-blue-200 hover:bg-opacity-50 duration-100 ease-in font-ubuntu">
-              Tech Stack
-            </a>
-            <a href="#about" className="py-0.5 px-4 font-semibold text-blue-800 text-base rounded-full hover:bg-blue-200 hover:bg-opacity-50 duration-100 ease-in font-ubuntu">
-              About
-            </a>
-            <a href="#portfolio" className="py-0.5 px-4 font-semibold text-blue-800 text-base rounded-full hover:bg-blue-200 hover:bg-opacity-50 duration-100 ease-in font-ubuntu">
-              Portfolio
-            </a>
-          </div>
+    <motion.header
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="fixed top-0 left-0 right-0 z-50 pointer-events-none"
+    >
+      <nav className="flex justify-center py-6">
+        <div className="flex flex-row space-x-8 sm:space-x-16 py-2 px-8 bg-white/20 backdrop-blur-md rounded-full border border-white/30 shadow-lg pointer-events-auto">
+          {links.map((link) => (
+            <motion.a
+              key={link.name}
+              href={link.href}
+              whileHover={{ scale: 1.05, color: '#1d4ed8' }}
+              whileTap={{ scale: 0.95 }}
+              className="font-semibold text-blue-900 text-sm sm:text-base font-ubuntu transition-colors"
+            >
+              {link.name}
+            </motion.a>
+          ))}
         </div>
       </nav>
-    </header>
+    </motion.header>
   );
 };
 

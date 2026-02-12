@@ -1,44 +1,88 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const About: React.FC = () => {
+    const socialLinks = [
+        { icon: 'fa-solid fa-envelope', href: 'mailto:muhammadnaufan719@gmail.com', color: 'hover:text-red-500' },
+        { icon: 'fa-brands fa-whatsapp', href: 'https://wa.me/6289630743492', color: 'hover:text-green-500' },
+        { icon: 'fa-brands fa-linkedin', href: 'https://www.linkedin.com/in/muhammad-naufan/', color: 'hover:text-blue-600' },
+        { icon: 'fa-brands fa-github', href: 'https://github.com/naufan17', color: 'hover:text-gray-900' },
+    ];
+
     return (
         <div id="about" className="relative mt-8 sm:mt-12 px-4 py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-lg md:px-24 lg:px-8 lg:py-12">
-            <div className="bg-blue-100 border border-blue-200 rounded-2xl p-8 sm:p-10">
-                <div className="flex flex-col justify-center items-center">
-                    <h1 className="text-3xl text-blue-800 font-ubuntu font-semibold leading-tight tracking-tight sm:text-4xl md:text-5xl">
-                        About
-                    </h1>
-                    <p className="text-blue-800 text-center mt-6 sm:mt-8 text-xl md:text-2xl font-ubuntu">  
+            <motion.div 
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+                className="bg-white/40 backdrop-blur-xl border border-white/30 rounded-[2.5rem] p-8 sm:p-12 shadow-2xl relative overflow-hidden"
+            >
+                {/* Decorative background shape */}
+                <div className="absolute -top-24 -right-24 w-48 h-48 bg-blue-400/10 rounded-full blur-3xl"></div>
+                <div className="absolute -bottom-24 -left-24 w-48 h-48 bg-rose-400/10 rounded-full blur-3xl"></div>
+
+                <div className="flex flex-col justify-center items-center relative z-10">
+                    <motion.h1 
+                        initial={{ opacity: 0, y: -20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.2 }}
+                        className="text-3xl sm:text-4xl text-blue-900 font-ubuntu font-bold leading-tight tracking-tight mb-8"
+                    >
+                        About Me
+                    </motion.h1>
+                    <motion.p 
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.3 }}
+                        className="text-blue-900/80 text-center max-w-2xl text-lg md:text-xl font-ubuntu leading-relaxed"
+                    >  
                         I'm Naufan, a Full Stack Developer passionate about building innovative, user-friendly applications. 
                         I thrive on learning new technologies and staying up-to-date with the latest IT trends. 
-                        Skilled in a wide range of tools and technologies essential for Full Stack Development                    
-                    </p>
+                    </motion.p>
                 </div>
-                <div className="flex justify-center items-center mt-6 sm:mt-8 space-x-3 sm:space-x-4">
-                    <a href="mailto:muhammadnaufan719@gmail.com" className="px-2 sm:px-3 text-[28px] sm:text-[32px] text-blue-800 rounded-xl hover:bg-blue-200 duration-100 ease-in">
-                        <span className="fa-solid fa-envelope"></span>  
-                    </a>
-                    <a href="https://wa.me/6289630743492" className="px-2 sm:px-3 text-[28px] sm:text-[32px] text-blue-800 rounded-xl hover:bg-blue-200 duration-100 ease-in">
-                        <span className="fa-brands fa-whatsapp"></span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/muhammad-naufan/" className="px-2 sm:px-3 text-[28px] sm:text-[32px] text-blue-800 rounded-xl hover:bg-blue-200 duration-100 ease-in">
-                        <span className="fa-brands fa-linkedin"></span>
-                    </a>
-                    <a href="https://github.com/naufan17" className="px-2 sm:px-3 text-[28px] sm:text-[32px] text-blue-800 rounded-xl hover:bg-blue-200 duration-100 ease-in">
-                        <span className="fa-brands fa-github"></span>
-                    </a>
+
+                <div className="flex justify-center items-center mt-12 space-x-6 sm:space-x-8">
+                    {socialLinks.map((link, index) => (
+                        <motion.a 
+                            key={index}
+                            href={link.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.1 }}
+                            whileHover={{ scale: 1.1, y: -5 }}
+                            whileTap={{ scale: 0.9 }}
+                            className={`text-3xl sm:text-4xl text-blue-800 transition-colors duration-300 ${link.color}`}
+                        >
+                            <span className={link.icon}></span>  
+                        </motion.a>
+                    ))}
                 </div>
-                <div className="flex justify-center items-center mt-6 sm:mt-8">
-                    <a 
-                        className="inline-block px-6 sm:px-8 py-2 sm:py-2.5 font-semibold text-blue-800 text-base sm:text-lg rounded-xl border-2 border-blue-800 hover:bg-blue-200 hover:border-blue-200 duration-100 ease-in font-ubuntu" 
+
+                <motion.div 
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.8 }}
+                    className="flex justify-center items-center mt-12"
+                >
+                    <motion.a 
+                        whileHover={{ scale: 1.05, boxShadow: "0 10px 25px -5px rgba(29, 78, 216, 0.4)" }}
+                        whileTap={{ scale: 0.95 }}
+                        className="inline-block px-10 py-3 font-semibold text-white bg-blue-600 text-lg rounded-2xl shadow-lg hover:bg-blue-700 transition-all font-ubuntu" 
                         href="https://www.canva.com/design/DAF9sAxu3Ew/B2HgZlbOpLM5xXjv0ZEMJQ/view?utm_content=DAF9sAxu3Ew&utm_campaign=designshare&utm_medium=link&utm_source=editor"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        CV
-                    </a>
-                </div>
-            </div>
+                        Download CV
+                    </motion.a>
+                </motion.div>
+            </motion.div>
         </div>
     );
 };

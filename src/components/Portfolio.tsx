@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 interface Project {
     id: string;
@@ -54,28 +55,38 @@ const projects: Project[] = [
         id: 'cryptoMarket',
         title: 'Crypto Market',
         shortDesc: 'Final project JavaScript with API Program from Digital Talent Scholarship.',
-        longDesc: 'Final project JavaScript with API Program from Digital Talent Scholarship.',
+        longDesc: 'Final project JavaScript with API Program from Digital Talent Scholarship. Website to monitor the rise and fall of more than 200 crypto prices in real time. The website was created using React by taking API data from Indodax.',
         image: '/assets/images/crypto-market.png',
-        tech: ['JavaScript', 'API'],
-        links: []
+        tech: ['TypeScript', 'React', 'Indodax API'],
+        links: [
+            { label: 'Frontend', url: 'https://github.com/naufan17/crypto-market', icon: 'fa-brands fa-github' },
+            { label: 'Demo', url: 'https://crypto-market-idr.netlify.app' },
+        ]
     },
     {
         id: 'cekResi',
         title: 'Cek Resi',
         shortDesc: 'Website to track goods shipments from 24 forwarding service companies.',
-        longDesc: 'Website to track goods shipments from 24 forwarding service companies.',
+        longDesc: 'Website to track goods shipments from 24 forwarding service companies. The website is created using Next by retrieving API data from binderbyte.',
         image: '/assets/images/cek-resi.png',
-        tech: ['JavaScript', 'API'],
-        links: []
+        tech: ['TypeScript', 'NextJS', 'Binderbyte API'],
+        links: [
+            { label: 'Frontend', url: 'https://github.com/naufan17/cek-resi', icon: 'fa-brands fa-github' },
+            { label: 'Demo', url: 'https://cek-resi-naufan17s-projects.vercel.app' },
+        ]
     },
     {
         id: 'bcr',
         title: 'Binar Car Rental',
         shortDesc: 'Synergy Academy bootcamp course project car rental simulation website.',
-        longDesc: 'Synergy Academy bootcamp course project car rental simulation website.',
+        longDesc: 'Synergy Academy bootcamp course project car rental simulation website. The website is made using the Express library and React.',
         image: '/assets/images/binar-car-rental.png',
-        tech: ['JavaScript', 'React'],
-        links: []
+        tech: ['TypeScript', 'Express', 'React', 'PostgreSQL'],
+        links: [
+            { label: 'Frontend', url: 'https://github.com/naufan17/24001143-synrgy7-nau_bcr-ch7', icon: 'fa-brands fa-github' },
+            { label: 'Backend', url: 'https://github.com/naufan17/24001143-synrgy7-nau_bcr-ch6', icon: 'fa-brands fa-github' },
+            { label: 'Demo', url: 'https://nau-binar-car-rental.netlify.app' },
+        ]
     },
     {
         id: 'boilerplateExpress',
@@ -85,7 +96,7 @@ const projects: Project[] = [
         image: '/assets/images/boilerplate-express-rest-api.png',
         tech: ['TypeScript', 'NodeJS', 'Express', 'PostgreSQL', 'MySQL', 'MongoDB', 'Docker'],
         links: [
-            { label: 'Demo', url: 'https://github.com/naufan17/express-boilerplate' },
+            { label: 'Demo', url: 'https://github.com/naufan17/express-boilerplate', icon: 'fa-brands fa-github' },
         ]
     },
     {
@@ -96,7 +107,7 @@ const projects: Project[] = [
         image: '/assets/images/boilerplate-go-gin-rest-api.png',
         tech: ['Go', 'Gin', 'PostgreSQL', 'Docker'],
         links: [
-            { label: 'Demo', url: 'https://github.com/naufan17/go-gin-boilerplate' },
+            { label: 'Demo', url: 'https://github.com/naufan17/go-gin-boilerplate', icon: 'fa-brands fa-github' },
         ]
     }
 ];
@@ -105,96 +116,132 @@ const Portfolio: React.FC = () => {
     const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
     return (
-        <div id="portfolio" className="relative mt-8 sm:mt-12 px-4 py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-12">
-            <div className="flex flex-col justify-center items-center">
-                <h1 className="text-3xl text-blue-800 font-ubuntu font-semibold leading-tight tracking-tight sm:text-4xl md:text-5xl">
+        <div id="portfolio" className="relative px-4 py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-7xl md:px-24 lg:px-8 lg:py-12">
+            <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="flex flex-col justify-center items-center"
+            >
+                <h1 className="text-2xl text-blue-800 font-ubuntu font-semibold leading-tight tracking-tight sm:text-3xl md:text-4xl">
                     Portfolio
                 </h1>
-                <p className="text-blue-800 text-center mt-6 sm:mt-8 text-xl sm:text-2xl font-ubuntu">
+                <h6 className="text-blue-800 text-center mt-6 sm:mt-8 text-lg sm:text-xl font-ubuntu">
                     Here are some of the projects I have worked on.
-                </p>
-            </div> 
+                </h6>
+            </motion.div> 
+
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mt-8 sm:mt-12">
                 {projects.map((project) => (
-                    <div key={project.id} className="bg-blue-100 bg-opacity-50 border border-blue-200 rounded-2xl duration-500">
-                        <div className="flex justify-end p-4 sm:p-6">
-                            <img className="rounded-lg w-full h-auto" src={project.image} alt={project.title} />
+                    <motion.div 
+                        key={project.id}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.1 }}
+                        whileHover={{ y: -5 }}
+                        className="bg-blue-100/50 backdrop-blur-sm border border-blue-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300"
+                    >
+                        <div className="p-4 sm:p-6 pb-0">
+                            <img 
+                                className="rounded-2xl w-full h-auto shadow-md" 
+                                src={project.image} 
+                                alt={project.title} 
+                            />
                         </div>
-                        <div className="flex flex-col justify-left px-4 sm:px-6 space-y-4">
-                            <h5 className="text-xl sm:text-2xl font-semibold tracking-tight text-blue-800 font-ubuntu">
+                        <div className="flex flex-col p-6 space-y-4">
+                            <h5 className="text-lg sm:text-xl font-semibold tracking-tight text-blue-900 font-ubuntu">
                                 {project.title}
                             </h5>
-                            <p className="text-blue-800 text-base sm:text-lg font-ubuntu line-clamp-3">
+                            <p className="text-blue-800/80 text-base font-ubuntu line-clamp-2">
                                 {project.shortDesc}
                             </p>
+                            <div className="flex justify-center pt-4">
+                                <motion.button 
+                                    whileHover={{ scale: 1.05 }}
+                                    whileTap={{ scale: 0.95 }}
+                                    onClick={() => setSelectedProject(project)} 
+                                    className="inline-flex items-center px-6 py-2 rounded-full bg-blue-600 text-white text-base font-semibold hover:bg-blue-700 transition-colors font-ubuntu"
+                                >
+                                    See more <span className="ml-2 fa-solid fa-chevron-right text-sm"></span>
+                                </motion.button>
+                            </div>
                         </div>
-                        <div className="flex flex-row justify-center py-4 sm:py-6 space-x-4">
-                            <button 
-                                onClick={() => setSelectedProject(project)} 
-                                className="inline-flex items-center px-4 py-0.5 rounded-full text-blue-800 text-base font-semibold sm:text-lg hover:bg-blue-200 duration-100 ease-in font-ubuntu"
-                            >
-                                See more <span className="ml-2 fa-solid fa-chevron-right text-sm sm:text-base"></span>
-                            </button>
-                        </div>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
 
-            {selectedProject && (
-                <div 
-                    className="fixed inset-0 bg-black/40 backdrop-blur-sm z-[100] flex justify-center items-center overflow-auto p-4 duration-300 ease-in-out"
-                    onClick={() => setSelectedProject(null)}
-                >
-                    <div 
-                        className="w-full max-w-[720px] bg-blue-50 rounded-2xl max-h-full overflow-y-auto pt-2 sm:pt-4 pb-6 sm:pb-8 px-6 sm:px-8 custom-scroll"
-                        onClick={(e) => e.stopPropagation()}
+            <AnimatePresence>
+                {selectedProject && (
+                    <motion.div 
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className="fixed inset-0 bg-black/60 backdrop-blur-md z-[100] flex justify-center items-center overflow-auto p-4"
+                        onClick={() => setSelectedProject(null)}
                     >
-                        <div className="flex justify-end">
+                        <motion.div 
+                            initial={{ scale: 0.9, opacity: 0, y: 50 }}
+                            animate={{ scale: 1, opacity: 1, y: 0 }}
+                            exit={{ scale: 0.9, opacity: 0, y: 50 }}
+                            transition={{ type: "spring", damping: 25, stiffness: 300 }}
+                            className="w-full max-w-3xl bg-blue-50 rounded-3xl max-h-full overflow-y-auto p-6 sm:p-10 relative custom-scroll shadow-2xl"
+                            onClick={(e) => e.stopPropagation()}
+                        >
                             <button 
                                 onClick={() => setSelectedProject(null)} 
-                                className="px-2 sm:px-3 -mr-4 text-[24px] sm:text-[28px] text-blue-800 rounded-lg hover:bg-blue-100 duration-100 ease-in"
+                                className="absolute top-4 right-6 py-1 px-2.5 text-blue-900 bg-blue-100 rounded-full hover:bg-blue-200 transition-colors z-10"
                             >
-                                <span className="fa-solid fa-times"></span>
+                                <span className="fa-solid fa-times text-xl mt-1"></span>
                             </button>
-                        </div>
-                        <div className="flex justify-center mt-2">
-                            <img className="rounded-lg w-full h-auto" src={selectedProject.image} alt={selectedProject.title} />
-                        </div>
-                        <div className="flex flex-col justify-left mt-4 sm:mt-6 space-y-4">
-                            <h5 className="text-xl sm:text-2xl font-semibold tracking-tight text-blue-800 font-ubuntu">
-                                {selectedProject.title}
-                            </h5>
-                            <p className="text-blue-800 text-base sm:text-lg font-ubuntu">
-                                {selectedProject.longDesc}
-                            </p>
-                        </div>
-                        <div className="flex flex-wrap justify-left mt-2 sm:mt-4">
-                            {selectedProject.tech.map((t, i) => (
-                                <div key={i} className="inline-flex justify-center items-center bg-blue-200 border border-blue-600 rounded-full px-2.5 py-0.5 mt-2 mr-2">
-                                    <p className="text-blue-800 text-sm sm:text-base font-ubuntu">
-                                        {t}
+                            
+                            <div className="mt-6">
+                                <motion.img 
+                                    initial={{ opacity: 0, scale: 0.95 }}
+                                    animate={{ opacity: 1, scale: 1 }}
+                                    className="rounded-2xl w-full h-auto shadow-lg mb-8" 
+                                    src={selectedProject.image} 
+                                    alt={selectedProject.title} 
+                                />
+                                <div className="space-y-6">
+                                    <h5 className="text-xl sm:text-2xl font-bold text-blue-900 font-ubuntu">
+                                        {selectedProject.title}
+                                    </h5>
+                                    <p className="text-blue-800 text-base sm:text-lg leading-relaxed font-ubuntu">
+                                        {selectedProject.longDesc}
                                     </p>
+                                    
+                                    <div className="flex flex-wrap gap-2">
+                                        {selectedProject.tech.map((t, i) => (
+                                            <span key={i} className="px-4 py-1.5 bg-blue-100 text-blue-800 border border-blue-200 rounded-full text-sm font-semibold font-ubuntu">
+                                                {t}
+                                            </span>
+                                        ))}
+                                    </div>
+
+                                    {selectedProject.links.length > 0 && (
+                                        <div className="flex flex-wrap gap-4 pt-6 border-t border-blue-200">
+                                            {selectedProject.links.map((link, i) => (
+                                                <motion.a 
+                                                    key={i} 
+                                                    href={link.url} 
+                                                    target="_blank" 
+                                                    rel="noopener noreferrer"
+                                                    whileHover={{ scale: 1.05 }}
+                                                    whileTap={{ scale: 0.95 }}
+                                                    className="inline-flex items-center px-6 py-2.5 font-semibold text-white bg-blue-600 rounded-xl hover:bg-blue-700 transition-colors font-ubuntu shadow-md"
+                                                >
+                                                    {link.label} {link.icon && <span className={`${link.icon} ml-2`}></span>}
+                                                </motion.a>
+                                            ))}
+                                        </div>
+                                    )}
                                 </div>
-                            ))}
-                        </div>
-                        {selectedProject.links.length > 0 && (
-                            <div className="flex flex-row justify-center mt-4 sm:mt-6 space-x-4">
-                                {selectedProject.links.map((link, i) => (
-                                    <a 
-                                        key={i} 
-                                        href={link.url} 
-                                        target="_blank" 
-                                        rel="noopener noreferrer"
-                                        className="inline-flex items-center px-3 sm:px-4 py-1.5 sm:py-2 font-semibold text-blue-800 text-base sm:text-lg rounded-xl border-2 border-blue-800 hover:bg-blue-200 hover:border-blue-200 duration-100 ease-in font-ubuntu"
-                                    >
-                                        {link.label} {link.icon && <span className={`${link.icon} ml-1`}></span>}
-                                    </a>
-                                ))}
                             </div>
-                        )}
-                    </div>
-                </div>
-            )}
+                        </motion.div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </div>
     );
 };
