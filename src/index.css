@@ -1,0 +1,50 @@
+@import 'https://fonts.googleapis.com/css?family=Ubuntu:300, 400, 500, 700';
+@import "tailwindcss";
+
+@theme {
+  --font-ubuntu: "Ubuntu", sans-serif;
+  --animate-infinite-scroll: infinite-scroll 40s linear infinite;
+
+  @keyframes infinite-scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+}
+
+@layer utilities {
+  .custom-scroll::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .custom-scroll::-webkit-scrollbar-track {
+    background: rgb(239 246 255);
+    border-radius: 4px;
+  }
+
+  .custom-scroll::-webkit-scrollbar-thumb {
+    background: rgb(30 64 175);
+    border-radius: 4px;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply text-white bg-blue-50 min-h-screen font-ubuntu;
+  margin: 0;
+}
+
+button, a {
+  cursor: pointer;
+}
