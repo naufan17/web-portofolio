@@ -13,12 +13,12 @@ const Navbar: React.FC = () => {
 
   return (
     <motion.header
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
+      initial={{ y: 50, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="fixed top-0 left-0 right-0 z-50 pointer-events-none"
+      className="fixed bottom-6 sm:top-0 sm:bottom-auto left-0 right-0 z-50 pointer-events-none"
     >
-      <nav className="flex justify-center py-4 sm:py-6">
+      <nav className="flex justify-center py-0 sm:py-6">
         <div 
           className="flex flex-row space-x-1 sm:space-x-4 py-1.5 sm:py-2 px-2 sm:px-4 bg-white/30 backdrop-blur-sm rounded-full border border-white/40 shadow-xl pointer-events-auto"
           onMouseLeave={() => setHoveredIndex(null)}

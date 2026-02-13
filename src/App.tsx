@@ -49,7 +49,7 @@ function App() {
       <Navbar />
       
       {/* Main Content */}
-      <main className="relative z-10 pt-4 sm:pt-8 lg:pt-12">
+      <main className="relative z-10 sm:pt-8 lg:pt-12">
         <Hero />
         <TechStack />
         <About />
