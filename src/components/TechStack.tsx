@@ -33,12 +33,12 @@ const TechStack: React.FC = () => {
                 {/* Mobile View: Two Rows */}
                 <div className="flex sm:hidden flex-col gap-y-8">
                     <div className="flex w-fit animate-infinite-scroll hover:[animation-play-state:paused]">
-                        {[...techStack.slice(0, 7), ...techStack.slice(0, 7), ...techStack.slice(0, 7), ...techStack.slice(0, 7)].map((tech, index) => (
+                        {[...techStack.slice(0, 7), ...techStack.slice(0, 7)].map((tech, index) => (
                             <TechCard key={`row1-${index}`} tech={tech} />
                         ))}
                     </div>
                     <div className="flex w-fit animate-infinite-scroll-reverse hover:[animation-play-state:paused]">
-                        {[...techStack.slice(7), ...techStack.slice(7), ...techStack.slice(7), ...techStack.slice(7)].map((tech, index) => (
+                        {[...techStack.slice(7), ...techStack.slice(7)].map((tech, index) => (
                             <TechCard key={`row2-${index}`} tech={tech} />
                         ))}
                     </div>

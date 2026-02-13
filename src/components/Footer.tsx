@@ -11,10 +11,6 @@ const Footer: React.FC = () => {
                 transition={{ duration: 0.8 }}
                 className="max-w-7xl mx-auto"
             >
-                {/* Decorative background shape */}
-                <div className="absolute -top-12 -left-12 w-32 h-32 bg-blue-400/10 rounded-full blur-2xl"/>
-                <div className="absolute -bottom-12 -right-12 w-32 h-32 bg-rose-400/10 rounded-full blur-2xl"/>
-
                 <div className="bg-white/40 backdrop-blur-xl border border-white/30 rounded-[2.5rem] p-6 sm:p-10 shadow-2xl relative overflow-hidden">
                     {/* Decorative Blobs */}
                     <div className="relative z-10 flex flex-col items-center">                        {/* Copyright */}

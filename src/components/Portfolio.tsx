@@ -147,6 +147,8 @@ const Portfolio: React.FC = () => {
                                 className="rounded-2xl w-full h-auto shadow-md" 
                                 src={project.image} 
                                 alt={project.title} 
+                                loading="lazy"
+                                decoding="async"
                             />
                         </div>
                         <div className="flex flex-col p-6 space-y-4">
