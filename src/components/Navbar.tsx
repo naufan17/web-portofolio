@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
     >
       <nav className="flex justify-center py-4 sm:py-6">
         <div 
-          className="flex flex-row space-x-1 sm:space-x-4 py-1.5 sm:py-2 px-2 sm:px-4 bg-white/30 backdrop-blur-xl rounded-full border border-white/40 shadow-xl pointer-events-auto"
+          className="flex flex-row space-x-1 sm:space-x-4 py-1.5 sm:py-2 px-2 sm:px-4 bg-white/30 backdrop-blur-sm rounded-full border border-white/40 shadow-xl pointer-events-auto"
           onMouseLeave={() => setHoveredIndex(null)}
         >
           {links.map((link, index) => (

@@ -116,7 +116,7 @@ const Portfolio: React.FC = () => {
     const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
     return (
-        <div id="portfolio" className="relative px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-7xl md:px-24 lg:px-8 lg:py-20">
+        <div id="portfolio" className="relative px-4 py-16 mx-auto md:px-24 lg:px-8 sm:py-24 sm:max-w-xl md:max-w-full lg:max-w-7xl">
             <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -177,7 +177,7 @@ const Portfolio: React.FC = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        className="fixed inset-0 bg-black/60 backdrop-blur-md z-[100] flex justify-center items-center overflow-auto p-4"
+                        className="fixed inset-0 bg-black/60 backdrop-blur-md z-100 flex justify-center items-center overflow-auto p-4"
                         onClick={() => setSelectedProject(null)}
                     >
                         <motion.div 
@@ -185,7 +185,7 @@ const Portfolio: React.FC = () => {
                             animate={{ scale: 1, opacity: 1, y: 0 }}
                             exit={{ scale: 0.9, opacity: 0, y: 50 }}
                             transition={{ type: "spring", damping: 25, stiffness: 300 }}
-                            className="w-full max-w-3xl bg-blue-50 rounded-3xl max-h-full overflow-y-auto p-6 sm:p-10 relative custom-scroll shadow-2xl"
+                            className="w-full max-w-3xl bg-blue-50 rounded-3xl max-h-full overflow-y-auto p-6 pt-10 sm:p-10 relative custom-scroll shadow-2xl"
                             onClick={(e) => e.stopPropagation()}
                         >
                             <button 

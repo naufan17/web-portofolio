@@ -1,6 +1,6 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import Typewriter from 'typewriter-effect';
+import { motion } from 'framer-motion';
 
 const Hero: React.FC = () => {
   return (
@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="flex flex-col justify-center items-center space-y-4 sm:space-y-6"
         >
-          <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-rose-700 text-center text-4xl sm:text-5xl lg:text-6xl font-ubuntu font-bold leading-tight tracking-tight min-h-16 sm:min-h-20 lg:min-h-24 px-2">
+          <h1 className="bg-clip-text text-transparent bg-linear-to-r from-blue-700 to-rose-700 text-center text-4xl sm:text-5xl lg:text-6xl font-ubuntu font-bold leading-tight tracking-tight min-h-16 sm:min-h-20 lg:min-h-24 px-2">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter.typeString("Hi, I'm Naufan, a")
@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
               }}
             />
           </h1>
-          <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-rose-700 to-blue-700 text-center text-4xl sm:text-5xl lg:text-6xl font-ubuntu font-bold leading-tight tracking-tight min-h-16 sm:min-h-20 lg:min-h-24 px-2">
+          <h1 className="bg-clip-text text-transparent bg-linear-to-r from-rose-700 to-blue-700 text-center text-4xl sm:text-5xl lg:text-6xl font-ubuntu font-bold leading-tight tracking-tight min-h-16 sm:min-h-20 lg:min-h-24 px-2">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter.pauseFor(1500)
@@ -50,12 +50,12 @@ const Hero: React.FC = () => {
             href="#tech-stack" 
             whileHover={{ scale: 1.1, backgroundColor: '#dbeafe' }}
             whileTap={{ scale: 0.9 }}
-            className="flex justify-center items-center rounded-full border-2 border-blue-800 w-12 h-12 sm:w-14 sm:h-14 hover:border-blue-300 transition-colors shadow-lg"
+            className="flex justify-center items-center rounded-full border-2 border-blue-800 w-10 h-10 sm:w-12 sm:h-12 hover:border-blue-300 transition-colors shadow-lg"
           >
             <motion.span 
               animate={{ y: [0, 5, 0] }}
               transition={{ repeat: Infinity, duration: 1.5 }}
-              className="fa-solid fa-arrow-down text-blue-800 text-xl sm:text-2xl"
+              className="fa-solid fa-arrow-down text-blue-800 text-xl sm:text-2xl mb-1"
             ></motion.span>
           </motion.a>    
         </motion.div>

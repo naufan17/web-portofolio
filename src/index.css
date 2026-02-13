@@ -1,13 +1,27 @@
-@import 'https://fonts.googleapis.com/css?family=Ubuntu:300, 400, 500, 700';
+@import "https://fonts.googleapis.com/css?family=Ubuntu:300, 400, 500, 700";
 @import "tailwindcss";
 
 @theme {
   --font-ubuntu: "Ubuntu", sans-serif;
   --animate-infinite-scroll: infinite-scroll 60s linear infinite;
+  --animate-infinite-scroll-reverse: infinite-scroll-reverse 60s linear infinite;
 
   @keyframes infinite-scroll {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes infinite-scroll-reverse {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0);
+    }
   }
 }
 
@@ -45,11 +59,12 @@
 }
 
 body {
-  @apply text-slate-900 bg-[#f8faff] min-h-screen font-ubuntu antialiased;
+  @apply text-slate-900 bg-[#f8faff] min-h-screen font-ubuntu antialiased overflow-x-hidden;
   margin: 0;
 }
 
-button, a {
+button,
+a {
   cursor: pointer;
 }
 
