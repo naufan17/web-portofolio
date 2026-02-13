@@ -17,7 +17,7 @@ const projects: Project[] = [
         title: 'Sistem Informasi Akademik MDNU',
         shortDesc: 'The college practical work project creates an academic information system at the Nurul Ummah Islamic Boarding School Kotagede.',
         longDesc: 'The college practical work project creates an Academic Information System at the Nurul Ummah Islamic Boarding School Kotagede. The system was created for students and teachers at Islamic boarding schools to facilitate administrative activities in the form of attendance, assessments and semester reports. The website was created using the Laravel framework and Tailwind.',
-        image: '/assets/images/sistem-informasi-akademik-mdnu.png',
+        image: 'assets/images/sistem-informasi-akademik-mdnu.png',
         tech: ['PHP', 'Laravel', 'Tailwind', 'MySQL'],
         links: [
             { label: 'User', url: 'https://github.com/naufan17/sistem-informasi-akademik', icon: 'fa-brands fa-github' },
@@ -30,7 +30,7 @@ const projects: Project[] = [
         title: 'Connect by BCA',
         shortDesc: 'Final project Fullstack Engineer Program from Binar Academy.',
         longDesc: 'Final project Fullstack Engineer Program from Binar Academy. BCA bank clone application in the form of Android and Internet banking that is friendly to users with disabilities. Rest API is created using Express library.',
-        image: '/assets/images/connect-by-bca.png',
+        image: 'assets/images/connect-by-bca.png',
         tech: ['TypeScript', 'Express', 'React', 'PostgreSQL'],
         links: [
             { label: 'Frontend', url: 'https://github.com/SYNRGY7-Kelompok-6/connect-bca-frontend', icon: 'fa-brands fa-github' },
@@ -43,7 +43,7 @@ const projects: Project[] = [
         title: 'Bincang Rakyat',
         shortDesc: 'Final capstone project of the Fullstack Engineer Generation Gigih 3.0 Program with the theme SDGs 11: Sustainable Cities and Communities.',
         longDesc: 'Final capstone project of the Fullstack Engineer Generation Gigih 3.0 Program with the theme SDGs 11: Sustainable Cities and Communities. Website social media for posting complaints related to government public facilities. The Rest API was created using Express library.',
-        image: '/assets/images/bincang-rakyat.png',
+        image: 'assets/images/bincang-rakyat.png',
         tech: ['JavaScript', 'Express', 'React', 'MongoDB'],
         links: [
             { label: 'Frontend', url: 'https://github.com/CPI-FS-SDG-11-D/LPM-frontend', icon: 'fa-brands fa-github' },
@@ -56,7 +56,7 @@ const projects: Project[] = [
         title: 'Crypto Market',
         shortDesc: 'Final project JavaScript with API Program from Digital Talent Scholarship.',
         longDesc: 'Final project JavaScript with API Program from Digital Talent Scholarship. Website to monitor the rise and fall of more than 200 crypto prices in real time. The website was created using React by taking API data from Indodax.',
-        image: '/assets/images/crypto-market.png',
+        image: 'assets/images/crypto-market.png',
         tech: ['TypeScript', 'React', 'Indodax API'],
         links: [
             { label: 'Frontend', url: 'https://github.com/naufan17/crypto-market', icon: 'fa-brands fa-github' },
@@ -68,7 +68,7 @@ const projects: Project[] = [
         title: 'Cek Resi',
         shortDesc: 'Website to track goods shipments from 24 forwarding service companies.',
         longDesc: 'Website to track goods shipments from 24 forwarding service companies. The website is created using Next by retrieving API data from binderbyte.',
-        image: '/assets/images/cek-resi.png',
+        image: 'assets/images/cek-resi.png',
         tech: ['TypeScript', 'NextJS', 'Binderbyte API'],
         links: [
             { label: 'Frontend', url: 'https://github.com/naufan17/cek-resi', icon: 'fa-brands fa-github' },
@@ -80,7 +80,7 @@ const projects: Project[] = [
         title: 'Binar Car Rental',
         shortDesc: 'Synergy Academy bootcamp course project car rental simulation website.',
         longDesc: 'Synergy Academy bootcamp course project car rental simulation website. The website is made using the Express library and React.',
-        image: '/assets/images/binar-car-rental.png',
+        image: 'assets/images/binar-car-rental.png',
         tech: ['TypeScript', 'Express', 'React', 'PostgreSQL'],
         links: [
             { label: 'Frontend', url: 'https://github.com/naufan17/24001143-synrgy7-nau_bcr-ch7', icon: 'fa-brands fa-github' },
@@ -93,7 +93,7 @@ const projects: Project[] = [
         title: 'Boilerplate Express Rest Api',
         shortDesc: 'Express started to build REST API',
         longDesc: 'Express started to build REST API',
-        image: '/assets/images/boilerplate-express-rest-api.png',
+        image: 'assets/images/boilerplate-express-rest-api.png',
         tech: ['TypeScript', 'NodeJS', 'Express', 'PostgreSQL', 'MySQL', 'MongoDB', 'Docker'],
         links: [
             { label: 'Demo', url: 'https://github.com/naufan17/express-boilerplate', icon: 'fa-brands fa-github' },
@@ -104,7 +104,7 @@ const projects: Project[] = [
         title: 'Boilerplate Go Gin Rest Api',
         shortDesc: 'Go Gin started to build REST API',
         longDesc: 'Go Gin started to build REST API',
-        image: '/assets/images/boilerplate-go-gin-rest-api.png',
+        image: 'assets/images/boilerplate-go-gin-rest-api.png',
         tech: ['Go', 'Gin', 'PostgreSQL', 'Docker'],
         links: [
             { label: 'Demo', url: 'https://github.com/naufan17/go-gin-boilerplate', icon: 'fa-brands fa-github' },
