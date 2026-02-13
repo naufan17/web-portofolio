@@ -204,6 +204,7 @@ const Portfolio: React.FC = () => {
                                     className="rounded-2xl w-full h-auto shadow-lg mb-8" 
                                     src={selectedProject.image} 
                                     alt={selectedProject.title} 
+                                    decoding="async"
                                 />
                                 <div className="space-y-6">
                                     <h5 className="text-xl sm:text-2xl font-bold text-blue-900 font-ubuntu">

@@ -23,11 +23,6 @@
       transform: translateX(0);
     }
   }
-
-  .animate-infinite-scroll,
-  .animate-infinite-scroll-reverse {
-    will-change: transform;
-  }
 }
 
 @layer utilities {
