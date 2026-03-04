@@ -52,6 +52,18 @@ const projects: Project[] = [
         ]
     },
     {
+        id: 'restCountry',
+        title: 'Rest Country',
+        shortDesc: 'Website to display country information using the Rest Country API.',
+        longDesc: 'Website to display country information using the Rest Country API. The website was created using NextJS by retrieving API data from Rest Country API.',
+        image: 'assets/images/rest-country.webp',
+        tech: ['TypeScript', 'NextJS', 'Rest Country API'],
+        links: [
+            { label: 'Fullstack', url: 'https://github.com/naufan17/rest-country-app', icon: 'fa-brands fa-github' },
+            { label: 'Demo', url: 'https://rest-country-app-psi.vercel.app/' },
+        ]
+    },
+    {
         id: 'cryptoMarket',
         title: 'Crypto Market',
         shortDesc: 'Final project JavaScript with API Program from Digital Talent Scholarship.',
