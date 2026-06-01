@@ -75,18 +75,18 @@ const projects: Project[] = [
             { label: 'Demo', url: 'https://crypto-market-idr.netlify.app' },
         ]
     },
-    {
-        id: 'cekResi',
-        title: 'Cek Resi',
-        shortDesc: 'Website to track goods shipments from 24 forwarding service companies.',
-        longDesc: 'Website to track goods shipments from 24 forwarding service companies. The website is created using Next by retrieving API data from binderbyte.',
-        image: 'assets/images/cek-resi.webp',
-        tech: ['TypeScript', 'NextJS', 'Binderbyte API'],
-        links: [
-            { label: 'Frontend', url: 'https://github.com/naufan17/cek-resi', icon: 'fa-brands fa-github' },
-            { label: 'Demo', url: 'https://cek-resi-naufan17s-projects.vercel.app' },
-        ]
-    },
+    // {
+    //     id: 'cekResi',
+    //     title: 'Cek Resi',
+    //     shortDesc: 'Website to track goods shipments from 24 forwarding service companies.',
+    //     longDesc: 'Website to track goods shipments from 24 forwarding service companies. The website is created using Next by retrieving API data from binderbyte.',
+    //     image: 'assets/images/cek-resi.webp',
+    //     tech: ['TypeScript', 'NextJS', 'Binderbyte API'],
+    //     links: [
+    //         { label: 'Frontend', url: 'https://github.com/naufan17/cek-resi', icon: 'fa-brands fa-github' },
+    //         { label: 'Demo', url: 'https://cek-resi-naufan17s-projects.vercel.app' },
+    //     ]
+    // },
     {
         id: 'bcr',
         title: 'Binar Car Rental',

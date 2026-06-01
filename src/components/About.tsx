@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const About: React.FC = () => {
     const socialLinks = [
         { icon: 'fa-solid fa-envelope', href: 'mailto:muhammadnaufan719@gmail.com', color: 'hover:text-red-500' },
-        { icon: 'fa-brands fa-whatsapp', href: 'https://wa.me/6289630743492', color: 'hover:text-green-500' },
+        // { icon: 'fa-brands fa-whatsapp', href: 'https://wa.me/6289630743492', color: 'hover:text-green-500' },
         { icon: 'fa-brands fa-linkedin', href: 'https://www.linkedin.com/in/muhammad-naufan/', color: 'hover:text-blue-600' },
         { icon: 'fa-brands fa-github', href: 'https://github.com/naufan17', color: 'hover:text-gray-900' },
     ];
