@@ -63,18 +63,18 @@ const projects: Project[] = [
             { label: 'Demo', url: 'https://rest-country-app-psi.vercel.app/' },
         ]
     },
-    {
-        id: 'cryptoMarket',
-        title: 'Crypto Market',
-        shortDesc: 'Final project JavaScript with API Program from Digital Talent Scholarship.',
-        longDesc: 'Final project JavaScript with API Program from Digital Talent Scholarship. Website to monitor the rise and fall of more than 200 crypto prices in real time. The website was created using React by taking API data from Indodax.',
-        image: 'assets/images/crypto-market.webp',
-        tech: ['TypeScript', 'React', 'Indodax API'],
-        links: [
-            { label: 'Frontend', url: 'https://github.com/naufan17/crypto-market', icon: 'fa-brands fa-github' },
-            { label: 'Demo', url: 'https://crypto-market-idr.netlify.app' },
-        ]
-    },
+    // {
+    //     id: 'cryptoMarket',
+    //     title: 'Crypto Market',
+    //     shortDesc: 'Final project JavaScript with API Program from Digital Talent Scholarship.',
+    //     longDesc: 'Final project JavaScript with API Program from Digital Talent Scholarship. Website to monitor the rise and fall of more than 200 crypto prices in real time. The website was created using React by taking API data from Indodax.',
+    //     image: 'assets/images/crypto-market.webp',
+    //     tech: ['TypeScript', 'React', 'Indodax API'],
+    //     links: [
+    //         { label: 'Frontend', url: 'https://github.com/naufan17/crypto-market', icon: 'fa-brands fa-github' },
+    //         { label: 'Demo', url: 'https://crypto-market-idr.netlify.app' },
+    //     ]
+    // },
     // {
     //     id: 'cekResi',
     //     title: 'Cek Resi',
@@ -111,17 +111,17 @@ const projects: Project[] = [
             { label: 'Demo', url: 'https://github.com/naufan17/express-boilerplate', icon: 'fa-brands fa-github' },
         ]
     },
-    {
-        id: 'boilerplateGoGin',
-        title: 'Boilerplate Go Gin Rest Api',
-        shortDesc: 'Go Gin started to build REST API',
-        longDesc: 'Go Gin started to build REST API',
-        image: 'assets/images/boilerplate-go-gin-rest-api.webp',
-        tech: ['Go', 'Gin', 'PostgreSQL', 'Docker'],
-        links: [
-            { label: 'Demo', url: 'https://github.com/naufan17/go-gin-boilerplate', icon: 'fa-brands fa-github' },
-        ]
-    }
+    // {
+    //     id: 'boilerplateGoGin',
+    //     title: 'Boilerplate Go Gin Rest Api',
+    //     shortDesc: 'Go Gin started to build REST API',
+    //     longDesc: 'Go Gin started to build REST API',
+    //     image: 'assets/images/boilerplate-go-gin-rest-api.webp',
+    //     tech: ['Go', 'Gin', 'PostgreSQL', 'Docker'],
+    //     links: [
+    //         { label: 'Demo', url: 'https://github.com/naufan17/go-gin-boilerplate', icon: 'fa-brands fa-github' },
+    //     ]
+    // }
 ];
 
 const Portfolio: React.FC = () => {
