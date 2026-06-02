@@ -135,10 +135,10 @@ const Portfolio: React.FC = () => {
                 viewport={{ once: true }}
                 className="flex flex-col justify-center items-center px-4"
             >
-                <h1 className="text-3xl text-blue-800 font-ubuntu font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">
+                <h1 className="text-3xl text-blue-800 dark:text-blue-300 font-ubuntu font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">
                     Portfolio
                 </h1>
-                <h6 className="text-blue-800/70 text-center mt-6 text-lg sm:text-xl font-ubuntu max-w-2xl">
+                <h6 className="text-blue-800/70 dark:text-blue-300/80 text-center mt-6 text-lg sm:text-xl font-ubuntu max-w-2xl">
                     Here are some of the projects I have worked on.
                 </h6>
             </motion.div> 
@@ -151,7 +151,7 @@ const Portfolio: React.FC = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
-                        className="bg-white/40 backdrop-blur-xl border border-white/50 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300"
+                        className="bg-white/40 dark:bg-slate-800/40 backdrop-blur-xl border border-white/50 dark:border-slate-700/50 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300"
                     >
                         <div className="p-4 sm:p-6 pb-0">
                             <img 
@@ -163,10 +163,10 @@ const Portfolio: React.FC = () => {
                             />
                         </div>
                         <div className="flex flex-col p-6 space-y-4">
-                            <h5 className="text-lg sm:text-xl font-semibold tracking-tight text-blue-900 font-ubuntu">
+                            <h5 className="text-lg sm:text-xl font-semibold tracking-tight text-blue-900 dark:text-blue-300 font-ubuntu">
                                 {project.title}
                             </h5>
-                            <p className="text-blue-800/80 text-base font-ubuntu line-clamp-2">
+                            <p className="text-blue-800/80 dark:text-blue-300/80 text-base font-ubuntu line-clamp-2">
                                 {project.shortDesc}
                             </p>
                             <div className="flex justify-center pt-4">
@@ -174,7 +174,7 @@ const Portfolio: React.FC = () => {
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
                                     onClick={() => setSelectedProject(project)} 
-                                    className="inline-flex items-center px-6 py-2 rounded-full bg-blue-600 text-white text-base font-semibold btn-slider transition-colors font-ubuntu"
+                                    className="inline-flex items-center px-6 py-2 rounded-full bg-blue-600 dark:bg-blue-500 text-white text-base font-semibold btn-slider transition-colors font-ubuntu"
                                 >
                                     See more <span className="ml-2 fa-solid fa-chevron-right text-sm"></span>
                                 </motion.button>
@@ -198,12 +198,12 @@ const Portfolio: React.FC = () => {
                             animate={{ scale: 1, opacity: 1, y: 0 }}
                             exit={{ scale: 0.9, opacity: 0, y: 50 }}
                             transition={{ type: "spring", damping: 25, stiffness: 300 }}
-                            className="w-full max-w-3xl bg-white rounded-3xl max-h-full overflow-y-auto p-6 pt-10 sm:p-10 relative custom-scroll shadow-2xl"
+                            className="w-full max-w-3xl bg-white dark:bg-slate-900 rounded-3xl max-h-full overflow-y-auto p-6 pt-10 sm:p-10 relative custom-scroll shadow-2xl"
                             onClick={(e) => e.stopPropagation()}
                         >
                             <button 
                                 onClick={() => setSelectedProject(null)} 
-                                className="absolute top-4 right-6 py-1 px-2.5 text-blue-900 bg-blue-100 rounded-full hover:bg-blue-200 transition-colors z-10"
+                                className="absolute top-4 right-6 py-1 px-2.5 rounded-full text-blue-900 dark:text-blue-300 bg-blue-100 dark:bg-slate-800 hover:bg-blue-200 dark:hover:bg-slate-700 transition-colors z-10"
                             >
                                 <span className="fa-solid fa-times text-xl mt-1"></span>
                             </button>
@@ -218,23 +218,23 @@ const Portfolio: React.FC = () => {
                                     decoding="async"
                                 />
                                 <div className="space-y-6">
-                                    <h5 className="text-xl sm:text-2xl font-bold text-blue-900 font-ubuntu">
+                                    <h5 className="text-xl sm:text-2xl font-bold text-blue-900 dark:text-blue-300 font-ubuntu">
                                         {selectedProject.title}
                                     </h5>
-                                    <p className="text-blue-800 text-base sm:text-lg leading-relaxed font-ubuntu">
+                                    <p className="text-blue-800 dark:text-blue-300/90 text-base sm:text-lg leading-relaxed font-ubuntu">
                                         {selectedProject.longDesc}
                                     </p>
                                     
                                     <div className="flex flex-wrap gap-2">
                                         {selectedProject.tech.map((t, i) => (
-                                            <span key={i} className="px-4 py-1.5 bg-blue-100 text-blue-800 border border-blue-200 rounded-full text-sm font-semibold font-ubuntu">
+                                            <span key={i} className="px-4 py-1.5 bg-blue-100 dark:bg-slate-800 text-blue-800 dark:text-blue-300 border border-blue-200 dark:border-slate-700 rounded-full text-sm font-semibold font-ubuntu">
                                                 {t}
                                             </span>
                                         ))}
                                     </div>
 
                                     {selectedProject.links.length > 0 && (
-                                        <div className="flex flex-wrap gap-4 pt-6 border-t border-blue-200">
+                                        <div className="flex flex-wrap gap-4 pt-6 border-t border-blue-200 dark:border-slate-700">
                                             {selectedProject.links.map((link, i) => (
                                                 <motion.a 
                                                     key={i} 
@@ -243,7 +243,7 @@ const Portfolio: React.FC = () => {
                                                     rel="noopener noreferrer"
                                                     whileHover={{ scale: 1.05 }}
                                                     whileTap={{ scale: 0.95 }}
-                                                    className="inline-flex items-center px-6 py-2.5 font-semibold text-white bg-blue-600 rounded-full btn-slider transition-colors font-ubuntu shadow-md"
+                                                    className="inline-flex items-center px-6 py-2.5 font-semibold text-white bg-blue-600 dark:bg-blue-500 rounded-full btn-slider transition-colors font-ubuntu shadow-md"
                                                 >
                                                     {link.label} {link.icon && <span className={`${link.icon} ml-2`}></span>}
                                                 </motion.a>

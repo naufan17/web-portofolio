@@ -58,8 +58,10 @@
   scroll-behavior: smooth;
 }
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 body {
-  @apply text-slate-900 bg-[#f8faff] min-h-screen font-ubuntu antialiased overflow-x-hidden;
+  @apply text-slate-900 dark:text-slate-100 bg-[#f8faff] dark:bg-[#0f172a] min-h-screen font-ubuntu antialiased overflow-x-hidden transition-colors duration-300;
   margin: 0;
 }
 
@@ -79,12 +81,12 @@ a {
   }
   .btn-slider::before {
     content: '';
-    @apply absolute inset-0 bg-white transition-transform duration-300 ease-in-out -z-10 origin-left scale-x-0 border border-blue-600 rounded-full;
+    @apply absolute inset-0 bg-white dark:bg-slate-800 transition-transform duration-300 ease-in-out -z-10 origin-left scale-x-0 border border-blue-600 dark:border-blue-400 rounded-full;
   }
   .btn-slider:hover::before {
     @apply scale-x-100;
   }
   .btn-slider:hover {
-    @apply !text-blue-700;
+    @apply !text-blue-700 dark:!text-blue-500;
   }
 }
