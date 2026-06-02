@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -6,13 +7,34 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
 
-function App() {
+const App: React.FC = () => {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
     damping: 30,
     restDelta: 0.001
   });
+
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('theme');
+      if (saved) return saved === 'dark';
+      return window.matchMedia('(prefers-color-scheme: dark)').matches;
+    }
+    return false;
+  });
+
+  useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    }
+  }, [isDarkMode]);
+
+  const toggleTheme = () => setIsDarkMode(!isDarkMode);
 
   return (
     <div className="relative min-h-screen selection:bg-blue-200 selection:text-blue-900 overflow-x-hidden">
@@ -23,8 +45,8 @@ function App() {
       />
 
       {/* Background Gradient */}
-      <div className="fixed inset-0 h-full w-full bg-[#f8faff] pointer-events-none">
-        <div className="absolute inset-0 bg-[radial-gradient(#99a0ff_1px,transparent_1px)] bg-size-[24px_24px] mask-[radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-40"></div>
+      <div className="fixed inset-0 h-full w-full bg-[#f8faff] dark:bg-[#0f172a] pointer-events-none transition-colors duration-300">
+        <div className="absolute inset-0 bg-[radial-gradient(#99a0ff_1px,transparent_1px)] dark:bg-[radial-gradient(#334155_1px,transparent_1px)] bg-size-[24px_24px] mask-[radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-40"></div>
         {/* Animated background blobs */}
         <motion.div 
           animate={{ 
@@ -33,7 +55,7 @@ function App() {
             scale: [1, 1.1, 1]
           }}
           transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-          className="absolute top-1/4 -left-24 w-96 h-96 bg-blue-200/30 rounded-full blur-[100px]"
+          className="absolute top-1/4 -left-24 w-96 h-96 bg-blue-200/30 dark:bg-blue-900/20 rounded-full blur-[100px]"
         />
         <motion.div 
           animate={{ 
@@ -42,11 +64,11 @@ function App() {
             scale: [1, 1.2, 1]
           }}
           transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-          className="absolute bottom-1/4 -right-24 w-96 h-96 bg-rose-200/20 rounded-full blur-[100px]"
+          className="absolute bottom-1/4 -right-24 w-96 h-96 bg-rose-200/20 dark:bg-rose-900/20 rounded-full blur-[100px]"
         />
       </div>
       
-      <Navbar />
+      <Navbar isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
       
       {/* Main Content */}
       <main className="relative z-10 sm:pt-8 lg:pt-12">

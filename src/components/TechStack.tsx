@@ -22,10 +22,10 @@ const TechStack: React.FC = () => {
     return (
         <div id="tech-stack" className="relative py-16 sm:py-24 mx-auto overflow-hidden">
             <div className="flex flex-col justify-center items-center mb-10 px-4">
-                <h2 className="text-3xl text-blue-800 font-ubuntu font-bold leading-tight tracking-tight md:text-4xl lg:text-5xl">
+                <h2 className="text-3xl text-blue-800 dark:text-blue-300 font-ubuntu font-bold leading-tight tracking-tight md:text-4xl lg:text-5xl">
                     Tech Stack
                 </h2>
-                <h6 className="text-blue-800/70 text-center mt-6 text-lg sm:text-xl font-ubuntu max-w-2xl">
+                <h6 className="text-blue-800/70 dark:text-blue-300/80 text-center mt-6 text-lg sm:text-xl font-ubuntu max-w-2xl">
                     I have experience in several programming languages and frameworks.
                 </h6>
             </div>
@@ -33,12 +33,12 @@ const TechStack: React.FC = () => {
             <div className="flex flex-col gap-y-4">
                 {/* Mobile View: Two Rows */}
                 <div className="flex sm:hidden flex-col gap-y-8">
-                    <div className="flex w-fit animate-infinite-scroll hover:[animation-play-state:paused]">
+                    <div className="flex w-fit animate-infinite-scroll">
                         {[...techStack.slice(0, 7), ...techStack.slice(0, 7)].map((tech, index) => (
                             <TechCard key={`row1-${index}`} tech={tech} />
                         ))}
                     </div>
-                    <div className="flex w-fit animate-infinite-scroll-reverse hover:[animation-play-state:paused]">
+                    <div className="flex w-fit animate-infinite-scroll-reverse">
                         {[...techStack.slice(7), ...techStack.slice(7)].map((tech, index) => (
                             <TechCard key={`row2-${index}`} tech={tech} />
                         ))}
@@ -46,7 +46,7 @@ const TechStack: React.FC = () => {
                 </div>
 
                 {/* Desktop View: One Row */}
-                <div className="hidden sm:flex w-fit animate-infinite-scroll hover:[animation-play-state:paused]">
+                <div className="hidden sm:flex w-fit animate-infinite-scroll">
                     {[...techStack, ...techStack].map((tech, index) => (
                         <TechCard key={`desktop-${index}`} tech={tech} />
                     ))}
@@ -57,13 +57,13 @@ const TechStack: React.FC = () => {
 };
 
 const TechCard: React.FC<{ tech: { name: string; icon: string } }> = ({ tech }) => (
-    <div className="flex flex-col justify-center items-center bg-blue-100 border border-blue-200 rounded-2xl p-2 sm:p-4 mx-2 sm:mx-3 min-w-[120px] sm:min-w-[150px]">
-        <div className="w-20 sm:w-24 h-20 sm:h-24 bg-blue-200 rounded-full p-1 sm:p-2">
+    <div className="flex flex-col justify-center items-center bg-white/40 dark:bg-slate-800/40 backdrop-blur-xl border border-white/50 dark:border-slate-700/50 rounded-2xl p-2 sm:p-4 mx-2 sm:mx-3 min-w-[120px] sm:min-w-[150px] shadow-xl hover:shadow-2xl transition-all duration-300">
+        <div className="w-20 sm:w-24 h-20 sm:h-24 bg-white/50 dark:bg-slate-700/50 backdrop-blur-2xl rounded-full p-1 sm:p-2 shadow-inner border border-white/60 dark:border-slate-600/50">
             <div className="inline-flex w-full h-full justify-center items-center">
                 <span className={tech.icon}></span>
             </div>
         </div>
-        <h4 className="mt-1 sm:mt-2 text-blue-800 font-semibold text-sm sm:text-base text-center font-ubuntu">
+        <h4 className="mt-1 sm:mt-2 text-blue-800 dark:text-blue-300 font-semibold text-sm sm:text-base text-center font-ubuntu">
             {tech.name}
         </h4>
     </div>

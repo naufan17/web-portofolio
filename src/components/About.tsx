@@ -16,7 +16,7 @@ const About: React.FC = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
-                className="bg-white/40 backdrop-blur-xl border border-white/30 rounded-[2.5rem] p-10 sm:p-14 lg:p-18 shadow-2xl relative overflow-hidden"
+                className="bg-white/40 dark:bg-slate-800/40 backdrop-blur-xl border border-white/30 dark:border-slate-700/50 rounded-[2.5rem] p-10 sm:p-14 lg:p-18 shadow-2xl relative overflow-hidden"
             >
                 {/* Decorative background shape */}
                 <div className="absolute -top-24 -right-24 w-48 h-48 bg-blue-400/10 rounded-full blur-3xl"/>
@@ -28,7 +28,7 @@ const About: React.FC = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.2 }}
-                        className="text-3xl sm:text-4xl text-blue-900 font-ubuntu font-bold leading-tight tracking-tight mb-8"
+                        className="text-3xl sm:text-4xl text-blue-900 dark:text-blue-300 font-ubuntu font-bold leading-tight tracking-tight mb-8"
                     >
                         About Me
                     </motion.h1>
@@ -37,7 +37,7 @@ const About: React.FC = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.3 }}
-                        className="text-blue-900/80 text-center max-w-2xl text-lg md:text-xl font-ubuntu leading-relaxed"
+                        className="text-blue-900/80 dark:text-blue-300/80 text-center max-w-2xl text-lg md:text-xl font-ubuntu leading-relaxed"
                     >  
                         I'm Naufan, a Full Stack Developer passionate about building innovative, user-friendly applications. 
                         I thrive on learning new technologies and staying up-to-date with the latest IT trends. 
@@ -54,10 +54,9 @@ const About: React.FC = () => {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ delay: 0.1 }}
-                            whileHover={{ scale: 1.1, y: -5 }}
+                            whileHover={{ scale: 1.1, y: -2 }}
                             whileTap={{ scale: 0.9 }}
-                            className={`text-3xl sm:text-4xl text-blue-800 transition-colors duration-300 ${link.color}`}
+                            className={`text-3xl sm:text-4xl text-blue-800 dark:text-blue-400 transition-colors duration-300 ${link.color}`}
                         >
                             <span className={link.icon}></span>  
                         </motion.a>
@@ -74,7 +73,7 @@ const About: React.FC = () => {
                     <motion.a 
                         whileHover={{ scale: 1.05, boxShadow: "0 10px 25px -5px rgba(29, 78, 216, 0.4)" }}
                         whileTap={{ scale: 0.95 }}
-                        className="inline-block px-10 py-3 font-semibold text-white bg-blue-600 text-lg rounded-2xl shadow-lg hover:bg-blue-700 transition-all font-ubuntu" 
+                        className="inline-block px-10 py-3 font-semibold text-white bg-blue-600 dark:bg-blue-500 text-lg rounded-full shadow-lg btn-slider transition-all font-ubuntu" 
                         href="https://www.canva.com/design/DAF9sAxu3Ew/B2HgZlbOpLM5xXjv0ZEMJQ/view?utm_content=DAF9sAxu3Ew&utm_campaign=designshare&utm_medium=link&utm_source=editor"
                         target="_blank"
                         rel="noopener noreferrer"
