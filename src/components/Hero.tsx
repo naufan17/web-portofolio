@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
             href="#tech-stack" 
             whileHover={{ scale: 1.1, backgroundColor: '#dbeafe' }}
             whileTap={{ scale: 0.9 }}
-            className="flex justify-center items-center rounded-full border-2 border-blue-800 w-10 h-10 sm:w-12 sm:h-12 hover:border-blue-300 transition-colors shadow-lg"
+            className="flex justify-center items-center rounded-full border-2 border-blue-800 w-10 h-10 sm:w-12 sm:h-12 hover:border-blue-100 transition-colors shadow-lg"
           >
             <motion.span 
               animate={{ y: [0, 5, 0] }}

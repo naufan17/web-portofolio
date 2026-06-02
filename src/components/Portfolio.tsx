@@ -151,8 +151,7 @@ const Portfolio: React.FC = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
-                        whileHover={{ y: -5 }}
-                        className="bg-blue-100/50 backdrop-blur-sm border border-blue-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300"
+                        className="bg-white/40 backdrop-blur-xl border border-white/50 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300"
                     >
                         <div className="p-4 sm:p-6 pb-0">
                             <img 
@@ -199,7 +198,7 @@ const Portfolio: React.FC = () => {
                             animate={{ scale: 1, opacity: 1, y: 0 }}
                             exit={{ scale: 0.9, opacity: 0, y: 50 }}
                             transition={{ type: "spring", damping: 25, stiffness: 300 }}
-                            className="w-full max-w-3xl bg-blue-50 rounded-3xl max-h-full overflow-y-auto p-6 pt-10 sm:p-10 relative custom-scroll shadow-2xl"
+                            className="w-full max-w-3xl bg-white rounded-3xl max-h-full overflow-y-auto p-6 pt-10 sm:p-10 relative custom-scroll shadow-2xl"
                             onClick={(e) => e.stopPropagation()}
                         >
                             <button 

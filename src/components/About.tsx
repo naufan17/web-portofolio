@@ -54,8 +54,7 @@ const About: React.FC = () => {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ delay: 0.1 }}
-                            whileHover={{ scale: 1.1, y: -5 }}
+                            whileHover={{ scale: 1.1, y: -2 }}
                             whileTap={{ scale: 0.9 }}
                             className={`text-3xl sm:text-4xl text-blue-800 transition-colors duration-300 ${link.color}`}
                         >
