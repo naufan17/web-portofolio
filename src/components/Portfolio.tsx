@@ -175,7 +175,7 @@ const Portfolio: React.FC = () => {
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
                                     onClick={() => setSelectedProject(project)} 
-                                    className="inline-flex items-center px-6 py-2 rounded-full bg-blue-600 text-white text-base font-semibold hover:bg-blue-700 transition-colors font-ubuntu"
+                                    className="inline-flex items-center px-6 py-2 rounded-full bg-blue-600 text-white text-base font-semibold btn-slider transition-colors font-ubuntu"
                                 >
                                     See more <span className="ml-2 fa-solid fa-chevron-right text-sm"></span>
                                 </motion.button>
@@ -244,7 +244,7 @@ const Portfolio: React.FC = () => {
                                                     rel="noopener noreferrer"
                                                     whileHover={{ scale: 1.05 }}
                                                     whileTap={{ scale: 0.95 }}
-                                                    className="inline-flex items-center px-6 py-2.5 font-semibold text-white bg-blue-600 rounded-xl hover:bg-blue-700 transition-colors font-ubuntu shadow-md"
+                                                    className="inline-flex items-center px-6 py-2.5 font-semibold text-white bg-blue-600 rounded-full btn-slider transition-colors font-ubuntu shadow-md"
                                                 >
                                                     {link.label} {link.icon && <span className={`${link.icon} ml-2`}></span>}
                                                 </motion.a>

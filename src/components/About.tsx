@@ -74,7 +74,7 @@ const About: React.FC = () => {
                     <motion.a 
                         whileHover={{ scale: 1.05, boxShadow: "0 10px 25px -5px rgba(29, 78, 216, 0.4)" }}
                         whileTap={{ scale: 0.95 }}
-                        className="inline-block px-10 py-3 font-semibold text-white bg-blue-600 text-lg rounded-2xl shadow-lg hover:bg-blue-700 transition-all font-ubuntu" 
+                        className="inline-block px-10 py-3 font-semibold text-white bg-blue-600 text-lg rounded-full shadow-lg btn-slider transition-all font-ubuntu" 
                         href="https://www.canva.com/design/DAF9sAxu3Ew/B2HgZlbOpLM5xXjv0ZEMJQ/view?utm_content=DAF9sAxu3Ew&utm_campaign=designshare&utm_medium=link&utm_source=editor"
                         target="_blank"
                         rel="noopener noreferrer"
