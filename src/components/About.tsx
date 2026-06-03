@@ -78,7 +78,7 @@ const About: React.FC = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        View CV <span className="ml-2 fa-solid fa-chevron-right text-md"></span>
+                        View CV <span className="ml-2 fa-solid fa-file-text text-md"></span>
                     </motion.a>
                 </motion.div>
             </motion.div>

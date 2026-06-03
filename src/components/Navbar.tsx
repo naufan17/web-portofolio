@@ -1,5 +1,5 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 interface NavbarProps {
   isDarkMode: boolean;
@@ -7,7 +7,7 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme }) => {
-  const [hoveredIndex, setHoveredIndex] = React.useState<number | null>(null);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   const links = [
     { name: 'Home', href: '#' },
@@ -24,17 +24,24 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme }) => {
       className="fixed bottom-6 sm:top-0 sm:bottom-auto left-0 right-0 z-50 pointer-events-none"
     >
       {/* Mobile: toggle button floats top-right */}
-      <button
+      <motion.button
         onClick={toggleTheme}
-        className="sm:hidden fixed top-4 right-4 flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-slate-900/40 backdrop-blur-sm border border-white/40 dark:border-slate-700/50 shadow-xl pointer-events-auto text-blue-900 dark:text-yellow-400 transition-colors duration-300 hover:bg-blue-500/15 dark:hover:bg-slate-700/50 z-50"
+        whileHover={{ rotate: 15 }}
+        whileTap={{ scale: 0.9 }}
+        className="sm:hidden fixed top-4 right-4 flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-slate-900/40 backdrop-blur-sm border border-white/40 dark:border-slate-700/50 shadow-xl pointer-events-auto text-blue-900 dark:text-yellow-400 transition-colors duration-300 hover:bg-blue-500/15 dark:hover:bg-slate-700/50 z-50 overflow-hidden"
         aria-label="Toggle Dark Mode"
       >
-        {isDarkMode ? (
-          <span className="fa-solid fa-sun text-lg"></span>
-        ) : (
-          <span className="fa-solid fa-moon text-lg"></span>
-        )}
-      </button>
+        <AnimatePresence mode="wait">
+          <motion.span
+            key={isDarkMode ? "sun" : "moon"}
+            initial={{ y: -20, opacity: 0, rotate: -90 }}
+            animate={{ y: 0, opacity: 1, rotate: 0 }}
+            exit={{ y: 20, opacity: 0, rotate: 90 }}
+            transition={{ duration: 0.2 }}
+            className={`fa-solid ${isDarkMode ? "fa-sun" : "fa-moon"} text-lg`}
+          ></motion.span>
+        </AnimatePresence>
+      </motion.button>
 
       {/* Desktop: toggle sits next to nav pill */}
       <nav className="flex justify-center items-center py-0 sm:py-6 space-x-2 sm:space-x-4 pointer-events-none">
@@ -66,17 +73,24 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme }) => {
           ))}
         </div>
 
-        <button
+        <motion.button
           onClick={toggleTheme}
-          className="hidden sm:flex items-center justify-center w-12 h-12 rounded-full bg-white/30 dark:bg-slate-900/40 backdrop-blur-sm border border-white/40 dark:border-slate-700/50 shadow-xl pointer-events-auto text-blue-900 dark:text-yellow-400 transition-colors duration-300 hover:bg-blue-500/15 dark:hover:bg-slate-700/50"
+          whileHover={{ rotate: 15 }}
+          whileTap={{ scale: 0.9 }}
+          className="hidden sm:flex items-center justify-center w-12 h-12 rounded-full bg-white/30 dark:bg-slate-900/40 backdrop-blur-sm border border-white/40 dark:border-slate-700/50 shadow-xl pointer-events-auto text-blue-900 dark:text-yellow-400 transition-colors duration-300 hover:bg-blue-500/15 dark:hover:bg-slate-700/50 overflow-hidden"
           aria-label="Toggle Dark Mode"
         >
-          {isDarkMode ? (
-            <span className="fa-solid fa-sun text-xl"></span>
-          ) : (
-            <span className="fa-solid fa-moon text-xl"></span>
-          )}
-        </button>
+          <AnimatePresence mode="wait">
+            <motion.span
+              key={isDarkMode ? "sun" : "moon"}
+              initial={{ y: -20, opacity: 0, rotate: -90 }}
+              animate={{ y: 0, opacity: 1, rotate: 0 }}
+              exit={{ y: 20, opacity: 0, rotate: 90 }}
+              transition={{ duration: 0.2 }}
+              className={`fa-solid ${isDarkMode ? "fa-sun" : "fa-moon"} text-xl`}
+            ></motion.span>
+          </AnimatePresence>
+        </motion.button>
       </nav>
     </motion.header>
   );
