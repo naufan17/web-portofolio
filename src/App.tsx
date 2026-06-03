@@ -1,13 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
+
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import TechStack from './components/TechStack';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
+import { useState } from 'react';
 
-const App: React.FC = () => {
+const App: React.FC = () => {  
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,

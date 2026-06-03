@@ -8,7 +8,11 @@ interface Project {
     longDesc: string;
     image: string;
     tech: string[];
-    links: { label: string; url: string; icon?: string }[];
+    links: { 
+        label: string; 
+        url: string; 
+        icon?: string 
+    }[];
 }
 
 const projects: Project[] = [
@@ -22,7 +26,7 @@ const projects: Project[] = [
         links: [
             { label: 'User', url: 'https://github.com/naufan17/sistem-informasi-akademik', icon: 'fa-brands fa-github' },
             { label: 'Admin', url: 'https://github.com/naufan17/sistem-informasi-akademik-admin', icon: 'fa-brands fa-github' },
-            { label: 'Demo', url: 'https://siakad-mdnu.herokuapp.com' },
+            { label: 'Demo', url: 'https://siakad-mdnu.herokuapp.com', icon: 'fa-solid fa-arrow-up-right-from-square' },
         ]
     },
     {
@@ -35,7 +39,7 @@ const projects: Project[] = [
         links: [
             { label: 'Frontend', url: 'https://github.com/SYNRGY7-Kelompok-6/connect-bca-frontend', icon: 'fa-brands fa-github' },
             { label: 'Backend', url: 'https://github.com/SYNRGY7-Kelompok-6/connect-bca-backend-js', icon: 'fa-brands fa-github' },
-            { label: 'Demo', url: 'https://connect-bca.netlify.app' },
+            { label: 'Demo', url: 'https://connect-bca.netlify.app', icon: 'fa-solid fa-arrow-up-right-from-square' },
         ]
     },
     {
@@ -48,7 +52,7 @@ const projects: Project[] = [
         links: [
             { label: 'Frontend', url: 'https://github.com/CPI-FS-SDG-11-D/LPM-frontend', icon: 'fa-brands fa-github' },
             { label: 'Backend', url: 'https://github.com/CPI-FS-SDG-11-D/LPM-api', icon: 'fa-brands fa-github' },
-            { label: 'Demo', url: 'https://bincang-rakyat.vercel.app' },
+            { label: 'Demo', url: 'https://bincang-rakyat.vercel.app', icon: 'fa-solid fa-arrow-up-right-from-square' },
         ]
     },
     {
@@ -60,7 +64,7 @@ const projects: Project[] = [
         tech: ['TypeScript', 'NextJS', 'Rest Country API'],
         links: [
             { label: 'Fullstack', url: 'https://github.com/naufan17/rest-country-app', icon: 'fa-brands fa-github' },
-            { label: 'Demo', url: 'https://rest-country-app-psi.vercel.app/' },
+            { label: 'Demo', url: 'https://rest-country-app-psi.vercel.app/', icon: 'fa-solid fa-arrow-up-right-from-square' },
         ]
     },
     {
@@ -72,7 +76,7 @@ const projects: Project[] = [
         tech: ['TypeScript', 'React', 'Indodax API'],
         links: [
             { label: 'Frontend', url: 'https://github.com/naufan17/crypto-market', icon: 'fa-brands fa-github' },
-            { label: 'Demo', url: 'https://crypto-market-idr.netlify.app' },
+            { label: 'Demo', url: 'https://crypto-market-idr.netlify.app', icon: 'fa-solid fa-arrow-up-right-from-square' },
         ]
     },
     // {
@@ -84,7 +88,7 @@ const projects: Project[] = [
     //     tech: ['TypeScript', 'NextJS', 'Binderbyte API'],
     //     links: [
     //         { label: 'Frontend', url: 'https://github.com/naufan17/cek-resi', icon: 'fa-brands fa-github' },
-    //         { label: 'Demo', url: 'https://cek-resi-naufan17s-projects.vercel.app' },
+    //         { label: 'Demo', url: 'https://cek-resi-naufan17s-projects.vercel.app', icon: 'fa-solid fa-arrow-up-right-from-square' },
     //     ]
     // },
     {
@@ -97,7 +101,7 @@ const projects: Project[] = [
         links: [
             { label: 'Frontend', url: 'https://github.com/naufan17/24001143-synrgy7-nau_bcr-ch7', icon: 'fa-brands fa-github' },
             { label: 'Backend', url: 'https://github.com/naufan17/24001143-synrgy7-nau_bcr-ch6', icon: 'fa-brands fa-github' },
-            { label: 'Demo', url: 'https://nau-binar-car-rental.netlify.app' },
+            { label: 'Demo', url: 'https://nau-binar-car-rental.netlify.app', icon: 'fa-solid fa-arrow-up-right-from-square' },
         ]
     },
     {
@@ -234,7 +238,7 @@ const Portfolio: React.FC = () => {
                                     </div>
 
                                     {selectedProject.links.length > 0 && (
-                                        <div className="flex flex-wrap gap-4 pt-6 border-t border-blue-200 dark:border-slate-700">
+                                        <div className="w-full flex justify-center items-center flex-wrap gap-4 pt-6 border-t border-blue-200 dark:border-slate-700">
                                             {selectedProject.links.map((link, i) => (
                                                 <motion.a 
                                                     key={i} 
