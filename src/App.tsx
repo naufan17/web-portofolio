@@ -42,7 +42,7 @@ const App: React.FC = () => {
     <div className="relative min-h-screen selection:bg-blue-200 selection:text-blue-900 overflow-x-hidden">
       {/* Fixed Progress Bar */}
       <motion.div
-        className="fixed top-0 left-0 right-0 h-1 bg-blue-600 origin-left z-60"
+        className="hidden md:block fixed top-0 left-0 right-0 h-1 bg-blue-600 origin-left z-60"
         style={{ scaleX }}
       />
 
@@ -57,7 +57,7 @@ const App: React.FC = () => {
             scale: [1, 1.1, 1]
           }}
           transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-          className="absolute top-1/4 -left-24 w-96 h-96 bg-blue-200/30 dark:bg-blue-900/20 rounded-full blur-[100px]"
+          className="absolute top-1/4 -left-24 w-96 h-96 bg-blue-200/30 dark:bg-blue-900/20 rounded-full blur-[60px] md:blur-[100px]"
         />
         <motion.div 
           animate={{ 
@@ -66,7 +66,7 @@ const App: React.FC = () => {
             scale: [1, 1.2, 1]
           }}
           transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-          className="absolute bottom-1/4 -right-24 w-96 h-96 bg-rose-200/20 dark:bg-rose-900/20 rounded-full blur-[100px]"
+          className="absolute bottom-1/4 -right-24 w-96 h-96 bg-rose-200/20 dark:bg-rose-900/20 rounded-full blur-[60px] md:blur-[100px]"
         />
       </div>
       
@@ -75,12 +75,12 @@ const App: React.FC = () => {
       {/* Main Content */}
       <main className="relative z-10 sm:pt-8 lg:pt-12">
         <Hero />
-        <TechStack />
-        <About />
-        <Portfolio />
+          <TechStack />
+          <About />
+          <Portfolio />
       </main>
       
-      <Footer />
+        <Footer />
     </div>
   );
 }

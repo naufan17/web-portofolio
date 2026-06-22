@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
               }}
             />
           </h1>
-          <h1 className="bg-clip-text text-transparent bg-linear-to-r from-rose-700 to-blue-700 dark:from-rose-400 dark:to-blue-400 text-center text-4xl sm:text-5xl lg:text-6xl font-ubuntu font-bold leading-tight tracking-tight min-h-16 sm:min-h-20 lg:min-h-24 px-2">
+          <h2 className="bg-clip-text text-transparent bg-linear-to-r from-rose-700 to-blue-700 dark:from-rose-400 dark:to-blue-400 text-center text-4xl sm:text-5xl lg:text-6xl font-ubuntu font-bold leading-tight tracking-tight min-h-16 sm:min-h-20 lg:min-h-24 px-2">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter.pauseFor(1500)
@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
                 delay: 75,
               }}
             />
-          </h1>
+          </h2>
         </motion.div>
         
         <motion.div 
