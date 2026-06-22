@@ -16,6 +16,9 @@ const Hero: React.FC = () => {
             <Typewriter
               onInit={(typewriter) => {
                 typewriter.typeString("Hi, I'm Naufan, a")
+                  .callFunction((state) => {
+                    state.elements.cursor.style.display = 'none';
+                  })
                   .start();
               }}
               options={{
@@ -28,8 +31,21 @@ const Hero: React.FC = () => {
           <h2 className="bg-clip-text text-transparent bg-linear-to-r from-rose-700 to-blue-700 dark:from-rose-400 dark:to-blue-400 text-center text-4xl sm:text-5xl lg:text-6xl font-ubuntu font-bold leading-tight tracking-tight min-h-16 sm:min-h-20 lg:min-h-24 px-2">
             <Typewriter
               onInit={(typewriter) => {
-                typewriter.pauseFor(1500)
+                typewriter
+                  .callFunction((state) => {
+                    // Hide cursor during the initial pause
+                    state.elements.cursor.style.display = 'none';
+                  })
+                  .pauseFor(1500)
+                  .callFunction((state) => {
+                    // Show cursor right before typing begins
+                    state.elements.cursor.style.display = 'inline';
+                  })
                   .typeString('Full Stack Developer')
+                  .callFunction((state) => {
+                    // Hide cursor when finished
+                    state.elements.cursor.style.display = 'none';
+                  })
                   .start();
               }}
               options={{

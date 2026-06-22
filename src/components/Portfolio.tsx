@@ -67,65 +67,43 @@ const projects: Project[] = [
             { label: 'Demo', url: 'https://rest-country-app-psi.vercel.app/', icon: 'fa-solid fa-arrow-up-right-from-square' },
         ]
     },
-    // {
-    //     id: 'cryptoMarket',
-    //     title: 'Crypto Market',
-    //     shortDesc: 'Final project JavaScript with API Program from Digital Talent Scholarship.',
-    //     longDesc: 'Final project JavaScript with API Program from Digital Talent Scholarship. Website to monitor the rise and fall of more than 200 crypto prices in real time. The website was created using React by taking API data from Indodax.',
-    //     image: 'assets/images/crypto-market.webp',
-    //     tech: ['TypeScript', 'React', 'Indodax API'],
-    //     links: [
-    //         { label: 'Frontend', url: 'https://github.com/naufan17/crypto-market', icon: 'fa-brands fa-github' },
-    //         { label: 'Demo', url: 'https://crypto-market-idr.netlify.app' },
-    //     ]
-    // },
-    // {
-    //     id: 'cekResi',
-    //     title: 'Cek Resi',
-    //     shortDesc: 'Website to track goods shipments from 24 forwarding service companies.',
-    //     longDesc: 'Website to track goods shipments from 24 forwarding service companies. The website is created using Next by retrieving API data from binderbyte.',
-    //     image: 'assets/images/cek-resi.webp',
-    //     tech: ['TypeScript', 'NextJS', 'Binderbyte API'],
-    //     links: [
-    //         { label: 'Frontend', url: 'https://github.com/naufan17/cek-resi', icon: 'fa-brands fa-github' },
-    //         { label: 'Demo', url: 'https://cek-resi-naufan17s-projects.vercel.app', icon: 'fa-solid fa-arrow-up-right-from-square' },
-    //     ]
-    // },
     {
-        id: 'bcr',
-        title: 'Binar Car Rental',
-        shortDesc: 'Synergy Academy bootcamp course project car rental simulation website.',
-        longDesc: 'Synergy Academy bootcamp course project car rental simulation website. The website is made using the Express library and React.',
-        image: 'assets/images/binar-car-rental.webp',
-        tech: ['TypeScript', 'Express', 'React', 'PostgreSQL'],
+        id: 'cryptoMarket',
+        title: 'Crypto Market',
+        shortDesc: 'Final project JavaScript with API Program from Digital Talent Scholarship.',
+        longDesc: 'Final project JavaScript with API Program from Digital Talent Scholarship. Website to monitor the rise and fall of more than 200 crypto prices in real time. The website was created using React by taking API data from Indodax.',
+        image: 'assets/images/crypto-market.webp',
+        tech: ['TypeScript', 'React', 'Indodax API'],
         links: [
-            { label: 'Frontend', url: 'https://github.com/naufan17/24001143-synrgy7-nau_bcr-ch7', icon: 'fa-brands fa-github' },
-            { label: 'Backend', url: 'https://github.com/naufan17/24001143-synrgy7-nau_bcr-ch6', icon: 'fa-brands fa-github' },
-            { label: 'Demo', url: 'https://nau-binar-car-rental.netlify.app', icon: 'fa-solid fa-arrow-up-right-from-square' },
+            { label: 'Frontend', url: 'https://github.com/naufan17/crypto-market', icon: 'fa-brands fa-github' },
+            { label: 'Demo', url: 'https://crypto-market-idr.netlify.app' },
         ]
     },
     {
-        id: 'boilerplateExpress',
-        title: 'Boilerplate Express Rest Api',
-        shortDesc: 'Express started to build REST API',
-        longDesc: 'Express started to build REST API',
-        image: 'assets/images/boilerplate-express-rest-api.webp',
-        tech: ['TypeScript', 'NodeJS', 'Express', 'PostgreSQL', 'MySQL', 'MongoDB', 'Docker'],
+        id: 'cekResi',
+        title: 'Cek Resi',
+        shortDesc: 'Website to track goods shipments from 24 forwarding service companies.',
+        longDesc: 'Website to track goods shipments from 24 forwarding service companies. The website is created using Next by retrieving API data from binderbyte.',
+        image: 'assets/images/cek-resi.webp',
+        tech: ['TypeScript', 'NextJS', 'Binderbyte API'],
         links: [
-            { label: 'Demo', url: 'https://github.com/naufan17/express-boilerplate', icon: 'fa-brands fa-github' },
+            { label: 'Frontend', url: 'https://github.com/naufan17/cek-resi', icon: 'fa-brands fa-github' },
+            { label: 'Demo', url: 'https://cek-resi-naufan17s-projects.vercel.app', icon: 'fa-solid fa-arrow-up-right-from-square' },
         ]
     },
     // {
-    //     id: 'boilerplateGoGin',
-    //     title: 'Boilerplate Go Gin Rest Api',
-    //     shortDesc: 'Go Gin started to build REST API',
-    //     longDesc: 'Go Gin started to build REST API',
-    //     image: 'assets/images/boilerplate-go-gin-rest-api.webp',
-    //     tech: ['Go', 'Gin', 'PostgreSQL', 'Docker'],
+    //     id: 'bcr',
+    //     title: 'Binar Car Rental',
+    //     shortDesc: 'Synergy Academy bootcamp course project car rental simulation website.',
+    //     longDesc: 'Synergy Academy bootcamp course project car rental simulation website. The website is made using the Express library and React.',
+    //     image: 'assets/images/binar-car-rental.webp',
+    //     tech: ['TypeScript', 'Express', 'React', 'PostgreSQL'],
     //     links: [
-    //         { label: 'Demo', url: 'https://github.com/naufan17/go-gin-boilerplate', icon: 'fa-brands fa-github' },
+    //         { label: 'Frontend', url: 'https://github.com/naufan17/24001143-synrgy7-nau_bcr-ch7', icon: 'fa-brands fa-github' },
+    //         { label: 'Backend', url: 'https://github.com/naufan17/24001143-synrgy7-nau_bcr-ch6', icon: 'fa-brands fa-github' },
+    //         { label: 'Demo', url: 'https://nau-binar-car-rental.netlify.app', icon: 'fa-solid fa-arrow-up-right-from-square' },
     //     ]
-    // }
+    // },
 ];
 
 const Portfolio: React.FC = () => {
