@@ -18,7 +18,7 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme }) => {
 
   return (
     <motion.header
-      initial={{ y: 50, opacity: 0 }}
+      initial={{ y: -50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
       className="fixed bottom-6 sm:top-0 sm:bottom-auto left-0 right-0 z-50 pointer-events-none"
