@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 interface NavbarProps {
@@ -8,7 +8,8 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme }) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
+  
   const links = [
     { name: 'Home', href: '#' },
     { name: 'Tech Stack', href: '#tech-stack' },
@@ -16,9 +17,17 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme }) => {
     { name: 'Portfolio', href: '#portfolio' },
   ];
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 640);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <motion.header
-      initial={{ y: -50, opacity: 0 }}
+      initial={{ y: isMobile ? 50 : -50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
       className="fixed bottom-6 sm:top-0 sm:bottom-auto left-0 right-0 z-50 pointer-events-none"
